@@ -12,6 +12,7 @@ var searchData=
   ['removebleconnectionparamiterdelegate_3a',['removeBleConnectionParamiterDelegate:',['../interface_blue_s_t_s_d_k_node.html#a630d19283f2e0d28572217bbfc4e84c2',1,'BlueSTSDKNode']]],
   ['removeconfigdelegate_3a',['removeConfigDelegate:',['../interface_blue_s_t_s_d_k_config_control.html#a9941428cb9f4f0fd861649078123d0bf',1,'BlueSTSDKConfigControl']]],
   ['removedelegate_3a',['removeDelegate:',['../interface_blue_s_t_s_d_k_manager.html#ab45a350ce8f368c46cc07c57b5d1e11c',1,'BlueSTSDKManager']]],
+  ['removefeatureaccelerationenabletypedelegate_3a',['removeFeatureAccelerationEnableTypeDelegate:',['../interface_blue_s_t_s_d_k_feature_accelerometer_event.html#afd5c8bc0e12d41bd4a6a04f0d512002e',1,'BlueSTSDKFeatureAccelerometerEvent']]],
   ['removefeatureconfigurationdelegate_3a',['removeFeatureConfigurationDelegate:',['../interface_blue_s_t_s_d_k_feature_auto_configurable.html#abe58a35bc79e49a9e88347cef3648e10',1,'BlueSTSDKFeatureAutoConfigurable']]],
   ['removefeaturedelegate_3a',['removeFeatureDelegate:',['../interface_blue_s_t_s_d_k_feature.html#adf13963d6a7a4d6a3a3bd56495f9b43c',1,'BlueSTSDKFeature']]],
   ['removefeatureloggerdelegate_3a',['removeFeatureLoggerDelegate:',['../interface_blue_s_t_s_d_k_feature.html#aa7af1ec8874ed7b5b2afeca61449373d',1,'BlueSTSDKFeature']]],
@@ -19,5 +20,6 @@ var searchData=
   ['removenodestatusdelegate_3a',['removeNodeStatusDelegate:',['../interface_blue_s_t_s_d_k_node.html#af09e0401d2af9f745b80ffaf20fcc525',1,'BlueSTSDKNode']]],
   ['requestautoconfigurationstatus',['requestAutoConfigurationStatus',['../interface_blue_s_t_s_d_k_feature_auto_configurable.html#a29ce48623c3f677b6a88a50e6737c29d',1,'BlueSTSDKFeatureAutoConfigurable']]],
   ['resetdiscovery',['resetDiscovery',['../interface_blue_s_t_s_d_k_manager.html#a34d56f2789396c3a4a58b2dd29422dc4',1,'BlueSTSDKManager']]],
+  ['resetdiscovery_3a',['resetDiscovery:',['../interface_blue_s_t_s_d_k_manager.html#a4652c9a2c6ebf82e8541d88ef2fbe952',1,'BlueSTSDKManager']]],
   ['resutlwithsample_3anreaddata_3a',['resutlWithSample:nReadData:',['../interface_blue_s_t_s_d_k_extract_result.html#a50a3758e3ac5f7ff5d398a5c0af3ff46',1,'BlueSTSDKExtractResult']]]
 ];

@@ -134,10 +134,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_config_control.html#af8f1f7b205a50d430e749266e0210a9d">   53</a></span>&#160;<span class="keyword">@property</span> (readonly,strong) <a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *<a class="code" href="interface_blue_s_t_s_d_k_config_control.html#af8f1f7b205a50d430e749266e0210a9d">node</a>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;+(instancetype)configControlWithNode:(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)<a class="code" href="interface_blue_s_t_s_d_k_config_control.html#af8f1f7b205a50d430e749266e0210a9d">node</a> device:(CBPeripheral *)device</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;+(instancetype)configControlWithNode:(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)<a class="code" href="interface_blue_s_t_s_d_k_config_control.html#af8f1f7b205a50d430e749266e0210a9d">node</a> periph:(CBPeripheral *)periph</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                  configControlChart:(CBCharacteristic*)configControlChar;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;-(instancetype)initWithNode:(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)<a class="code" href="interface_blue_s_t_s_d_k_config_control.html#af8f1f7b205a50d430e749266e0210a9d">node</a> device:(CBPeripheral *)device</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;-(instancetype)initWithNode:(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)<a class="code" href="interface_blue_s_t_s_d_k_config_control.html#af8f1f7b205a50d430e749266e0210a9d">node</a> periph:(CBPeripheral *)periph</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;         configControlChart:(CBCharacteristic*)configControlChar;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;-(void)read:(<a class="code" href="interface_blue_s_t_s_d_k_command.html">BlueSTSDKCommand</a> *)cmd;</div>
@@ -161,12 +161,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="interface_blue_s_t_s_d_k_config_control_html_af8f1f7b205a50d430e749266e0210a9d"><div class="ttname"><a href="interface_blue_s_t_s_d_k_config_control.html#af8f1f7b205a50d430e749266e0210a9d">BlueSTSDKConfigControl::node</a></div><div class="ttdeci">BlueSTSDKNode * node</div><div class="ttdoc">node that will send the data to this class </div><div class="ttdef"><b>Definition:</b> BlueSTSDKConfigControl.h:53</div></div>
 <div class="ttc" id="_blue_s_t_s_d_k_node_8h_html"><div class="ttname"><a href="_blue_s_t_s_d_k_node_8h.html">BlueSTSDKNode.h</a></div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_config_control_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_config_control.html">BlueSTSDKConfigControl</a></div><div class="ttdoc">Class that manage the Config characteristics. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKConfigControl.h:48</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_command_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_command.html">BlueSTSDKCommand</a></div><div class="ttdoc">class that represent an abstraction of the device command to set/get the proper register ...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKCommand.h:45</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_node_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a></div><div class="ttdoc">Class that represent a remote device that will export some data (as BlueSTSDKFeature) that the user c...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:57</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_command_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_command.html">BlueSTSDKCommand</a></div><div class="ttdoc">class that represent an abstraction of the node command to set/get the proper register ...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKCommand.h:45</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_node_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a></div><div class="ttdoc">Class that represent a remote node that will export some data (as BlueSTSDKFeature) that the user can...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:57</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 5 2015 09:11:54 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 5 2016 08:46:21 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

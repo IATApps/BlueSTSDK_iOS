@@ -180,7 +180,7 @@ Protected Types</h2></td></tr>
 </td></tr>
 <tr class="memitem:ae319533b681771d36e46ab0c84ca6a22"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_register.html#ae319533b681771d36e46ab0c84ca6a22">BlueSTSDKRegisterTarget_e</a> { <a class="el" href="interface_blue_s_t_s_d_k_register.html#ae319533b681771d36e46ab0c84ca6a22a78eaa04d533359c2b83df3b2af88bc01">BlueSTSDK_REGISTER_TARGET_PERSISTENT</a> = 0x01, 
 <a class="el" href="interface_blue_s_t_s_d_k_register.html#ae319533b681771d36e46ab0c84ca6a22a9e4100330380fd8319c1a24bd9c240ae">BlueSTSDK_REGISTER_TARGET_SESSION</a> = 0x02, 
-<a class="el" href="interface_blue_s_t_s_d_k_register.html#ae319533b681771d36e46ab0c84ca6a22a5d914f47ab69283f8d5a3d2d56e64907">BlueSTSDK_REGISTER_TARGET_BOTH</a> = BlueSTSDK_REGISTER_TARGET_PERSISTENT | BlueSTSDK_REGISTER_TARGET_SESSION
+<a class="el" href="interface_blue_s_t_s_d_k_register.html#ae319533b681771d36e46ab0c84ca6a22a5d914f47ab69283f8d5a3d2d56e64907">BlueSTSDK_REGISTER_TARGET_BOTH</a> = 0x03
  }<tr class="memdesc:ae319533b681771d36e46ab0c84ca6a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type used for register store target.  <a href="interface_blue_s_t_s_d_k_register.html#ae319533b681771d36e46ab0c84ca6a22">More...</a><br /></td></tr>
 <tr class="separator:ae319533b681771d36e46ab0c84ca6a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
@@ -279,7 +279,7 @@ Properties</h2></td></tr>
 <p>Get the address of the received register. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>packet received from the device</td></tr>
+    <tr><td class="paramname">data</td><td>packet received from the node</td></tr>
   </table>
   </dd>
 </dl>
@@ -304,7 +304,7 @@ Properties</h2></td></tr>
 <p>Get the error of the received register. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>packet received from the device</td></tr>
+    <tr><td class="paramname">data</td><td>packet received from the node</td></tr>
   </table>
   </dd>
 </dl>
@@ -339,8 +339,8 @@ Properties</h2></td></tr>
 <p>Get the header of the read command. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>packet received from the device </td></tr>
-    <tr><td class="paramname">pheader</td><td>pointer to packet received from the device</td></tr>
+    <tr><td class="paramname">data</td><td>packet received from the node </td></tr>
+    <tr><td class="paramname">pheader</td><td>pointer to packet received from the node</td></tr>
   </table>
   </dd>
 </dl>
@@ -365,7 +365,7 @@ Properties</h2></td></tr>
 <p>Get the payload of the read register. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>packet received from the device</td></tr>
+    <tr><td class="paramname">data</td><td>packet received from the node</td></tr>
   </table>
   </dd>
 </dl>
@@ -390,7 +390,7 @@ Properties</h2></td></tr>
 <p>Get the size of the received register. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>packet received from the device</td></tr>
+    <tr><td class="paramname">data</td><td>packet received from the node</td></tr>
   </table>
   </dd>
 </dl>
@@ -415,7 +415,7 @@ Properties</h2></td></tr>
 <p>Get the Target of the received register. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>packet received from the device</td></tr>
+    <tr><td class="paramname">data</td><td>packet received from the node</td></tr>
   </table>
   </dd>
 </dl>
@@ -514,7 +514,7 @@ Properties</h2></td></tr>
 <p>Check if the data is for a write operation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>packet received from the device</td></tr>
+    <tr><td class="paramname">data</td><td>packet received from the node</td></tr>
   </table>
   </dd>
 </dl>
@@ -539,7 +539,7 @@ Properties</h2></td></tr>
 <p>Check if the data is for a write operation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>packet received from the device</td></tr>
+    <tr><td class="paramname">data</td><td>packet received from the node</td></tr>
   </table>
   </dd>
 </dl>
@@ -810,7 +810,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the packet (buffer) to send to the device to read the register </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the packet (buffer) to send to the node to read the register </dd></dl>
 
 </div>
 </div>
@@ -842,11 +842,11 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">target</td><td>Mode Persistent/Session </td></tr>
-    <tr><td class="paramname">payloadData</td><td>data to write in the device register</td></tr>
+    <tr><td class="paramname">payloadData</td><td>data to write in the node register</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the packet (buffer) to send to the device to write the register with the value defined in the payload </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the packet (buffer) to send to the node to write the register with the value defined in the payload </dd></dl>
 
 </div>
 </div>
@@ -945,7 +945,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 5 2015 09:11:55 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 5 2016 08:46:22 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

@@ -121,82 +121,84 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define BlueSTSDK_BlueSTSDKFeature_h</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_feature_delegate-p.html">BlueSTSDKFeatureDelegate</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_sample.html">   43</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a> : NSObject</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_sample.html#aba4011cf690df99df2b781102500f640">   47</a></span>&#160;<span class="keyword">@property</span>(readonly) uint32_t <a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html#aba4011cf690df99df2b781102500f640">timestamp</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_sample.html#a31eb3f710a1fa976546993c9f029e8bd">   52</a></span>&#160;<span class="keyword">@property</span>(readonly,retain) NSArray *<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html#a31eb3f710a1fa976546993c9f029e8bd">data</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;+(instancetype) sampleWithTimestamp:(uint32_t)timestamp data:(NSArray*)data;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;-(instancetype) initWhitTimestamp: (uint32_t)timestamp data:(NSArray*)data;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;NS_CLASS_AVAILABLE(10_7, 5_0)</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature.html">   88</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a> : NSObject</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature.html#aebbec0816c94ebbdf302ed0c3a07116f">   95</a></span>&#160;<span class="keyword">@property</span>(readonly) <span class="keywordtype">bool</span> enabled;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature.html#a074914f133e0c901e14b039c92790685">  100</a></span>&#160;<span class="keyword">@property</span> (readonly,retain, nonatomic) NSString *name;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature.html#a17f491a6ce4ce6480f175a3efba37635">  105</a></span>&#160;<span class="keyword">@property</span> (readonly,retain,nonatomic) <a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *parentNode;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature.html#a7491d147b8e52c722db24a4d405dca0b">  110</a></span>&#160;<span class="keyword">@property</span> (readonly) NSDate* lastUpdate;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature.html#aa6c1917c872472248aa7ea16934806bf">  115</a></span>&#160;<span class="keyword">@property</span> (readonly,atomic) <a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a> *lastSample;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_blue_s_t_s_d_k_feature_field_8h.html">BlueSTSDKFeatureField.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_feature_delegate-p.html">BlueSTSDKFeatureDelegate</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">@class</span> <a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_sample.html">   44</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a> : NSObject</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_sample.html#a2645114fba1bfca1f06af8cc464914a5">   48</a></span>&#160;<span class="keyword">@property</span>(readonly) uint64_t <a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html#a2645114fba1bfca1f06af8cc464914a5">timestamp</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_sample.html#a31eb3f710a1fa976546993c9f029e8bd">   53</a></span>&#160;<span class="keyword">@property</span>(readonly,retain) NSArray *<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html#a31eb3f710a1fa976546993c9f029e8bd">data</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;+(instancetype) sampleWithTimestamp:(uint64_t)timestamp data:(NSArray*)data;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;-(instancetype) initWhitTimestamp: (uint64_t)timestamp data:(NSArray*)data;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;NS_CLASS_AVAILABLE(10_7, 5_0)</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature.html">   89</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a> : NSObject</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature.html#aebbec0816c94ebbdf302ed0c3a07116f">   96</a></span>&#160;<span class="keyword">@property</span>(readonly) <span class="keywordtype">bool</span> enabled;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature.html#a074914f133e0c901e14b039c92790685">  101</a></span>&#160;<span class="keyword">@property</span> (readonly,retain, nonatomic) NSString *name;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature.html#a17f491a6ce4ce6480f175a3efba37635">  106</a></span>&#160;<span class="keyword">@property</span> (readonly,retain,nonatomic) <a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *parentNode;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature.html#a7491d147b8e52c722db24a4d405dca0b">  111</a></span>&#160;<span class="keyword">@property</span> (readonly) NSDate* lastUpdate;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature.html#aa6c1917c872472248aa7ea16934806bf">  116</a></span>&#160;<span class="keyword">@property</span> (readonly,atomic) <a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a> *lastSample;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;-(NSString*) description;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;-(void) addFeatureDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_feature_delegate-p.html">BlueSTSDKFeatureDelegate</a>&gt;)delegate;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;-(void) removeFeatureDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_feature_delegate-p.html">BlueSTSDKFeatureDelegate</a>&gt;)delegate;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;-(void) addFeatureLoggerDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate</a>&gt;)delegate;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;-(void) removeFeatureLoggerDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate</a>&gt;)delegate;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;-(instancetype) initWhitNode: (<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a>*)node;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;-(NSString*) description;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;-(void) addFeatureDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_feature_delegate-p.html">BlueSTSDKFeatureDelegate</a>&gt;)delegate;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;-(void) removeFeatureDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_feature_delegate-p.html">BlueSTSDKFeatureDelegate</a>&gt;)delegate;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;-(void) addFeatureLoggerDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate</a>&gt;)delegate;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;-(void) removeFeatureLoggerDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate</a>&gt;)delegate;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;-(instancetype) initWhitNode: (<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a>*)node;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;-(NSArray*) getFieldsDesc;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;-(NSArray*) getFieldsDesc;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="protocol_blue_s_t_s_d_k_feature_delegate-p.html">  179</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_feature_delegate-p.html">BlueSTSDKFeatureDelegate</a> &lt;NSObject&gt;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="keyword">@required</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;- (void)didUpdateFeature:(<a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a> *)feature sample:(<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a>*) sample;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">  195</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate</a> &lt;NSObject&gt;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="protocol_blue_s_t_s_d_k_feature_delegate-p.html">  180</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_feature_delegate-p.html">BlueSTSDKFeatureDelegate</a> &lt;NSObject&gt;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keyword">@required</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;- (void)didUpdateFeature:(<a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a> *)feature sample:(<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a>*) sample;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="line" href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">  196</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate</a> &lt;NSObject&gt;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="keyword">@required</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;- (void)feature:(<a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a> *)feature rawData:(NSData*)raw sample:(<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a>*)sample;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_feature_sample_html_a31eb3f710a1fa976546993c9f029e8bd"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_sample.html#a31eb3f710a1fa976546993c9f029e8bd">BlueSTSDKFeatureSample::data</a></div><div class="ttdeci">NSArray * data</div><div class="ttdoc">array of NSNumber with the feature data </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:52</div></div>
-<div class="ttc" id="protocol_blue_s_t_s_d_k_feature_log_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate-p</a></div><div class="ttdoc">Protocol used for log all the data received from a feature. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:195</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_feature_sample_html_aba4011cf690df99df2b781102500f640"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_sample.html#aba4011cf690df99df2b781102500f640">BlueSTSDKFeatureSample::timestamp</a></div><div class="ttdeci">uint32_t timestamp</div><div class="ttdoc">device time stamp at the moment of the data acquisition </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:47</div></div>
-<div class="ttc" id="protocol_blue_s_t_s_d_k_feature_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_feature_delegate-p.html">BlueSTSDKFeatureDelegate-p</a></div><div class="ttdoc">Protocol used for notify that the feature data was updated. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:179</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_feature_sample_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a></div><div class="ttdoc">Class that represent a sample data from a feature, it contains the data exported by the feature and t...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:43</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_node_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a></div><div class="ttdoc">Class that represent a remote device that will export some data (as BlueSTSDKFeature) that the user c...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:57</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_feature_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a></div><div class="ttdoc">This class represent some set of data that a node can export. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:88</div></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keyword">@required</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;- (void)feature:(<a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a> *)feature rawData:(NSData*)raw sample:(<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a>*)sample;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_sample_html_a31eb3f710a1fa976546993c9f029e8bd"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_sample.html#a31eb3f710a1fa976546993c9f029e8bd">BlueSTSDKFeatureSample::data</a></div><div class="ttdeci">NSArray * data</div><div class="ttdoc">array of NSNumber with the feature data </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:53</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_sample_html_a2645114fba1bfca1f06af8cc464914a5"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_sample.html#a2645114fba1bfca1f06af8cc464914a5">BlueSTSDKFeatureSample::timestamp</a></div><div class="ttdeci">uint64_t timestamp</div><div class="ttdoc">node time stamp at the moment of the data acquisition </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:48</div></div>
+<div class="ttc" id="protocol_blue_s_t_s_d_k_feature_log_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate-p</a></div><div class="ttdoc">Protocol used for log all the data received from a feature. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:196</div></div>
+<div class="ttc" id="protocol_blue_s_t_s_d_k_feature_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_feature_delegate-p.html">BlueSTSDKFeatureDelegate-p</a></div><div class="ttdoc">Protocol used for notify that the feature data was updated. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:180</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_sample_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a></div><div class="ttdoc">Class that represent a sample data from a feature, it contains the data exported by the feature and t...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:44</div></div>
+<div class="ttc" id="_blue_s_t_s_d_k_feature_field_8h_html"><div class="ttname"><a href="_blue_s_t_s_d_k_feature_field_8h.html">BlueSTSDKFeatureField.h</a></div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_node_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a></div><div class="ttdoc">Class that represent a remote node that will export some data (as BlueSTSDKFeature) that the user can...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:57</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a></div><div class="ttdoc">This class represent some set of data that a node can export. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:89</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 5 2015 09:11:54 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 5 2016 08:46:21 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

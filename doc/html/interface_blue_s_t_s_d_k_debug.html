@@ -107,18 +107,18 @@ Inheritance diagram for BlueSTSDKDebug:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
-<tr class="memitem:aaefdcc6f008145931a81ca2a900ef00c"><td class="memItemLeft" align="right" valign="top">(instancetype)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_debug.html#aaefdcc6f008145931a81ca2a900ef00c">initWithNode:device:termChart:errChart:</a></td></tr>
-<tr class="memdesc:aaefdcc6f008145931a81ca2a900ef00c"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a debug console  <a href="#aaefdcc6f008145931a81ca2a900ef00c">More...</a><br /></td></tr>
-<tr class="separator:aaefdcc6f008145931a81ca2a900ef00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88437e6644b7c635135f271d77e7e9c0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_debug.html#a88437e6644b7c635135f271d77e7e9c0">writeMessage:</a></td></tr>
-<tr class="memdesc:a88437e6644b7c635135f271d77e7e9c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">send a message to the debug console  <a href="#a88437e6644b7c635135f271d77e7e9c0">More...</a><br /></td></tr>
-<tr class="separator:a88437e6644b7c635135f271d77e7e9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f008af9e38e93d44c455bd9974cba8"><td class="memItemLeft" align="right" valign="top">(instancetype)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_debug.html#a67f008af9e38e93d44c455bd9974cba8">initWithNode:periph:termChart:errChart:</a></td></tr>
+<tr class="memdesc:a67f008af9e38e93d44c455bd9974cba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a debug console  <a href="#a67f008af9e38e93d44c455bd9974cba8">More...</a><br /></td></tr>
+<tr class="separator:a67f008af9e38e93d44c455bd9974cba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ca2310286b33991ce94037de42639f"><td class="memItemLeft" align="right" valign="top">(NSUInteger)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_debug.html#ad4ca2310286b33991ce94037de42639f">writeMessage:</a></td></tr>
+<tr class="memdesc:ad4ca2310286b33991ce94037de42639f"><td class="mdescLeft">&#160;</td><td class="mdescRight">send a message to the debug console, the message longher than the maximun size will be splitted in several ble packages  <a href="#ad4ca2310286b33991ce94037de42639f">More...</a><br /></td></tr>
+<tr class="separator:ad4ca2310286b33991ce94037de42639f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a44895ae1bdfbf97b3b53540054824f52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_debug.html#a44895ae1bdfbf97b3b53540054824f52">node</a></td></tr>
-<tr class="memdesc:a44895ae1bdfbf97b3b53540054824f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">node that export this console  <a href="#a44895ae1bdfbf97b3b53540054824f52">More...</a><br /></td></tr>
-<tr class="separator:a44895ae1bdfbf97b3b53540054824f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac56eb8495a695b533c37e6905385fc0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_debug.html#ac56eb8495a695b533c37e6905385fc0a">parentNode</a></td></tr>
+<tr class="memdesc:ac56eb8495a695b533c37e6905385fc0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">node that export this console  <a href="#ac56eb8495a695b533c37e6905385fc0a">More...</a><br /></td></tr>
+<tr class="separator:ac56eb8495a695b533c37e6905385fc0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae560d854f03599d9a3d16074ff0f0994"><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_blue_s_t_s_d_k_debug_output_delegate-p.html">BlueSTSDKDebugOutputDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_debug.html#ae560d854f03599d9a3d16074ff0f0994">delegate</a></td></tr>
 <tr class="memdesc:ae560d854f03599d9a3d16074ff0f0994"><td class="mdescLeft">&#160;</td><td class="mdescRight">delegate used for notify new message in the console, when you set a delegate we will automatically enable the notification for the out/error message for disable the notification set it to nil  <a href="#ae560d854f03599d9a3d16074ff0f0994">More...</a><br /></td></tr>
 <tr class="separator:ae560d854f03599d9a3d16074ff0f0994"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,7 +127,7 @@ Properties</h2></td></tr>
 <div class="textblock"><p>Class that permit to read and write from the debug node console. </p>
 <dl class="section author"><dt>Author</dt><dd>STMicroelectronics - Central Labs. </dd></dl>
 </div><h2 class="groupheader">Method Documentation</h2>
-<a class="anchor" id="aaefdcc6f008145931a81ca2a900ef00c"></a>
+<a class="anchor" id="a67f008af9e38e93d44c455bd9974cba8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -138,10 +138,10 @@ Properties</h2></td></tr>
           <td class="paramname"><em>node</em></td>
         </tr>
         <tr>
-          <td class="paramkey">device:</td>
+          <td class="paramkey">periph:</td>
           <td></td>
           <td class="paramtype">(CBPeripheral *)&#160;</td>
-          <td class="paramname"><em>device</em></td>
+          <td class="paramname"><em>periph</em></td>
         </tr>
         <tr>
           <td class="paramkey">termChart:</td>
@@ -167,7 +167,7 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">node</td><td>node that export the debug console </td></tr>
-    <tr><td class="paramname">device</td><td>device associated to the node </td></tr>
+    <tr><td class="paramname">periph</td><td>peripheral associated to the node </td></tr>
     <tr><td class="paramname">termChar</td><td>characteristic where write and read the console message </td></tr>
     <tr><td class="paramname">errChar</td><td>characteristic where receive the error messages</td></tr>
   </table>
@@ -177,12 +177,12 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a88437e6644b7c635135f271d77e7e9c0"></a>
+<a class="anchor" id="ad4ca2310286b33991ce94037de42639f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (void) writeMessage: </td>
+          <td class="memname">- (NSUInteger) writeMessage: </td>
           <td></td>
           <td class="paramtype">(NSString *)&#160;</td>
           <td class="paramname"><em>msg</em></td>
@@ -191,13 +191,14 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>send a message to the debug console </p>
+<p>send a message to the debug console, the message longher than the maximun size will be splitted in several ble packages </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">msg</td><td>message to write in the node debug console </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>number of byte send </dd></dl>
 
 </div>
 </div>
@@ -224,7 +225,7 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a44895ae1bdfbf97b3b53540054824f52"></a>
+<a class="anchor" id="ac56eb8495a695b533c37e6905385fc0a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -232,7 +233,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">- (<a class="el" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a>*) node</td>
+          <td class="memname">- (<a class="el" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a>*) parentNode</td>
         </tr>
       </table>
   </td>
@@ -252,7 +253,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 5 2015 09:11:55 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 5 2016 08:46:21 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

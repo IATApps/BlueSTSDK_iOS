@@ -123,14 +123,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_log_n_s_log.html">   37</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_blue_s_t_s_d_k_feature_log_n_s_log.html">BlueSTSDKFeatureLogNSLog</a> : NSObject&lt;<a class="code" href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate</a>&gt;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">@end</span></div>
-<div class="ttc" id="protocol_blue_s_t_s_d_k_feature_log_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate-p</a></div><div class="ttdoc">Protocol used for log all the data received from a feature. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:195</div></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_log_n_s_log.html#affb66b00afd8870a69573c517fb806ac">   42</a></span>&#160;<span class="keyword">@property</span> (readonly,strong) NSDate* <a class="code" href="interface_blue_s_t_s_d_k_feature_log_n_s_log.html#affb66b00afd8870a69573c517fb806ac">startupTimestamp</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;+(instancetype)loggerWithTimestamp:(NSDate *)timestamp;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;-(instancetype)initWithTimestamp:(NSDate *)timestamp;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_log_n_s_log_html_affb66b00afd8870a69573c517fb806ac"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_log_n_s_log.html#affb66b00afd8870a69573c517fb806ac">BlueSTSDKFeatureLogNSLog::startupTimestamp</a></div><div class="ttdeci">NSDate * startupTimestamp</div><div class="ttdoc">startup timestamp of the logging </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureLogNSLog.h:42</div></div>
+<div class="ttc" id="protocol_blue_s_t_s_d_k_feature_log_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate-p</a></div><div class="ttdoc">Protocol used for log all the data received from a feature. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:196</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_feature_log_n_s_log_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_log_n_s_log.html">BlueSTSDKFeatureLogNSLog</a></div><div class="ttdoc">class that implement the BlueSTSDKFeatureLogDelegate and print on the NSLog stream the feature update...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureLogNSLog.h:37</div></div>
 <div class="ttc" id="_blue_s_t_s_d_k_feature_8h_html"><div class="ttname"><a href="_blue_s_t_s_d_k_feature_8h.html">BlueSTSDKFeature.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 5 2015 09:11:54 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 5 2016 08:46:21 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

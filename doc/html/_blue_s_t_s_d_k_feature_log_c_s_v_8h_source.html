@@ -123,26 +123,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html">   46</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html">BlueSTSDKFeatureLogCSV</a> : NSObject&lt;<a class="code" href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate</a>&gt;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;-(instancetype)<a class="code" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#ad0a9a9dc3d19ba192694b37de99d45b4">init</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;-(void) <a class="code" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a1de05d51c2aff7056c3b496616660a76">closeFiles</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#ab448a9f1add9a01894e071a4db2d1ace">   51</a></span>&#160;<span class="keyword">@property</span> (readonly,strong) NSDate* <a class="code" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#ab448a9f1add9a01894e071a4db2d1ace">startupTimestamp</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;+(instancetype)<a class="code" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#ae4604b063e01549965e3cd03c957e5d9">logger</a>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;+(NSArray*) <a class="code" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a01bba7defcaf3036623c0c80e7d43ef4">getLogFiles</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;+(void) <a class="code" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a47e1263bd725f17c89586da4d5201ba2">removeLogFiles</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">@end</span></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_feature_log_c_s_v_html_a47e1263bd725f17c89586da4d5201ba2"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a47e1263bd725f17c89586da4d5201ba2">+[BlueSTSDKFeatureLogCSV removeLogFiles]</a></div><div class="ttdeci">void removeLogFiles()</div><div class="ttdoc">remove all the file with estension *.csv in the same folter where we save the log files ...</div></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;+(instancetype)loggerWithTimestamp:(NSDate *)timestamp nodes:(NSArray *)nodes;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;+(instancetype)loggerWithNodes:(NSArray *)nodes;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;-(instancetype)initWithTimestamp:(NSDate *)timestamp nodes:(NSArray *)nodes;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;-(void) <a class="code" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a1de05d51c2aff7056c3b496616660a76">closeFiles</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;-(NSArray*) <a class="code" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a01bba7defcaf3036623c0c80e7d43ef4">getLogFiles</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;-(void) <a class="code" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a47e1263bd725f17c89586da4d5201ba2">removeLogFiles</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;+(BOOL) <a class="code" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#af510e465027378f8dfcb3a0bf7756754">areThereLogFiles</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;+(NSInteger) <a class="code" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a4420a9b0154a87a4ec791c4238ca5770">countAllLogFiles</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;+(NSArray*) <a class="code" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a4002e9537bd1ccc439a1b3a8629d54ea">getAllLogFiles</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;+(void) <a class="code" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a931c18a0770b0f2a6fd53c4f4a3916c5">clearLogFolder</a>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_log_c_s_v_html_a4420a9b0154a87a4ec791c4238ca5770"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a4420a9b0154a87a4ec791c4238ca5770">+[BlueSTSDKFeatureLogCSV countAllLogFiles]</a></div><div class="ttdeci">NSInteger countAllLogFiles()</div><div class="ttdoc">count the log files available in the folder </div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_log_c_s_v_html_a47e1263bd725f17c89586da4d5201ba2"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a47e1263bd725f17c89586da4d5201ba2">-[BlueSTSDKFeatureLogCSV removeLogFiles]</a></div><div class="ttdeci">void removeLogFiles()</div><div class="ttdoc">remove all the file of the current session with estension *.csv in the same folter where we save the ...</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_feature_log_c_s_v_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html">BlueSTSDKFeatureLogCSV</a></div><div class="ttdoc">class that implement the BlueSTSDKFeatureLogDelegate and store the data in a csv file with the same n...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureLogCSV.h:46</div></div>
-<div class="ttc" id="protocol_blue_s_t_s_d_k_feature_log_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate-p</a></div><div class="ttdoc">Protocol used for log all the data received from a feature. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:195</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_feature_log_c_s_v_html_a01bba7defcaf3036623c0c80e7d43ef4"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a01bba7defcaf3036623c0c80e7d43ef4">+[BlueSTSDKFeatureLogCSV getLogFiles]</a></div><div class="ttdeci">NSArray * getLogFiles()</div><div class="ttdoc">get all the csv file in the directory </div></div>
+<div class="ttc" id="protocol_blue_s_t_s_d_k_feature_log_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate-p</a></div><div class="ttdoc">Protocol used for log all the data received from a feature. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:196</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_log_c_s_v_html_a4002e9537bd1ccc439a1b3a8629d54ea"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a4002e9537bd1ccc439a1b3a8629d54ea">+[BlueSTSDKFeatureLogCSV getAllLogFiles]</a></div><div class="ttdeci">NSArray * getAllLogFiles()</div><div class="ttdoc">get all log files available in the folder </div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_log_c_s_v_html_a01bba7defcaf3036623c0c80e7d43ef4"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a01bba7defcaf3036623c0c80e7d43ef4">-[BlueSTSDKFeatureLogCSV getLogFiles]</a></div><div class="ttdeci">NSArray * getLogFiles()</div><div class="ttdoc">get all the csv file of the current session logging in the directory </div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_log_c_s_v_html_a931c18a0770b0f2a6fd53c4f4a3916c5"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a931c18a0770b0f2a6fd53c4f4a3916c5">+[BlueSTSDKFeatureLogCSV clearLogFolder]</a></div><div class="ttdeci">void clearLogFolder()</div><div class="ttdoc">clear log folder from all csv files </div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_log_c_s_v_html_af510e465027378f8dfcb3a0bf7756754"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#af510e465027378f8dfcb3a0bf7756754">+[BlueSTSDKFeatureLogCSV areThereLogFiles]</a></div><div class="ttdeci">BOOL areThereLogFiles()</div><div class="ttdoc">true if there are log files </div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_feature_log_c_s_v_html_a1de05d51c2aff7056c3b496616660a76"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a1de05d51c2aff7056c3b496616660a76">-[BlueSTSDKFeatureLogCSV closeFiles]</a></div><div class="ttdeci">void closeFiles()</div><div class="ttdoc">close all the open files </div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_feature_log_c_s_v_html_ad0a9a9dc3d19ba192694b37de99d45b4"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#ad0a9a9dc3d19ba192694b37de99d45b4">-[BlueSTSDKFeatureLogCSV init]</a></div><div class="ttdeci">instancetype init()</div><div class="ttdoc">create the logger </div></div>
 <div class="ttc" id="_blue_s_t_s_d_k_feature_8h_html"><div class="ttname"><a href="_blue_s_t_s_d_k_feature_8h.html">BlueSTSDKFeature.h</a></div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_log_c_s_v_html_ae4604b063e01549965e3cd03c957e5d9"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#ae4604b063e01549965e3cd03c957e5d9">+[BlueSTSDKFeatureLogCSV logger]</a></div><div class="ttdeci">instancetype logger()</div><div class="ttdoc">create a logger </div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_log_c_s_v_html_ab448a9f1add9a01894e071a4db2d1ace"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#ab448a9f1add9a01894e071a4db2d1ace">BlueSTSDKFeatureLogCSV::startupTimestamp</a></div><div class="ttdeci">NSDate * startupTimestamp</div><div class="ttdoc">startup timestamp of the logging </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureLogCSV.h:51</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 5 2015 09:11:54 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 5 2016 08:46:21 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

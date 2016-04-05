@@ -86,7 +86,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Instance Methods</a> &#124;
-<a href="#pub-static-methods">Class Methods</a>  </div>
+<a href="#pub-static-methods">Class Methods</a> &#124;
+<a href="#properties">Properties</a>  </div>
   <div class="headertitle">
 <div class="title">BlueSTSDKFeatureLogCSV Class Reference</div>  </div>
 </div><!--header-->
@@ -108,12 +109,18 @@ Inheritance diagram for BlueSTSDKFeatureLogCSV:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
-<tr class="memitem:ad0a9a9dc3d19ba192694b37de99d45b4"><td class="memItemLeft" align="right" valign="top">(instancetype)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#ad0a9a9dc3d19ba192694b37de99d45b4">init</a></td></tr>
-<tr class="memdesc:ad0a9a9dc3d19ba192694b37de99d45b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">create the logger  <a href="#ad0a9a9dc3d19ba192694b37de99d45b4">More...</a><br /></td></tr>
-<tr class="separator:ad0a9a9dc3d19ba192694b37de99d45b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0191bab6756f1cc486848e348ce357a3"><td class="memItemLeft" align="right" valign="top">(instancetype)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a0191bab6756f1cc486848e348ce357a3">initWithTimestamp:nodes:</a></td></tr>
+<tr class="memdesc:a0191bab6756f1cc486848e348ce357a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a logger  <a href="#a0191bab6756f1cc486848e348ce357a3">More...</a><br /></td></tr>
+<tr class="separator:a0191bab6756f1cc486848e348ce357a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1de05d51c2aff7056c3b496616660a76"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a1de05d51c2aff7056c3b496616660a76">closeFiles</a></td></tr>
 <tr class="memdesc:a1de05d51c2aff7056c3b496616660a76"><td class="mdescLeft">&#160;</td><td class="mdescRight">close all the open files  <a href="#a1de05d51c2aff7056c3b496616660a76">More...</a><br /></td></tr>
 <tr class="separator:a1de05d51c2aff7056c3b496616660a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01bba7defcaf3036623c0c80e7d43ef4"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a01bba7defcaf3036623c0c80e7d43ef4">getLogFiles</a></td></tr>
+<tr class="memdesc:a01bba7defcaf3036623c0c80e7d43ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">get all the csv file of the current session logging in the directory  <a href="#a01bba7defcaf3036623c0c80e7d43ef4">More...</a><br /></td></tr>
+<tr class="separator:a01bba7defcaf3036623c0c80e7d43ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e1263bd725f17c89586da4d5201ba2"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a47e1263bd725f17c89586da4d5201ba2">removeLogFiles</a></td></tr>
+<tr class="memdesc:a47e1263bd725f17c89586da4d5201ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove all the file of the current session with estension *.csv in the same folter where we save the log files  <a href="#a47e1263bd725f17c89586da4d5201ba2">More...</a><br /></td></tr>
+<tr class="separator:a47e1263bd725f17c89586da4d5201ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_protocol_blue_s_t_s_d_k_feature_log_delegate-p"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_protocol_blue_s_t_s_d_k_feature_log_delegate-p')"><img src="closed.png" alt="-"/>&#160;Instance Methods inherited from <a class="el" href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">&lt;BlueSTSDKFeatureLogDelegate&gt;</a></td></tr>
 <tr class="memitem:a34bf47abcf506fb59fb360d28e730967 inherit pub_methods_protocol_blue_s_t_s_d_k_feature_log_delegate-p"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html#a34bf47abcf506fb59fb360d28e730967">feature:rawData:sample:</a></td></tr>
 <tr class="memdesc:a34bf47abcf506fb59fb360d28e730967 inherit pub_methods_protocol_blue_s_t_s_d_k_feature_log_delegate-p"><td class="mdescLeft">&#160;</td><td class="mdescRight">method called every time we have new data from this feature  <a href="#a34bf47abcf506fb59fb360d28e730967">More...</a><br /></td></tr>
@@ -121,12 +128,33 @@ Instance Methods</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
-<tr class="memitem:a01bba7defcaf3036623c0c80e7d43ef4"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a01bba7defcaf3036623c0c80e7d43ef4">getLogFiles</a></td></tr>
-<tr class="memdesc:a01bba7defcaf3036623c0c80e7d43ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">get all the csv file in the directory  <a href="#a01bba7defcaf3036623c0c80e7d43ef4">More...</a><br /></td></tr>
-<tr class="separator:a01bba7defcaf3036623c0c80e7d43ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47e1263bd725f17c89586da4d5201ba2"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a47e1263bd725f17c89586da4d5201ba2">removeLogFiles</a></td></tr>
-<tr class="memdesc:a47e1263bd725f17c89586da4d5201ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove all the file with estension *.csv in the same folter where we save the log files  <a href="#a47e1263bd725f17c89586da4d5201ba2">More...</a><br /></td></tr>
-<tr class="separator:a47e1263bd725f17c89586da4d5201ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4604b063e01549965e3cd03c957e5d9"><td class="memItemLeft" align="right" valign="top">(instancetype)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#ae4604b063e01549965e3cd03c957e5d9">logger</a></td></tr>
+<tr class="memdesc:ae4604b063e01549965e3cd03c957e5d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a logger  <a href="#ae4604b063e01549965e3cd03c957e5d9">More...</a><br /></td></tr>
+<tr class="separator:ae4604b063e01549965e3cd03c957e5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa272ece77af33cab5aaf38fa2e18c75d"><td class="memItemLeft" align="right" valign="top">(instancetype)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#aa272ece77af33cab5aaf38fa2e18c75d">loggerWithTimestamp:nodes:</a></td></tr>
+<tr class="memdesc:aa272ece77af33cab5aaf38fa2e18c75d"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a logger  <a href="#aa272ece77af33cab5aaf38fa2e18c75d">More...</a><br /></td></tr>
+<tr class="separator:aa272ece77af33cab5aaf38fa2e18c75d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd49a771d612f8eef129cebfefa965c3"><td class="memItemLeft" align="right" valign="top">(instancetype)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#afd49a771d612f8eef129cebfefa965c3">loggerWithNodes:</a></td></tr>
+<tr class="memdesc:afd49a771d612f8eef129cebfefa965c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a logger that use the current timestamp inside the file name  <a href="#afd49a771d612f8eef129cebfefa965c3">More...</a><br /></td></tr>
+<tr class="separator:afd49a771d612f8eef129cebfefa965c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af510e465027378f8dfcb3a0bf7756754"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#af510e465027378f8dfcb3a0bf7756754">areThereLogFiles</a></td></tr>
+<tr class="memdesc:af510e465027378f8dfcb3a0bf7756754"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if there are log files  <a href="#af510e465027378f8dfcb3a0bf7756754">More...</a><br /></td></tr>
+<tr class="separator:af510e465027378f8dfcb3a0bf7756754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4420a9b0154a87a4ec791c4238ca5770"><td class="memItemLeft" align="right" valign="top">(NSInteger)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a4420a9b0154a87a4ec791c4238ca5770">countAllLogFiles</a></td></tr>
+<tr class="memdesc:a4420a9b0154a87a4ec791c4238ca5770"><td class="mdescLeft">&#160;</td><td class="mdescRight">count the log files available in the folder  <a href="#a4420a9b0154a87a4ec791c4238ca5770">More...</a><br /></td></tr>
+<tr class="separator:a4420a9b0154a87a4ec791c4238ca5770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4002e9537bd1ccc439a1b3a8629d54ea"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a4002e9537bd1ccc439a1b3a8629d54ea">getAllLogFiles</a></td></tr>
+<tr class="memdesc:a4002e9537bd1ccc439a1b3a8629d54ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">get all log files available in the folder  <a href="#a4002e9537bd1ccc439a1b3a8629d54ea">More...</a><br /></td></tr>
+<tr class="separator:a4002e9537bd1ccc439a1b3a8629d54ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a931c18a0770b0f2a6fd53c4f4a3916c5"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a931c18a0770b0f2a6fd53c4f4a3916c5">clearLogFolder</a></td></tr>
+<tr class="memdesc:a931c18a0770b0f2a6fd53c4f4a3916c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">clear log folder from all csv files  <a href="#a931c18a0770b0f2a6fd53c4f4a3916c5">More...</a><br /></td></tr>
+<tr class="separator:a931c18a0770b0f2a6fd53c4f4a3916c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:ab448a9f1add9a01894e071a4db2d1ace"><td class="memItemLeft" align="right" valign="top">NSDate *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_feature_log_c_s_v.html#ab448a9f1add9a01894e071a4db2d1ace">startupTimestamp</a></td></tr>
+<tr class="memdesc:ab448a9f1add9a01894e071a4db2d1ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">startup timestamp of the logging  <a href="#ab448a9f1add9a01894e071a4db2d1ace">More...</a><br /></td></tr>
+<tr class="separator:ab448a9f1add9a01894e071a4db2d1ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>class that implement the <a class="el" href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate</a> and store the data in a csv file with the same name of the feature. </p>
@@ -138,6 +166,41 @@ Class Methods</h2></td></tr>
 </ul>
 <dl class="section author"><dt>Author</dt><dd>STMicroelectronics - Central Labs. </dd></dl>
 </div><h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="af510e465027378f8dfcb3a0bf7756754"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (BOOL) areThereLogFiles </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>true if there are log files </p>
+<dl class="section return"><dt>Returns</dt><dd>true if there are log files, false if there are no log files </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a931c18a0770b0f2a6fd53c4f4a3916c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) clearLogFolder </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>clear log folder from all csv files </p>
+
+</div>
+</div>
 <a class="anchor" id="a1de05d51c2aff7056c3b496616660a76"></a>
 <div class="memitem">
 <div class="memproto">
@@ -155,12 +218,48 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a4420a9b0154a87a4ec791c4238ca5770"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (NSInteger) countAllLogFiles </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>count the log files available in the folder </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of log files </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4002e9537bd1ccc439a1b3a8629d54ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (NSArray*) getAllLogFiles </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get all log files available in the folder </p>
+<dl class="section return"><dt>Returns</dt><dd>array of log files </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a01bba7defcaf3036623c0c80e7d43ef4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">+ (NSArray*) getLogFiles </td>
+          <td class="memname">- (NSArray*) getLogFiles </td>
           <td></td>
           <td class="paramname"></td>
           <td></td>
@@ -168,17 +267,53 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>get all the csv file in the directory </p>
+<p>get all the csv file of the current session logging in the directory </p>
 <dl class="section return"><dt>Returns</dt><dd>array of NSURL with the created log files </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ad0a9a9dc3d19ba192694b37de99d45b4"></a>
+<a class="anchor" id="a0191bab6756f1cc486848e348ce357a3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (instancetype) init </td>
+          <td class="memname">- (instancetype) initWithTimestamp: </td>
+          <td></td>
+          <td class="paramtype">(NSDate *)&#160;</td>
+          <td class="paramname"><em>timestamp</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">nodes:</td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>nodes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create a logger </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timestamp</td><td>timestamp used in the file name </td></tr>
+    <tr><td class="paramname">nodes</td><td>list of node to log</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to a logger </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae4604b063e01549965e3cd03c957e5d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (instancetype) logger </td>
           <td></td>
           <td class="paramname"></td>
           <td></td>
@@ -186,8 +321,69 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>create the logger </p>
+<p>create a logger </p>
 <dl class="section return"><dt>Returns</dt><dd>pointer to the logger </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afd49a771d612f8eef129cebfefa965c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (instancetype) loggerWithNodes: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>nodes</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create a logger that use the current timestamp inside the file name </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td>list of node to log</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to a logger </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa272ece77af33cab5aaf38fa2e18c75d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (instancetype) loggerWithTimestamp: </td>
+          <td></td>
+          <td class="paramtype">(NSDate *)&#160;</td>
+          <td class="paramname"><em>timestamp</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">nodes:</td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>nodes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create a logger </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timestamp</td><td>timestamp used in the file name </td></tr>
+    <tr><td class="paramname">nodes</td><td>list of node to log</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to a logger </dd></dl>
 
 </div>
 </div>
@@ -196,7 +392,7 @@ Class Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">+ (void) removeLogFiles </td>
+          <td class="memname">- (void) removeLogFiles </td>
           <td></td>
           <td class="paramname"></td>
           <td></td>
@@ -204,7 +400,30 @@ Class Methods</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>remove all the file with estension *.csv in the same folter where we save the log files </p>
+<p>remove all the file of the current session with estension *.csv in the same folter where we save the log files </p>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="ab448a9f1add9a01894e071a4db2d1ace"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSDate*) startupTimestamp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">atomic</span><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>startup timestamp of the logging </p>
 
 </div>
 </div>
@@ -214,7 +433,7 @@ Class Methods</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 5 2015 09:11:55 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 5 2016 08:46:22 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

@@ -147,41 +147,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;-(void) <a class="code" href="interface_blue_s_t_s_d_k_manager.html#a34d56f2789396c3a4a58b2dd29422dc4">resetDiscovery</a>;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;-(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)nodeWithName:(NSString *)name;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;-(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)nodeWithTag:(NSString *)tag;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;-(void)addFeatureForBoard:(uint8_t)boardId features:(NSDictionary*)features;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;-(void) <a class="code" href="interface_blue_s_t_s_d_k_manager.html#a34d56f2789396c3a4a58b2dd29422dc4">resetDiscovery</a>:(BOOL)force;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;-(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)nodeWithName:(NSString *)name;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;-(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)nodeWithTag:(NSString *)tag;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;-(void) <a class="code" href="interface_blue_s_t_s_d_k_manager.html#ae62f518e0e1924a94fabd82555b24bb5">addVirtualNode</a>;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;-(bool)isValidDeviceId:(uint8_t)deviceId;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;+ (instancetype)<a class="code" href="interface_blue_s_t_s_d_k_manager.html#a029e629fae71c14dc84d2a5ec00e615e">sharedInstance</a>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="protocol_blue_s_t_s_d_k_manager_delegate-p.html">  159</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_manager_delegate-p.html">BlueSTSDKManagerDelegate</a> &lt;NSObject&gt;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keyword">@required</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;- (void)manager:(<a class="code" href="interface_blue_s_t_s_d_k_manager.html">BlueSTSDKManager</a> *)manager didDiscoverNode:(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)node;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;- (void)manager:(<a class="code" href="interface_blue_s_t_s_d_k_manager.html">BlueSTSDKManager</a> *)manager didChangeDiscovery:(BOOL)enable;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;-(void)addFeatureForNode:(uint8_t)nodeId features:(NSDictionary*)features;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;-(bool)isValidNodeId:(uint8_t)nodeId;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;+ (instancetype)<a class="code" href="interface_blue_s_t_s_d_k_manager.html#a029e629fae71c14dc84d2a5ec00e615e">sharedInstance</a>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="protocol_blue_s_t_s_d_k_manager_delegate-p.html">  169</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_manager_delegate-p.html">BlueSTSDKManagerDelegate</a> &lt;NSObject&gt;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keyword">@required</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;- (void)manager:(<a class="code" href="interface_blue_s_t_s_d_k_manager.html">BlueSTSDKManager</a> *)manager didDiscoverNode:(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)node;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_manager_html_a37f6279758b2b401abda1889ece7f23e"><div class="ttname"><a href="interface_blue_s_t_s_d_k_manager.html#a37f6279758b2b401abda1889ece7f23e">-[BlueSTSDKManager discoveryStart]</a></div><div class="ttdeci">void discoveryStart()</div><div class="ttdoc">start a discovery process, it will stop after BlueSTSDKMANAGER_DEFAULT_SCANING_TIMEOUT_S seconds ...</div></div>
-<div class="ttc" id="protocol_blue_s_t_s_d_k_manager_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_manager_delegate-p.html">BlueSTSDKManagerDelegate-p</a></div><div class="ttdoc">Delegate interface, used for notify change in the manager state or the discover of a new compatible n...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKManager.h:159</div></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;- (void)manager:(<a class="code" href="interface_blue_s_t_s_d_k_manager.html">BlueSTSDKManager</a> *)manager didChangeDiscovery:(BOOL)enable;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_manager_html_a37f6279758b2b401abda1889ece7f23e"><div class="ttname"><a href="interface_blue_s_t_s_d_k_manager.html#a37f6279758b2b401abda1889ece7f23e">-[BlueSTSDKManager discoveryStart]</a></div><div class="ttdeci">void discoveryStart()</div><div class="ttdoc">Start a discovery process, the discovery will stop when the use call BlueSTSDKManagerDelegate#discove...</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_manager_html_ae62f518e0e1924a94fabd82555b24bb5"><div class="ttname"><a href="interface_blue_s_t_s_d_k_manager.html#ae62f518e0e1924a94fabd82555b24bb5">-[BlueSTSDKManager addVirtualNode]</a></div><div class="ttdeci">void addVirtualNode()</div><div class="ttdoc">Insert a fake node inside the list of discovered node. </div></div>
+<div class="ttc" id="protocol_blue_s_t_s_d_k_manager_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_manager_delegate-p.html">BlueSTSDKManagerDelegate-p</a></div><div class="ttdoc">Delegate interface, used for notify change in the manager state or the discover of a new compatible n...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKManager.h:169</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_manager_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_manager.html">BlueSTSDKManager</a></div><div class="ttdoc">Class that permit to discover new node that are compatible with the BlueSTSDK protocol. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKManager.h:49</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_manager_html_a63cf67495318e5565b987619e7e22a89"><div class="ttname"><a href="interface_blue_s_t_s_d_k_manager.html#a63cf67495318e5565b987619e7e22a89">-[BlueSTSDKManager discoveryStop]</a></div><div class="ttdeci">void discoveryStop()</div><div class="ttdoc">stop the discovery process </div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_manager_html_a029e629fae71c14dc84d2a5ec00e615e"><div class="ttname"><a href="interface_blue_s_t_s_d_k_manager.html#a029e629fae71c14dc84d2a5ec00e615e">+[BlueSTSDKManager sharedInstance]</a></div><div class="ttdeci">instancetype sharedInstance()</div><div class="ttdoc">get the singleton instance of the manager </div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_manager_html_a762b98b3a9c18cbde84066a2d8e51475"><div class="ttname"><a href="interface_blue_s_t_s_d_k_manager.html#a762b98b3a9c18cbde84066a2d8e51475">-[BlueSTSDKManager isDiscovering]</a></div><div class="ttdeci">BOOL isDiscovering()</div><div class="ttdoc">tell if the manager is in a discovery state </div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_node_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a></div><div class="ttdoc">Class that represent a remote device that will export some data (as BlueSTSDKFeature) that the user c...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:57</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_manager_html_a34d56f2789396c3a4a58b2dd29422dc4"><div class="ttname"><a href="interface_blue_s_t_s_d_k_manager.html#a34d56f2789396c3a4a58b2dd29422dc4">-[BlueSTSDKManager resetDiscovery]</a></div><div class="ttdeci">void resetDiscovery()</div><div class="ttdoc">remove all the discovered nodes </div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_manager_html_ad7da405add9991028bc3dd25a9d4a61a"><div class="ttname"><a href="interface_blue_s_t_s_d_k_manager.html#ad7da405add9991028bc3dd25a9d4a61a">-[BlueSTSDKManager nodes]</a></div><div class="ttdeci">NSArray * nodes()</div><div class="ttdoc">get all the discovered nodes </div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_manager_html_a63cf67495318e5565b987619e7e22a89"><div class="ttname"><a href="interface_blue_s_t_s_d_k_manager.html#a63cf67495318e5565b987619e7e22a89">-[BlueSTSDKManager discoveryStop]</a></div><div class="ttdeci">void discoveryStop()</div><div class="ttdoc">Stop the discovery process. </div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_manager_html_a029e629fae71c14dc84d2a5ec00e615e"><div class="ttname"><a href="interface_blue_s_t_s_d_k_manager.html#a029e629fae71c14dc84d2a5ec00e615e">+[BlueSTSDKManager sharedInstance]</a></div><div class="ttdeci">instancetype sharedInstance()</div><div class="ttdoc">Get the singleton instance of the manager. </div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_manager_html_a762b98b3a9c18cbde84066a2d8e51475"><div class="ttname"><a href="interface_blue_s_t_s_d_k_manager.html#a762b98b3a9c18cbde84066a2d8e51475">-[BlueSTSDKManager isDiscovering]</a></div><div class="ttdeci">BOOL isDiscovering()</div><div class="ttdoc">Tell if the manager is in a discovery state. </div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_node_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a></div><div class="ttdoc">Class that represent a remote node that will export some data (as BlueSTSDKFeature) that the user can...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:57</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_manager_html_a34d56f2789396c3a4a58b2dd29422dc4"><div class="ttname"><a href="interface_blue_s_t_s_d_k_manager.html#a34d56f2789396c3a4a58b2dd29422dc4">-[BlueSTSDKManager resetDiscovery]</a></div><div class="ttdeci">void resetDiscovery()</div><div class="ttdoc">Remove all the discovered nodes no connected. </div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_manager_html_ad7da405add9991028bc3dd25a9d4a61a"><div class="ttname"><a href="interface_blue_s_t_s_d_k_manager.html#ad7da405add9991028bc3dd25a9d4a61a">-[BlueSTSDKManager nodes]</a></div><div class="ttdeci">NSArray * nodes()</div><div class="ttdoc">Get all the discovered nodes. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 5 2015 09:11:54 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 5 2016 08:46:21 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

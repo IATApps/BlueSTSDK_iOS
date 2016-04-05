@@ -94,7 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Class that represent a remote device that will export some data (as <a class="el" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a>) that the user can query or ask to be notify when they change.  
+<p>Class that represent a remote node that will export some data (as <a class="el" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a>) that the user can query or ask to be notify when they change.  
  <a href="interface_blue_s_t_s_d_k_node.html#details">More...</a></p>
 
 <p><code>#import &lt;<a class="el" href="_blue_s_t_s_d_k_node_8h_source.html">BlueSTSDKNode.h</a>&gt;</code></p>
@@ -110,6 +110,12 @@ Inheritance diagram for BlueSTSDKNode:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
+<tr class="memitem:aeef26fdb8cb42383d684fec697979995"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_node.html#aeef26fdb8cb42383d684fec697979995">friendlyName</a></td></tr>
+<tr class="memdesc:aeef26fdb8cb42383d684fec697979995"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a friendly name composed with name and tag or address  <a href="#aeef26fdb8cb42383d684fec697979995">More...</a><br /></td></tr>
+<tr class="separator:aeef26fdb8cb42383d684fec697979995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af69ba8dcfd8fea729a56e03122c6f931"><td class="memItemLeft" align="right" valign="top">(NSString *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_node.html#af69ba8dcfd8fea729a56e03122c6f931">addressEx</a></td></tr>
+<tr class="memdesc:af69ba8dcfd8fea729a56e03122c6f931"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the address if available otherwise the tag  <a href="#af69ba8dcfd8fea729a56e03122c6f931">More...</a><br /></td></tr>
+<tr class="separator:af69ba8dcfd8fea729a56e03122c6f931"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98bcd01b57b7968bec047b5f78086909"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_node.html#a98bcd01b57b7968bec047b5f78086909">addBleConnectionParamiterDelegate:</a></td></tr>
 <tr class="memdesc:a98bcd01b57b7968bec047b5f78086909"><td class="mdescLeft">&#160;</td><td class="mdescRight">add a delegate where notify the change in the connection parameters  <a href="#a98bcd01b57b7968bec047b5f78086909">More...</a><br /></td></tr>
 <tr class="separator:a98bcd01b57b7968bec047b5f78086909"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,8 +134,11 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a9b7251b463924d8ed53eab3039a92099"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_node.html#a9b7251b463924d8ed53eab3039a92099">getFeatures</a></td></tr>
 <tr class="memdesc:a9b7251b463924d8ed53eab3039a92099"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the available features, there is a feature for each bit set in the advertise, if the linked characteristics is not find in the node the feature is not enabled  <a href="#a9b7251b463924d8ed53eab3039a92099">More...</a><br /></td></tr>
 <tr class="separator:a9b7251b463924d8ed53eab3039a92099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a33a25cd9c9da0bfec20fe1f9c5d1c0"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_node.html#a1a33a25cd9c9da0bfec20fe1f9c5d1c0">getFeaturesOfType:</a></td></tr>
+<tr class="memdesc:a1a33a25cd9c9da0bfec20fe1f9c5d1c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">get all the available feature of a specific type  <a href="#a1a33a25cd9c9da0bfec20fe1f9c5d1c0">More...</a><br /></td></tr>
+<tr class="separator:a1a33a25cd9c9da0bfec20fe1f9c5d1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa46b2f6ad16fded12a31b7152f4482c"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_node.html#afa46b2f6ad16fded12a31b7152f4482c">getFeatureOfType:</a></td></tr>
-<tr class="memdesc:afa46b2f6ad16fded12a31b7152f4482c"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a particular feature or null if it is not available  <a href="#afa46b2f6ad16fded12a31b7152f4482c">More...</a><br /></td></tr>
+<tr class="memdesc:afa46b2f6ad16fded12a31b7152f4482c"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the first feature of the specific type or null if it is not available  <a href="#afa46b2f6ad16fded12a31b7152f4482c">More...</a><br /></td></tr>
 <tr class="separator:afa46b2f6ad16fded12a31b7152f4482c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d98fd174a8198b950592c5ae569224a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_node.html#a6d98fd174a8198b950592c5ae569224a">readRssi</a></td></tr>
 <tr class="memdesc:a6d98fd174a8198b950592c5ae569224a"><td class="mdescLeft">&#160;</td><td class="mdescRight">request to update the rssi value the answer is notify through the <a class="el" href="protocol_blue_s_t_s_d_k_node_ble_connection_param_delegate-p.html#a07e6755c0a8e894739b2f99fc2d7b341">BlueSTSDKNodeBleConnectionParamDelegate::node:didChangeRssi:</a> callback  <a href="#a6d98fd174a8198b950592c5ae569224a">More...</a><br /></td></tr>
@@ -220,6 +229,9 @@ Properties</h2></td></tr>
 <tr class="memitem:a3d25505c833e222b4ef9bbce5168677a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7f">BlueSTSDKNodeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_node.html#a3d25505c833e222b4ef9bbce5168677a">type</a></td></tr>
 <tr class="memdesc:a3d25505c833e222b4ef9bbce5168677a"><td class="mdescLeft">&#160;</td><td class="mdescRight">board type  <a href="#a3d25505c833e222b4ef9bbce5168677a">More...</a><br /></td></tr>
 <tr class="separator:a3d25505c833e222b4ef9bbce5168677a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac013319e9ffe49d4910cad503b3e5094"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_node.html#ac013319e9ffe49d4910cad503b3e5094">typeId</a></td></tr>
+<tr class="memdesc:ac013319e9ffe49d4910cad503b3e5094"><td class="mdescLeft">&#160;</td><td class="mdescRight">board type id  <a href="#ac013319e9ffe49d4910cad503b3e5094">More...</a><br /></td></tr>
+<tr class="separator:ac013319e9ffe49d4910cad503b3e5094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fb84051da33560b8e71a1a584b05d96"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_node.html#a3fb84051da33560b8e71a1a584b05d96">name</a></td></tr>
 <tr class="memdesc:a3fb84051da33560b8e71a1a584b05d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">node name, is not guaranteed that this string is unique  <a href="#a3fb84051da33560b8e71a1a584b05d96">More...</a><br /></td></tr>
 <tr class="separator:a3fb84051da33560b8e71a1a584b05d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,7 +261,7 @@ Properties</h2></td></tr>
 <tr class="separator:a8707731e4b1352bbb9e36e13e9bab278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class that represent a remote device that will export some data (as <a class="el" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a>) that the user can query or ask to be notify when they change. </p>
+<div class="textblock"><p>Class that represent a remote node that will export some data (as <a class="el" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a>) that the user can query or ask to be notify when they change. </p>
 <dl class="section note"><dt>Note</dt><dd>In case that the node require the a secure connection with the pin it can happen that the notification subscription are sent before the connection completed. It is not possible have callback/notification when the connection completed. For this reason we try to subscribe the feature every second until we didn't receive some data from it.</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>STMicroelectronics - Central Labs. </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -416,6 +428,24 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af69ba8dcfd8fea729a56e03122c6f931"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString *) addressEx </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return the address if available otherwise the tag </p>
+<dl class="section return"><dt>Returns</dt><dd>a string represent the address </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a470676eb53c2c50ed4fabd7a968462fc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -526,6 +556,24 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aeef26fdb8cb42383d684fec697979995"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString *) friendlyName </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return a friendly name composed with name and tag or address </p>
+<dl class="section return"><dt>Returns</dt><dd>a string represent the friendly name </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="afa46b2f6ad16fded12a31b7152f4482c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -540,7 +588,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>return a particular feature or null if it is not available </p>
+<p>return the first feature of the specific type or null if it is not available </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>type of feature that we want have</td></tr>
@@ -566,6 +614,31 @@ Properties</h2></td></tr>
 
 <p>get the available features, there is a feature for each bit set in the advertise, if the linked characteristics is not find in the node the feature is not enabled </p>
 <dl class="section return"><dt>Returns</dt><dd>array of <a class="el" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a> that the node can export </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1a33a25cd9c9da0bfec20fe1f9c5d1c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSArray*) getFeaturesOfType: </td>
+          <td></td>
+          <td class="paramtype">(Class)&#160;</td>
+          <td class="paramname"><em>type</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get all the available feature of a specific type </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>type of features to serach </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array of <a class="el" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a> exported by the node </dd></dl>
 
 </div>
 </div>
@@ -645,7 +718,7 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>class <a class="el" href="interface_blue_s_t_s_d_k_node.html" title="Class that represent a remote device that will export some data (as BlueSTSDKFeature) that the user c...">BlueSTSDKNode</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>class <a class="el" href="interface_blue_s_t_s_d_k_node.html" title="Class that represent a remote node that will export some data (as BlueSTSDKFeature) that the user can...">BlueSTSDKNode</a> </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">NSException</td><td>if the ble advertise hasn't all the mandatory fields </td></tr>
@@ -1247,13 +1320,35 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac013319e9ffe49d4910cad503b3e5094"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (uint8_t) typeId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>board type id </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>BlueSTSDK/<a class="el" href="_blue_s_t_s_d_k_node_8h_source.html">BlueSTSDKNode.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 5 2015 09:11:55 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 5 2016 08:46:22 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>
