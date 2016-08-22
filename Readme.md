@@ -29,7 +29,7 @@ Currently, bits are mapped in the following way:
   
    |Bit|31|30|29|28|27|26|25|24|23|22|21|20|19|18|17|16|
    |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-   |Feature|RFU|RFU|Switch|Direction of arrival|RFU|MicLevel|Proximity|Lux|Acc|Gyro|Mag|Pressure|Humidity|Temperature|Battery|Second Temperature|
+   |Feature|RFU|ADPCM Audio sync|Switch|Direction of arrival|ADPCM Audio|MicLevel|Proximity|Lux|Acc|Gyro|Mag|Pressure|Humidity|Temperature|Battery|Second Temperature|
    
    |Bit|15|14|13|12|11|10|9|8|7|6|5|4|3|2|1|0|
    |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -104,7 +104,7 @@ If available, the configuration service must have the UUID <code>00000000-000F-1
   write mode, the *command id* and the *command data* are sending directly to the feature 
   characteristics. In this case is not possible answer to the command.
 
-- <code>00000002-000F-11e1-ac36-0002a5d5c51b</code> (Read/Write/Notify): if available it is used to access the board configuration register that can be modified using the [<code>BlueSTSDKConfigControl</code>](https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html/interface_blue_s_t_s_d_k_config_control.html) class.
+- <code>00000001-000F-11e1-ac36-0002a5d5c51b</code> (Read/Write/Notify): if available it is used to access the board configuration register that can be modified using the [<code>BlueSTSDKConfigControl</code>](https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html/interface_blue_s_t_s_d_k_config_control.html) class.
 
 ###Example
 The ST Bluemicrosystem1 and ST Bluemicrosystem3 firmware implements this protocol, you can find 
@@ -182,7 +182,14 @@ Note that each callback is performed asynchronously by a background thread.
     [manager addFeatureForBoard:deviceId features:temp];
 
     ```
-    
+    Otherwise you can register the characteristics before call the connect method:
+
+    ```Objective-C
+    BlueSTSDKNode *node = ...
+    NSDictionary *map = [BlueSTSDKStdCharToFeatureMap getManageStdCharacteristics];
+    [node addExternalCharacteristics: map];
+    ```
+ 
 ##Docs
 You can find the documentation at this link: [Documentation](https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html)
 

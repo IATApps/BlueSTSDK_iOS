@@ -1,8 +1,16 @@
 var searchData=
 [
-  ['termuuid',['termUuid',['../interface_blue_s_t_s_d_k_service_debug.html#a2dad59361ef49c5e8ae19699df64f39a',1,'BlueSTSDKServiceDebug']]],
-  ['toreadpacket',['toReadPacket',['../interface_blue_s_t_s_d_k_command.html#afb9414c26ac8b4cc26779410ae163141',1,'BlueSTSDKCommand']]],
-  ['toreadpacketwithtarget_3a',['toReadPacketWithTarget:',['../interface_blue_s_t_s_d_k_register.html#a1c394e619829905e73b3a9b8eb20a8ec',1,'BlueSTSDKRegister']]],
-  ['towritepacket',['toWritePacket',['../interface_blue_s_t_s_d_k_command.html#ab3b87cc7a8a99214ee6e19031c3430b8',1,'BlueSTSDKCommand']]],
-  ['towritepacketwithtarget_3apayloaddata_3a',['toWritePacketWithTarget:payloadData:',['../interface_blue_s_t_s_d_k_register.html#add30f4a134233ea518c5e8c5bbea6af3',1,'BlueSTSDKRegister']]]
+  ['samplewithtimestamp_3adata_3a',['sampleWithTimestamp:data:',['../interface_blue_s_t_s_d_k_feature_sample.html#a42ff1f615b6e583d26b49d0ca370c04d',1,'BlueSTSDKFeatureSample']]],
+  ['sendcommand_3adata_3a',['sendCommand:data:',['../interface_blue_s_t_s_d_k_feature.html#a669cd03b94a0d0c9649ecef6af22645b',1,'BlueSTSDKFeature']]],
+  ['sendcommandmessagetofeature_3atype_3adata_3a',['sendCommandMessageToFeature:type:data:',['../interface_blue_s_t_s_d_k_node.html#a467cad9502e30a4b4ef00d04e44da542',1,'BlueSTSDKNode']]],
+  ['serviceuuid',['serviceUuid',['../interface_blue_s_t_s_d_k_service_debug.html#a6d77631ed787b0f5b0181b04e58b19bd',1,'BlueSTSDKServiceDebug::serviceUuid()'],['../interface_blue_s_t_s_d_k_service_config.html#a874173a47b882a704fefc21e9c7adedf',1,'BlueSTSDKServiceConfig::serviceUuid()']]],
+  ['setheader_3atarget_3awrite_3aack_3a',['setHeader:target:write:ack:',['../interface_blue_s_t_s_d_k_register.html#a5f2d059f82562a6c83f38cc2eaacffd0',1,'BlueSTSDKRegister']]],
+  ['setswitchstatus_3a',['setSwitchStatus:',['../interface_blue_s_t_s_d_k_feature_switch.html#a184b0457bca53501642cd4619f7ec04b',1,'BlueSTSDKFeatureSwitch']]],
+  ['setswitchstatus_3anewstatus_3a',['setSwitchStatus:newStatus:',['../interface_blue_s_t_s_d_k_remote_feature_switch.html#a861928dea699a0868bf39ae9414454fc',1,'BlueSTSDKRemoteFeatureSwitch']]],
+  ['setsyncparam_3a',['setSyncParam:',['../interface_a_d_p_c_m_audio_sync_manager.html#ae90cdd9ddc7fc417887a4d3412273a2b',1,'ADPCMAudioSyncManager']]],
+  ['sharedinstance',['sharedInstance',['../interface_blue_s_t_s_d_k_manager.html#a029e629fae71c14dc84d2a5ec00e615e',1,'BlueSTSDKManager']]],
+  ['startautoconfiguration',['startAutoConfiguration',['../interface_blue_s_t_s_d_k_feature_auto_configurable.html#a08c09c8ff2703d55946b590f8ab464e0',1,'BlueSTSDKFeatureAutoConfigurable']]],
+  ['statetostring_3a',['stateToString:',['../interface_blue_s_t_s_d_k_node.html#a546420e6d53e5403ac97226d80a36aee',1,'BlueSTSDKNode']]],
+  ['stderruuid',['stdErrUuid',['../interface_blue_s_t_s_d_k_service_debug.html#ad4d4362049fd60937c7866b07cd1fee1',1,'BlueSTSDKServiceDebug']]],
+  ['stopautoconfiguration',['stopAutoConfiguration',['../interface_blue_s_t_s_d_k_feature_auto_configurable.html#a5314a20761b46438ef46c57eb11a5f91',1,'BlueSTSDKFeatureAutoConfigurable']]]
 ];

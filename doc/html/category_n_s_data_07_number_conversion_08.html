@@ -107,6 +107,8 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:ada464e2c52927e0c59bba3e227cd30b8"><td class="memItemLeft" align="right" valign="top">(int16_t)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_n_s_data_07_number_conversion_08.html#ada464e2c52927e0c59bba3e227cd30b8">extractLeInt16FromOffset:</a></td></tr>
 <tr class="memdesc:ada464e2c52927e0c59bba3e227cd30b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">extract an int16 from a little endian byte array  <a href="#ada464e2c52927e0c59bba3e227cd30b8">More...</a><br /></td></tr>
 <tr class="separator:ada464e2c52927e0c59bba3e227cd30b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cfe2367810882ae6cca8ef07d237856"><td class="memItemLeft" align="right" valign="top">(int16_t)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_n_s_data_07_number_conversion_08.html#a1cfe2367810882ae6cca8ef07d237856">extractBeInt16FromOffset:</a></td></tr>
+<tr class="separator:a1cfe2367810882ae6cca8ef07d237856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7ac75254dcf980d069f41bf42976322"><td class="memItemLeft" align="right" valign="top">(int32_t)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_n_s_data_07_number_conversion_08.html#ae7ac75254dcf980d069f41bf42976322">extractLeInt32FromOffset:</a></td></tr>
 <tr class="memdesc:ae7ac75254dcf980d069f41bf42976322"><td class="mdescLeft">&#160;</td><td class="mdescRight">extract an int32 from a little endian byte array  <a href="#ae7ac75254dcf980d069f41bf42976322">More...</a><br /></td></tr>
 <tr class="separator:ae7ac75254dcf980d069f41bf42976322"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,14 +117,50 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a9c7508ae651d9676c4cac776768f6000"><td class="memItemLeft" align="right" valign="top">(uint32_t)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_n_s_data_07_number_conversion_08.html#a9c7508ae651d9676c4cac776768f6000">extractBeUInt32FromOffset:</a></td></tr>
 <tr class="memdesc:a9c7508ae651d9676c4cac776768f6000"><td class="mdescLeft">&#160;</td><td class="mdescRight">extract an uint32 from a big endian byte array  <a href="#a9c7508ae651d9676c4cac776768f6000">More...</a><br /></td></tr>
 <tr class="separator:a9c7508ae651d9676c4cac776768f6000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a792c6617b071ff0f3e3b1926b129a4bf"><td class="memItemLeft" align="right" valign="top">(int32_t)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_n_s_data_07_number_conversion_08.html#a792c6617b071ff0f3e3b1926b129a4bf">extractBeInt32FromOffset:</a></td></tr>
+<tr class="separator:a792c6617b071ff0f3e3b1926b129a4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59adaf508a91dd476526dc3b1b7870da"><td class="memItemLeft" align="right" valign="top">(float)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_n_s_data_07_number_conversion_08.html#a59adaf508a91dd476526dc3b1b7870da">extractLeFloatFromOffset:</a></td></tr>
 <tr class="memdesc:a59adaf508a91dd476526dc3b1b7870da"><td class="mdescLeft">&#160;</td><td class="mdescRight">extract a float (32bit) number from a little endian byte array  <a href="#a59adaf508a91dd476526dc3b1b7870da">More...</a><br /></td></tr>
 <tr class="separator:a59adaf508a91dd476526dc3b1b7870da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b9a96db2a98f542c1b1a2923b0da00a"><td class="memItemLeft" align="right" valign="top">(NSData *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="category_n_s_data_07_number_conversion_08.html#a9b9a96db2a98f542c1b1a2923b0da00a">int16ChangeEndianes</a></td></tr>
+<tr class="separator:a9b9a96db2a98f542c1b1a2923b0da00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Add to the NSData class the method for convert a little endian byte array to numbers. </p>
 <dl class="section author"><dt>Author</dt><dd>STMicroelectronics - Central Labs. </dd></dl>
 </div><h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="a1cfe2367810882ae6cca8ef07d237856"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int16_t) extractBeInt16FromOffset: </td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>offset</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a792c6617b071ff0f3e3b1926b129a4bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int32_t) extractBeInt32FromOffset: </td>
+          <td></td>
+          <td class="paramtype">(NSUInteger)&#160;</td>
+          <td class="paramname"><em>offset</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a9c7508ae651d9676c4cac776768f6000"></a>
 <div class="memitem">
 <div class="memproto">
@@ -289,13 +327,28 @@ Instance Methods</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9b9a96db2a98f542c1b1a2923b0da00a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSData *) int16ChangeEndianes </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this category was generated from the following file:<ul>
 <li>BlueSTSDK/Util/<a class="el" href="_n_s_data_09_number_conversion_8h_source.html">NSData+NumberConversion.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 5 2016 08:46:22 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

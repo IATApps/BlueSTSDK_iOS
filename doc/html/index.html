@@ -81,10 +81,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>#BlueST SDK</p>
-<p>BlueST is an multi-platform library (Android and iOS supported) that permits to easily access to the data exported by a Bluetooth Low Energy (BLE) device that implements the BlueST protocol.</p>
+<p>BlueST is a multi-platform library (Android and iOS supported) that permits easy access to the data exported by a Bluetooth Low Energy (BLE) device that implements the BlueST protocol.</p>
 <h2>BlueST Protocol</h2>
 <h3>Advertise</h3>
-<p>The library will show only the device that has a vendor specific field formatted in this way:</p>
+<p>The library will show only the device that has a vendor-specific field formatted in the following way:</p>
 <table class="doxtable">
 <tr>
 <th>Length</th><th>1 </th><th>1 </th><th>1 </th><th>1 </th><th>4 </th><th>6  </th></tr>
@@ -96,34 +96,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <ul>
 <li>The Field Length must be 7 or 13 bytes long.</li>
 <li><p class="startli">The Device Id is a number that identifies the type of device. It is used to select different types of feature mask and can manage more than 32 features. Currently used values are:</p><ul>
-<li>0x00 for a generic device.</li>
+<li>0x00 for a generic device</li>
 <li>0x01 is reserved for the STEVAL-WESU1 board</li>
-<li>0x80 for a generic Nucleo board.</li>
+<li>0x80 for a generic Nucleo board</li>
+<li>0x81 for a Nucleo board exporting remote feature</li>
 </ul>
-<p class="startli">You should use a value between 0x02 and 0x7F for your custom board, values between 0x80 and 0xFF are reserved for ST Nucleo boards.</p>
+<p class="startli">You should use a value between 0x02 and 0x7F for your custom board, as values between 0x80 and 0xFF are reserved for ST Nucleo boards.</p>
 </li>
-<li>The feature mask is a bit field that permits to understand what characteristics/features are exported by the board. Currently bits are mapped in the following way:</li>
+<li>The feature mask is a bit field that provides information regarding what characteristics/features are exported by the board. Currently, bits are mapped in the following way:</li>
 </ul>
 <table class="doxtable">
 <tr>
 <th align="center">Bit</th><th align="center">31</th><th align="center">30</th><th align="center">29</th><th align="center">28</th><th align="center">27</th><th align="center">26</th><th align="center">25</th><th align="center">24</th><th align="center">23</th><th align="center">22</th><th align="center">21</th><th align="center">20</th><th align="center">19</th><th align="center">18</th><th align="center">17</th><th align="center">16  </th></tr>
 <tr>
-<td align="center">Feature</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">Proximity</td><td align="center">Lux</td><td align="center">Acc</td><td align="center">Gyro</td><td align="center">Mag</td><td align="center">Pressure</td><td align="center">Humidity</td><td align="center">Temperature</td><td align="center">Battery</td><td align="center">RFU </td></tr>
+<td align="center">Feature</td><td align="center">RFU</td><td align="center">ADPCM Audio sync</td><td align="center">Switch</td><td align="center">Direction of arrival</td><td align="center">ADPCM Audio</td><td align="center">MicLevel</td><td align="center">Proximity</td><td align="center">Lux</td><td align="center">Acc</td><td align="center">Gyro</td><td align="center">Mag</td><td align="center">Pressure</td><td align="center">Humidity</td><td align="center">Temperature</td><td align="center">Battery</td><td align="center">Second Temperature </td></tr>
 </table>
 <table class="doxtable">
 <tr>
 <th align="center">Bit</th><th align="center">15</th><th align="center">14</th><th align="center">13</th><th align="center">12</th><th align="center">11</th><th align="center">10</th><th align="center">9</th><th align="center">8</th><th align="center">7</th><th align="center">6</th><th align="center">5</th><th align="center">4</th><th align="center">3</th><th align="center">2</th><th align="center">1</th><th align="center">0  </th></tr>
 <tr>
-<td align="center">Feature</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">Sensor Fusion Compact</td><td align="center">Sensor Fusion</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">Activity</td><td align="center">Carry Position</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU </td></tr>
+<td align="center">Feature</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">AccEvent</td><td align="center">FreeFall</td><td align="center">Sensor Fusion Compact</td><td align="center">Sensor Fusion</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">Activity</td><td align="center">Carry Position</td><td align="center">ProximityGesture</td><td align="center">MemsGesture</td><td align="center">Pedometer </td></tr>
 </table>
-<p>You can use one of the RFU bits or define a new device and decide how map the feature. To see how the data are exported by already defined features, take a look at the method <a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html/interface_blue_s_t_s_d_k_feature.html#aca7a0947e86bcffba03ffa29bdcdd473"><code>BlueSTSDKFeature::extractData:data:dataOffset</code></a> inside the feature class definition.</p>
+<p>You can use one of the RFU bits or define a new device and decide how to map the feature. To see how the data is exported by pre-defined features, consult the export method <a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_Android/javadoc/com/st/BlueSTSDK/Feature.html#extractData-long-byte:A-int-"><code> Feature.ExtractResult Feature.extractData(long,byte[],int)</code></a>. within the feature class definition.</p>
 <ul>
-<li>The device MAC address is optional and only useful to get the device MAC address on an iOS device.</li>
+<li>The device MAC address is optional and useful only for obtaining the device MAC address on an iOS device.</li>
 </ul>
 <h3>Characteristics/Features</h3>
-<p>The characteristics managed by the SDK must have an UUID like: <code>*XXXXXXXX*-0001-11e1-ac36-0002a5d5c51b</code>. The SDK will scan all the services looking for characteristics that match that pattern.</p>
+<p>The characteristics managed by the SDK must have a UUID such as: <code>*XXXXXXXX*-0001-11e1-ac36-0002a5d5c51b</code>. The SDK will scan all the services, searching for characteristics that match that pattern.</p>
 <p>The first part of the UUID will have the bit set to 1 for each feature exported by the characteristics.</p>
-<p>In case of multiple features mapped in a single characteristic the data must be in the same order as the bit mask.</p>
+<p>In case of multiple features mapped in a single characteristic, the data must be in the same order as the bit mask.</p>
 <p>The characteristic data format must be:</p>
 <table class="doxtable">
 <tr>
@@ -131,20 +132,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr>
 <td align="center">Name </td><td align="center">Timestamp </td><td align="center">First Feature Data </td><td align="center">Second Feature Data </td><td align="center">..... </td></tr>
 </table>
-<p>The first 2 bytes are used to communicate a time stamp. This is especially useful to recognize any data loss.</p>
+<p>The first 2 bytes are used to communicate a time stamp. This is especially useful for recognizing any data loss.</p>
 <p>Since the BLE packet max length is 20 bytes, the max size for a feature data field is 18 bytes.</p>
+<h4>Remote Feature</h4>
+<p>This type of Feature are created for handle the case when the node collect information from other boards the user want to know also how produced the data.</p>
+<p>For this type of feature a node ID is attach at the beginning of a standard feature update message.</p>
+<p>For this type of feature the characteristic data format must be:</p>
+<table class="doxtable">
+<tr>
+<th align="center">Length </th><th align="center">2 </th><th align="center">2 </th><th align="center">&gt;1 </th><th align="center"></th></tr>
+<tr>
+<td align="center">Name </td><td align="center">NodeID </td><td align="center">Remote timestamp </td><td align="center">Feature Data </td><td align="center">..... </td></tr>
+</table>
 <h3>Special Services</h3>
 <h4><a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html/interface_blue_s_t_s_d_k_debug.html">Debug</a></h4>
-<p>If available the debug service must have the UUID <code>0000000-0000E-11e1-9ab4-0002a5d5c51b</code> and will contains 2 characteristics:</p>
+<p>If available, the debug service must have the UUID <code>0000000-0000E-11e1-9ab4-0002a5d5c51b</code> and will contains 2 characteristics:</p>
 <ul>
-<li><code>00000001-000E-11e1-ac36-0002a5d5c51b</code> (Notify/Write) is used to send string commands to the board and to notify the result.</li>
-<li><code>00000002-000E-11e1-ac36-0002a5d5c51b</code> (Notify) is used by the board to notify an error message.</li>
+<li><code>00000001-000E-11e1-ac36-0002a5d5c51b</code> (Notify/Write) is used to send string commands to the board and to notify the user of the result.</li>
+<li><code>00000002-000E-11e1-ac36-0002a5d5c51b</code> (Notify) is used by the board to notify the user of an error message.</li>
 </ul>
 <h4>Configuration</h4>
-<p>If available the configuration service must have the UUID <code>00000000-000F-11e1-ac36-0002a5d5c51b</code> and will contain 2 characteristics:</p>
+<p>If available, the configuration service must have the UUID <code>00000000-000F-11e1-9ab4-0002a5d5c51b</code> and will contain 2 characteristics:</p>
 <ul>
 <li><p class="startli"><code>00000002-000F-11e1-ac36-0002a5d5c51b</code> (Notify/Write): it can be used to send command/data to a specific feature.</p>
-<p class="startli">The request message must have the format:</p>
+<p class="startli">The request message must have the following format:</p>
 </li>
 </ul>
 <table class="doxtable">
@@ -154,7 +165,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <td align="center">Name </td><td align="center">Destination Feature Mask </td><td align="center">Command Id </td><td>Command Data </td></tr>
 </table>
 <p>Where the first 4 bytes will select the recipient of the command/data package.</p>
-<p>The optional command answer must have the format:</p>
+<p>The optional command answer must have the following format:</p>
 <table class="doxtable">
 <tr>
 <th align="center">Length </th><th align="center">2 </th><th align="center">4 </th><th align="center">1 </th><th align="center">0-13  </th></tr>
@@ -162,11 +173,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <td align="center">Name </td><td align="center">Timestamp </td><td align="center">Sender Feature Mask </td><td align="center">Command Id </td><td align="center">Answer Data </td></tr>
 </table>
 <p>From the SDK point of view the messages are sent using the method <a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html/interface_blue_s_t_s_d_k_feature.html#a669cd03b94a0d0c9649ecef6af22645b"><code>BlueSTSDKFeature::sendCommand:data:</code></a> and the answer is notified with a callback passed through the method <a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/com/html/interface_blue_s_t_s_d_k_feature.html#a16e1c4d33cc52bc5b19f55c126e"><code>BlueSTSDKFeature::parseCommandResponseWithTimestamp:commandType::data:</code></a>.</p>
+<p>If this characteristic does not exist, but the characteristics that export the feature is in write mode, the <em>command id</em> and the <em>command data</em> are sending directly to the feature characteristics. In this case is not possible answer to the command.</p>
 <ul>
-<li><code>00000002-000F-11e1-ac36-0002a5d5c51b</code> (Read/Write/Notify): if available it is used to access the board configuration register that can be modified using the <a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html/interface_blue_s_t_s_d_k_config_control.html"><code>BlueSTSDKConfigControl</code></a> class.</li>
+<li><code>00000001-000F-11e1-ac36-0002a5d5c51b</code> (Read/Write/Notify): if available it is used to access the board configuration register that can be modified using the <a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html/interface_blue_s_t_s_d_k_config_control.html"><code>BlueSTSDKConfigControl</code></a> class.</li>
 </ul>
 <h3>Example</h3>
-<p>The ST Bluemicrosystem1 firmware implements this protocol, you can find the project source here: <a href="http://www.st.com/bluemicrosystem1">Bluemicrosystem1</a></p>
+<p>The ST Bluemicrosystem1 and ST Bluemicrosystem3 firmware implements this protocol, you can find the project source here: <a href="http://www.st.com/bluemicrosystem">Bluemicrosystem</a></p>
 <h2>How to install the library</h2>
 <h3>As an external library</h3>
 <ol type="1">
@@ -179,11 +191,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ol>
 <h2>Main library actors</h2>
 <h3><a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html/interface_blue_s_t_s_d_k_manager.html">Manager</a></h3>
-<p>This is a singleton class that starts/stops the discovery process and stores the retrieved nodes. Before starting the scanning process it is also possible to define a new deviceId and to register/add new features to already defined devices</p>
+<p>This is a singleton class that starts/stops the discovery process and stores the retrieved nodes. Before starting the scanning process, it is also possible to define a new deviceId and to register/add new features to already-defined devices</p>
 <p>The Manager will notify a node discovery through the <a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/com/html/protocol_blue_s_t_s_d_k_manager_delegate-p.html"><code>BlueSTSDKManagerDelegate</code></a> delegate. Note that each callback is performed asynchronously by a background thread.</p>
 <h3><a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html/interface_blue_s_t_s_d_k_node.html">Node</a></h3>
 <p>This class represents a remote device.</p>
-<p>From this class you can recover what features are exported by a node and read write data from/to the device. The node will export all the features that are set to 1 in the advertise message. Once the device is connected, scanning and enabling of available characteristics are performed. At this point it is possible to request/send data related to the discovered features.</p>
+<p>From this class you can recover what features are exported by a node and read/write data from/to the device. The node will export all the features that are set to 1 in the advertise message. Once the device is connected, scanning and enabling of available characteristics are performed. At this point it is possible to request/send data related to the discovered features.</p>
 <p>A node notifies its RSSI (signal strength) through the <a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html/protocol_blue_s_t_s_d_k_node_ble_connection_param_delegate-p.html"><code>BlueSTSDKNodeBleConnectionParamDelegate</code></a> delegate. A node notifies any change of its state through the <a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html/protocol_blue_s_t_s_d_k_node_state_delegate-p.html"><code>BlueSTSDKNodeStateDelegate</code></a> delegate.</p>
 <p>A node can be in one of following states:</p><ul>
 <li><b>Idle</b>: the node is waiting for a connection and sending an advertise message</li>
@@ -195,9 +207,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ul>
 <p>Note that each callback is performed asynchronously by a background thread.</p>
 <h3><a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html/interface_blue_s_t_s_d_k_feature.html">Feature</a></h3>
-<p>This class represent a data exported by the node.</p>
+<p>This class represent data exported by the node.</p>
 <p>Each Feature has an array of <a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html/interface_blue_s_t_s_d_k_feature_field.html"><code>BlueSTSDKFeatureField</code></a> that describes the data exported.</p>
-<p>Data are received from a BLE characteristic and contained in a class <a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html/interface_blue_s_t_s_d_k_feature_sample.html"><code>BlueSTSDKFeatureSample</code></a>. Data are notified to the user using a listener pattern.</p>
+<p>Data are received from a BLE characteristic and contained in a class <a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html/interface_blue_s_t_s_d_k_feature_sample.html"><code>BlueSTSDKFeatureSample</code></a>. The user is notified of data using a listener pattern.</p>
 <p>The data exported by the Sample can be extracted using the static utility methods of the class.</p>
 <p>Note that each callback is performed asynchronously by a background thread.</p>
 <h4>How to add a new Feature</h4>
@@ -214,11 +226,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li><p class="startli">Before start the scanning register the new feature</p>
 <p class="startli">```Objective-C // add the feature to the Nucleo device uint8_t deviceId = 0x80; // the feature will be mapped in the characteristic // 0x10000000-0001-11e1-ac36-0002a5d5c51b NSDictionary * temp = @0x10000000: [MyNewFeature class] };</p>
 <p class="startli"><a class="el" href="interface_blue_s_t_s_d_k_manager.html" title="Class that permit to discover new node that are compatible with the BlueSTSDK protocol. ">BlueSTSDKManager</a> *manager = [<a class="el" href="interface_blue_s_t_s_d_k_manager.html" title="Class that permit to discover new node that are compatible with the BlueSTSDK protocol. ">BlueSTSDKManager</a> sharedInstance]; [manager addFeatureForBoard:deviceId features:temp];</p>
-<p class="startli">```</p>
+<p class="startli">``` Otherwise you can register the characteristics before call the connect method:</p>
+<p class="startli">```Objective-C <a class="el" href="interface_blue_s_t_s_d_k_node.html" title="Class that represent a remote node that will export some data (as BlueSTSDKFeature) that the user can...">BlueSTSDKNode</a> *node = … NSDictionary *map = [<a class="el" href="interface_blue_s_t_s_d_k_std_char_to_feature_map.html" title="Utility class that return all the standard charateristics manage by the SDK. ">BlueSTSDKStdCharToFeatureMap</a> getManageStdCharacteristics]; [node addExternalCharacteristics: map]; ```</p>
 </li>
 </ol>
 <h2>Docs</h2>
-<p>You can found the full api documentation at this link: <a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html">Documentation</a></p>
+<p>You can find the documentation at this link: <a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_iOS/doc/html">Documentation</a></p>
 <h2>License</h2>
 <p>COPYRIGHT(c) 2015 STMicroelectronics</p>
 <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p><ol type="1">
@@ -230,7 +243,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 5 2016 08:46:22 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

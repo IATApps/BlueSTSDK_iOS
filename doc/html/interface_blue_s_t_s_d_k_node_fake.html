@@ -156,6 +156,8 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a1e5b2a6c275135aa065bad3d13dd5e99 inherit pub_methods_interface_blue_s_t_s_d_k_node"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_node.html#a1e5b2a6c275135aa065bad3d13dd5e99">disconnect</a></td></tr>
 <tr class="memdesc:a1e5b2a6c275135aa065bad3d13dd5e99 inherit pub_methods_interface_blue_s_t_s_d_k_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">close the connection with this node  <a href="#a1e5b2a6c275135aa065bad3d13dd5e99">More...</a><br /></td></tr>
 <tr class="separator:a1e5b2a6c275135aa065bad3d13dd5e99 inherit pub_methods_interface_blue_s_t_s_d_k_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4351d2b5c14a43285efe84e670214999 inherit pub_methods_interface_blue_s_t_s_d_k_node"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_node.html#a4351d2b5c14a43285efe84e670214999">addExternalCharacteristics:</a></td></tr>
+<tr class="separator:a4351d2b5c14a43285efe84e670214999 inherit pub_methods_interface_blue_s_t_s_d_k_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf84d50cf02b042a4266e737f43182ec inherit pub_methods_interface_blue_s_t_s_d_k_node"><td class="memItemLeft" align="right" valign="top">(BOOL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_node.html#adf84d50cf02b042a4266e737f43182ec">readFeature:</a></td></tr>
 <tr class="memdesc:adf84d50cf02b042a4266e737f43182ec inherit pub_methods_interface_blue_s_t_s_d_k_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">request to read the value of a particular feature, the feature will manage to notify you the new value  <a href="#adf84d50cf02b042a4266e737f43182ec">More...</a><br /></td></tr>
 <tr class="separator:adf84d50cf02b042a4266e737f43182ec inherit pub_methods_interface_blue_s_t_s_d_k_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,9 +216,14 @@ Additional Inherited Members</h2></td></tr>
  }<tr class="memdesc:a29cd81ec11bcfc45b2913ac96f6c32aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">possible connection state  <a href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aa">More...</a><br /></td></tr>
 <tr class="separator:a29cd81ec11bcfc45b2913ac96f6c32aa inherit pro_types_interface_blue_s_t_s_d_k_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
-<tr class="memitem:ab0aae529f904156fac3cffad0e1aca7f inherit pro_types_interface_blue_s_t_s_d_k_node"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7f">BlueSTSDKNodeType</a> { <a class="el" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fac07a25b9a5cbbe23c107bbe73c261508">BlueSTSDKNodeTypeGeneric</a> = 0x00, 
+<tr class="memitem:ab0aae529f904156fac3cffad0e1aca7f inherit pro_types_interface_blue_s_t_s_d_k_node"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7f">BlueSTSDKNodeType</a> { <br />
+&#160;&#160;<a class="el" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fac07a25b9a5cbbe23c107bbe73c261508">BlueSTSDKNodeTypeGeneric</a> = 0x00, 
 <a class="el" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fa3291c8510df5a531e0d25d5dff500939">BlueSTSDKNodeTypeSTEVAL_WESU1</a> = 0x01, 
-<a class="el" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fabac63e5dda7c92f86c7ad548be687f04">BlueSTSDKNodeTypeNucleo</a> = 0x80
+<a class="el" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7faf3c5073865c800303bb07808a6165579">BlueSTSDKNodeTypeSensor_Tile</a> = 0x02, 
+<a class="el" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fa6085990fc97ec2ad9c50bd838c0e8754">BlueSTSDKNodeTypeBlue_Coin</a> = 0x03, 
+<br />
+&#160;&#160;<a class="el" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fabac63e5dda7c92f86c7ad548be687f04">BlueSTSDKNodeTypeNucleo</a> = 0x80
+<br />
  }<tr class="memdesc:ab0aae529f904156fac3cffad0e1aca7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">board type  <a href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7f">More...</a><br /></td></tr>
 <tr class="separator:ab0aae529f904156fac3cffad0e1aca7f inherit pro_types_interface_blue_s_t_s_d_k_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </td></tr>
@@ -332,7 +339,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 5 2016 08:46:22 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

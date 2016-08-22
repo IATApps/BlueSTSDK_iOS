@@ -7,6 +7,7 @@ var searchData=
   ['bluestsdkcommand_2eh',['BlueSTSDKCommand.h',['../_blue_s_t_s_d_k_command_8h.html',1,'']]],
   ['bluestsdkconfigcontrol_2eh',['BlueSTSDKConfigControl.h',['../_blue_s_t_s_d_k_config_control_8h.html',1,'']]],
   ['bluestsdkdebug_2eh',['BlueSTSDKDebug.h',['../_blue_s_t_s_d_k_debug_8h.html',1,'']]],
+  ['bluestsdkdevicetimestampfeature_2eh',['BlueSTSDKDeviceTimestampFeature.h',['../_blue_s_t_s_d_k_device_timestamp_feature_8h.html',1,'']]],
   ['bluestsdkfeature_2bfake_2eh',['BlueSTSDKFeature+fake.h',['../_blue_s_t_s_d_k_feature_09fake_8h.html',1,'']]],
   ['bluestsdkfeature_2bremote_2eh',['BlueSTSDKFeature+Remote.h',['../_blue_s_t_s_d_k_feature_09_remote_8h.html',1,'']]],
   ['bluestsdkfeature_2eh',['BlueSTSDKFeature.h',['../_blue_s_t_s_d_k_feature_8h.html',1,'']]],
@@ -14,6 +15,8 @@ var searchData=
   ['bluestsdkfeatureacceleration_2eh',['BlueSTSDKFeatureAcceleration.h',['../_blue_s_t_s_d_k_feature_acceleration_8h.html',1,'']]],
   ['bluestsdkfeatureaccelerometerevent_2eh',['BlueSTSDKFeatureAccelerometerEvent.h',['../_blue_s_t_s_d_k_feature_accelerometer_event_8h.html',1,'']]],
   ['bluestsdkfeatureactivity_2eh',['BlueSTSDKFeatureActivity.h',['../_blue_s_t_s_d_k_feature_activity_8h.html',1,'']]],
+  ['bluestsdkfeatureaudioadpcm_2eh',['BlueSTSDKFeatureAudioADPCM.h',['../_blue_s_t_s_d_k_feature_audio_a_d_p_c_m_8h.html',1,'']]],
+  ['bluestsdkfeatureaudioadpcmsync_2eh',['BlueSTSDKFeatureAudioADPCMSync.h',['../_blue_s_t_s_d_k_feature_audio_a_d_p_c_m_sync_8h.html',1,'']]],
   ['bluestsdkfeatureautoconfigurable_2eh',['BlueSTSDKFeatureAutoConfigurable.h',['../_blue_s_t_s_d_k_feature_auto_configurable_8h.html',1,'']]],
   ['bluestsdkfeaturebattery_2eh',['BlueSTSDKFeatureBattery.h',['../_blue_s_t_s_d_k_feature_battery_8h.html',1,'']]],
   ['bluestsdkfeaturecarryposition_2eh',['BlueSTSDKFeatureCarryPosition.h',['../_blue_s_t_s_d_k_feature_carry_position_8h.html',1,'']]],
@@ -22,6 +25,7 @@ var searchData=
   ['bluestsdkfeaturefreefall_2eh',['BlueSTSDKFeatureFreeFall.h',['../_blue_s_t_s_d_k_feature_free_fall_8h.html',1,'']]],
   ['bluestsdkfeaturegenpurpose_2eh',['BlueSTSDKFeatureGenPurpose.h',['../_blue_s_t_s_d_k_feature_gen_purpose_8h.html',1,'']]],
   ['bluestsdkfeaturegyroscope_2eh',['BlueSTSDKFeatureGyroscope.h',['../_blue_s_t_s_d_k_feature_gyroscope_8h.html',1,'']]],
+  ['bluestsdkfeatureheartrate_2eh',['BlueSTSDKFeatureHeartRate.h',['../_blue_s_t_s_d_k_feature_heart_rate_8h.html',1,'']]],
   ['bluestsdkfeaturehumidity_2eh',['BlueSTSDKFeatureHumidity.h',['../_blue_s_t_s_d_k_feature_humidity_8h.html',1,'']]],
   ['bluestsdkfeaturelogcsv_2eh',['BlueSTSDKFeatureLogCSV.h',['../_blue_s_t_s_d_k_feature_log_c_s_v_8h.html',1,'']]],
   ['bluestsdkfeaturelognslog_2eh',['BlueSTSDKFeatureLogNSLog.h',['../_blue_s_t_s_d_k_feature_log_n_s_log_8h.html',1,'']]],
@@ -47,5 +51,6 @@ var searchData=
   ['bluestsdkremotefeaturehumidity_2eh',['BlueSTSDKRemoteFeatureHumidity.h',['../_blue_s_t_s_d_k_remote_feature_humidity_8h.html',1,'']]],
   ['bluestsdkremotefeaturepressure_2eh',['BlueSTSDKRemoteFeaturePressure.h',['../_blue_s_t_s_d_k_remote_feature_pressure_8h.html',1,'']]],
   ['bluestsdkremotefeatureswitch_2eh',['BlueSTSDKRemoteFeatureSwitch.h',['../_blue_s_t_s_d_k_remote_feature_switch_8h.html',1,'']]],
-  ['bluestsdkremotefeaturetemperature_2eh',['BlueSTSDKRemoteFeatureTemperature.h',['../_blue_s_t_s_d_k_remote_feature_temperature_8h.html',1,'']]]
+  ['bluestsdkremotefeaturetemperature_2eh',['BlueSTSDKRemoteFeatureTemperature.h',['../_blue_s_t_s_d_k_remote_feature_temperature_8h.html',1,'']]],
+  ['bluestsdkstdchartofeaturemap_2eh',['BlueSTSDKStdCharToFeatureMap.h',['../_blue_s_t_s_d_k_std_char_to_feature_map_8h.html',1,'']]]
 ];

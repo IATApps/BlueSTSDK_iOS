@@ -131,11 +131,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_sample.html">   44</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a> : NSObject</div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_sample.html#a2645114fba1bfca1f06af8cc464914a5">   48</a></span>&#160;<span class="keyword">@property</span>(readonly) uint64_t <a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html#a2645114fba1bfca1f06af8cc464914a5">timestamp</a>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_sample.html#a31eb3f710a1fa976546993c9f029e8bd">   53</a></span>&#160;<span class="keyword">@property</span>(readonly,retain) NSArray *<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html#a31eb3f710a1fa976546993c9f029e8bd">data</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_sample.html#a5caf7f1ad6e3b9191fbad2c5612655b3">   53</a></span>&#160;<span class="keyword">@property</span>(readonly,retain) NSArray&lt;NSNumber*&gt; *<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html#a5caf7f1ad6e3b9191fbad2c5612655b3">data</a>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;+(instancetype) sampleWithTimestamp:(uint64_t)timestamp data:(NSArray*)data;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;+(instancetype) sampleWithTimestamp:(uint64_t)timestamp data:(NSArray&lt;NSNumber*&gt;*)data;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;-(instancetype) initWhitTimestamp: (uint64_t)timestamp data:(NSArray*)data;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;-(instancetype) initWhitTimestamp: (uint64_t)timestamp data:(NSArray&lt;NSNumber*&gt;*)data;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">@end</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
@@ -187,18 +187,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_feature_sample_html_a31eb3f710a1fa976546993c9f029e8bd"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_sample.html#a31eb3f710a1fa976546993c9f029e8bd">BlueSTSDKFeatureSample::data</a></div><div class="ttdeci">NSArray * data</div><div class="ttdoc">array of NSNumber with the feature data </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:53</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_feature_sample_html_a2645114fba1bfca1f06af8cc464914a5"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_sample.html#a2645114fba1bfca1f06af8cc464914a5">BlueSTSDKFeatureSample::timestamp</a></div><div class="ttdeci">uint64_t timestamp</div><div class="ttdoc">node time stamp at the moment of the data acquisition </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:48</div></div>
 <div class="ttc" id="protocol_blue_s_t_s_d_k_feature_log_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_feature_log_delegate-p.html">BlueSTSDKFeatureLogDelegate-p</a></div><div class="ttdoc">Protocol used for log all the data received from a feature. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:196</div></div>
 <div class="ttc" id="protocol_blue_s_t_s_d_k_feature_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_feature_delegate-p.html">BlueSTSDKFeatureDelegate-p</a></div><div class="ttdoc">Protocol used for notify that the feature data was updated. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:180</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_feature_sample_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a></div><div class="ttdoc">Class that represent a sample data from a feature, it contains the data exported by the feature and t...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:44</div></div>
 <div class="ttc" id="_blue_s_t_s_d_k_feature_field_8h_html"><div class="ttname"><a href="_blue_s_t_s_d_k_feature_field_8h.html">BlueSTSDKFeatureField.h</a></div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_node_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a></div><div class="ttdoc">Class that represent a remote node that will export some data (as BlueSTSDKFeature) that the user can...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:57</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_node_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a></div><div class="ttdoc">Class that represent a remote node that will export some data (as BlueSTSDKFeature) that the user can...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:58</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_sample_html_a5caf7f1ad6e3b9191fbad2c5612655b3"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_sample.html#a5caf7f1ad6e3b9191fbad2c5612655b3">BlueSTSDKFeatureSample::data</a></div><div class="ttdeci">NSArray&lt; NSNumber * &gt; * data</div><div class="ttdoc">array of NSNumber with the feature data </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:53</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_feature_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a></div><div class="ttdoc">This class represent some set of data that a node can export. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:89</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 5 2016 08:46:21 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

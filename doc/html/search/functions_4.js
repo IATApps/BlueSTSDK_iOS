@@ -4,6 +4,8 @@ var searchData=
   ['enablenotification_3a',['enableNotification:',['../interface_blue_s_t_s_d_k_node.html#a294980dd31352eac3c047ac2b0f9d894',1,'BlueSTSDKNode']]],
   ['equals_3a',['equals:',['../interface_blue_s_t_s_d_k_node.html#af7219a2dc525b93f9ced3dfea3b27188',1,'BlueSTSDKNode']]],
   ['eventtypetostring_3a',['eventTypeToString:',['../interface_blue_s_t_s_d_k_feature_accelerometer_event.html#a71f6bb93bdb08c7eb86aca0cc727fb7d',1,'BlueSTSDKFeatureAccelerometerEvent']]],
+  ['extractbeint16fromoffset_3a',['extractBeInt16FromOffset:',['../category_n_s_data_07_number_conversion_08.html#a1cfe2367810882ae6cca8ef07d237856',1,'NSData(NumberConversion)']]],
+  ['extractbeint32fromoffset_3a',['extractBeInt32FromOffset:',['../category_n_s_data_07_number_conversion_08.html#a792c6617b071ff0f3e3b1926b129a4bf',1,'NSData(NumberConversion)']]],
   ['extractbeuint32fromoffset_3a',['extractBeUInt32FromOffset:',['../category_n_s_data_07_number_conversion_08.html#a9c7508ae651d9676c4cac776768f6000',1,'NSData(NumberConversion)']]],
   ['extractdata_3adata_3adataoffset_3a',['extractData:data:dataOffset:',['../interface_blue_s_t_s_d_k_feature.html#a6def7461e03cf87a6a3df5f0b4862f37',1,'BlueSTSDKFeature']]],
   ['extractfeaturemask_3a',['extractFeatureMask:',['../interface_blue_s_t_s_d_k_feature_characteristics.html#ad634784a35f58c13094b06d6eac28f14',1,'BlueSTSDKFeatureCharacteristics']]],

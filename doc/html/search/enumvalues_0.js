@@ -114,6 +114,7 @@ var searchData=
   ['bluestsdkfeaturefieldtypedouble',['BlueSTSDKFeatureFieldTypeDouble',['../interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20a0a64d72df11749e04e63166a06bc8f49',1,'BlueSTSDKFeatureField']]],
   ['bluestsdkfeaturefieldtypefloat',['BlueSTSDKFeatureFieldTypeFloat',['../interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20aa3c21c06a497de1bdc1b9b7840420195',1,'BlueSTSDKFeatureField']]],
   ['bluestsdkfeaturefieldtypeint16',['BlueSTSDKFeatureFieldTypeInt16',['../interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20a207963875b66aac529577a9aaf50bde7',1,'BlueSTSDKFeatureField']]],
+  ['bluestsdkfeaturefieldtypeint16array',['BlueSTSDKFeatureFieldTypeInt16Array',['../interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20ac869c1f11f072e8a35ad127fb3a82913',1,'BlueSTSDKFeatureField']]],
   ['bluestsdkfeaturefieldtypeint32',['BlueSTSDKFeatureFieldTypeInt32',['../interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20af240762fd7abfc0f66b3fe04c55ce106',1,'BlueSTSDKFeatureField']]],
   ['bluestsdkfeaturefieldtypeint64',['BlueSTSDKFeatureFieldTypeInt64',['../interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20a9bebe033112d626ddcd1bb7e4104b3a7',1,'BlueSTSDKFeatureField']]],
   ['bluestsdkfeaturefieldtypeint8',['BlueSTSDKFeatureFieldTypeInt8',['../interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20a12717dccd24bb6c9d0b6750e283dc7e0',1,'BlueSTSDKFeatureField']]],
@@ -141,7 +142,9 @@ var searchData=
   ['bluestsdknodestateinit',['BlueSTSDKNodeStateInit',['../interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaac9e45b5b8c1171142f04bacda2ada34c',1,'BlueSTSDKNode']]],
   ['bluestsdknodestatelost',['BlueSTSDKNodeStateLost',['../interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa32613458f20bd901466e637c81f2c1ff',1,'BlueSTSDKNode']]],
   ['bluestsdknodestateunreachable',['BlueSTSDKNodeStateUnreachable',['../interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa3081128a92b4a2c9ca2ef2d190d25c59',1,'BlueSTSDKNode']]],
+  ['bluestsdknodetypeblue_5fcoin',['BlueSTSDKNodeTypeBlue_Coin',['../interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fa6085990fc97ec2ad9c50bd838c0e8754',1,'BlueSTSDKNode']]],
   ['bluestsdknodetypegeneric',['BlueSTSDKNodeTypeGeneric',['../interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fac07a25b9a5cbbe23c107bbe73c261508',1,'BlueSTSDKNode']]],
   ['bluestsdknodetypenucleo',['BlueSTSDKNodeTypeNucleo',['../interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fabac63e5dda7c92f86c7ad548be687f04',1,'BlueSTSDKNode']]],
+  ['bluestsdknodetypesensor_5ftile',['BlueSTSDKNodeTypeSensor_Tile',['../interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7faf3c5073865c800303bb07808a6165579',1,'BlueSTSDKNode']]],
   ['bluestsdknodetypesteval_5fwesu1',['BlueSTSDKNodeTypeSTEVAL_WESU1',['../interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fa3291c8510df5a531e0d25d5dff500939',1,'BlueSTSDKNode']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['data',['data',['../interface_blue_s_t_s_d_k_feature_sample.html#a31eb3f710a1fa976546993c9f029e8bd',1,'BlueSTSDKFeatureSample::data()'],['../interface_blue_s_t_s_d_k_command.html#a5572b93538918f41b0765c5775951b4b',1,'BlueSTSDKCommand::data()']]],
+  ['data',['data',['../interface_blue_s_t_s_d_k_feature_sample.html#a5caf7f1ad6e3b9191fbad2c5612655b3',1,'BlueSTSDKFeatureSample::data()'],['../interface_blue_s_t_s_d_k_command.html#a5572b93538918f41b0765c5775951b4b',1,'BlueSTSDKCommand::data()']]],
   ['debug_3adidstderrreceived_3a',['debug:didStdErrReceived:',['../protocol_blue_s_t_s_d_k_debug_output_delegate-p.html#ac7deb635656224ddade5bcc77956ba15',1,'BlueSTSDKDebugOutputDelegate-p']]],
   ['debug_3adidstdinsend_3aerror_3a',['debug:didStdInSend:error:',['../protocol_blue_s_t_s_d_k_debug_output_delegate-p.html#ae4991b8f1618faead56724a2053160ac',1,'BlueSTSDKDebugOutputDelegate-p']]],
   ['debug_3adidstdoutreceived_3a',['debug:didStdOutReceived:',['../protocol_blue_s_t_s_d_k_debug_output_delegate-p.html#af19bad8bb87054d6bf3b0e47706084de',1,'BlueSTSDKDebugOutputDelegate-p']]],

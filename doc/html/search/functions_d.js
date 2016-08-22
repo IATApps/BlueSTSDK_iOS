@@ -1,25 +1,4 @@
 var searchData=
 [
-  ['read_3a',['read:',['../interface_blue_s_t_s_d_k_config_control.html#a02bc7c2fb3908139e4a16f6dfcfa67cd',1,'BlueSTSDKConfigControl']]],
-  ['readfeature_3a',['readFeature:',['../interface_blue_s_t_s_d_k_node.html#adf84d50cf02b042a4266e737f43182ec',1,'BlueSTSDKNode']]],
-  ['readrssi',['readRssi',['../interface_blue_s_t_s_d_k_node.html#a6d98fd174a8198b950592c5ae569224a',1,'BlueSTSDKNode']]],
-  ['registers',['registers',['../interface_blue_s_t_s_d_k_register_defines.html#ae878f6e3983890eaf0503e270b5f310a',1,'BlueSTSDKRegisterDefines']]],
-  ['registerwithaddress_3asize_3a',['registerWithAddress:size:',['../interface_blue_s_t_s_d_k_register.html#ae1de0bafa18ef7dd1044cc65e5efe7fd',1,'BlueSTSDKRegister']]],
-  ['registerwithaddress_3asize_3aaccess_3a',['registerWithAddress:size:access:',['../interface_blue_s_t_s_d_k_register.html#ae285c3db39da3fc2f826b6b3096c9a33',1,'BlueSTSDKRegister']]],
-  ['registerwithaddress_3asize_3aaccess_3atarget_3a',['registerWithAddress:size:access:target:',['../interface_blue_s_t_s_d_k_register.html#ab60d4d193a22c96447c5edacc6d8028d',1,'BlueSTSDKRegister']]],
-  ['registerwithaddress_3asize_3atarget_3a',['registerWithAddress:size:target:',['../interface_blue_s_t_s_d_k_register.html#a124786bce7f9a365a0d223cd0e9f8e84',1,'BlueSTSDKRegister']]],
-  ['registerwithdata_3a',['registerWithData:',['../interface_blue_s_t_s_d_k_register.html#a550ed2083c64749b296815547cc223e1',1,'BlueSTSDKRegister']]],
-  ['removebleconnectionparamiterdelegate_3a',['removeBleConnectionParamiterDelegate:',['../interface_blue_s_t_s_d_k_node.html#a630d19283f2e0d28572217bbfc4e84c2',1,'BlueSTSDKNode']]],
-  ['removeconfigdelegate_3a',['removeConfigDelegate:',['../interface_blue_s_t_s_d_k_config_control.html#a9941428cb9f4f0fd861649078123d0bf',1,'BlueSTSDKConfigControl']]],
-  ['removedelegate_3a',['removeDelegate:',['../interface_blue_s_t_s_d_k_manager.html#ab45a350ce8f368c46cc07c57b5d1e11c',1,'BlueSTSDKManager']]],
-  ['removefeatureaccelerationenabletypedelegate_3a',['removeFeatureAccelerationEnableTypeDelegate:',['../interface_blue_s_t_s_d_k_feature_accelerometer_event.html#afd5c8bc0e12d41bd4a6a04f0d512002e',1,'BlueSTSDKFeatureAccelerometerEvent']]],
-  ['removefeatureconfigurationdelegate_3a',['removeFeatureConfigurationDelegate:',['../interface_blue_s_t_s_d_k_feature_auto_configurable.html#abe58a35bc79e49a9e88347cef3648e10',1,'BlueSTSDKFeatureAutoConfigurable']]],
-  ['removefeaturedelegate_3a',['removeFeatureDelegate:',['../interface_blue_s_t_s_d_k_feature.html#adf13963d6a7a4d6a3a3bd56495f9b43c',1,'BlueSTSDKFeature']]],
-  ['removefeatureloggerdelegate_3a',['removeFeatureLoggerDelegate:',['../interface_blue_s_t_s_d_k_feature.html#aa7af1ec8874ed7b5b2afeca61449373d',1,'BlueSTSDKFeature']]],
-  ['removelogfiles',['removeLogFiles',['../interface_blue_s_t_s_d_k_feature_log_c_s_v.html#a47e1263bd725f17c89586da4d5201ba2',1,'BlueSTSDKFeatureLogCSV']]],
-  ['removenodestatusdelegate_3a',['removeNodeStatusDelegate:',['../interface_blue_s_t_s_d_k_node.html#af09e0401d2af9f745b80ffaf20fcc525',1,'BlueSTSDKNode']]],
-  ['requestautoconfigurationstatus',['requestAutoConfigurationStatus',['../interface_blue_s_t_s_d_k_feature_auto_configurable.html#a29ce48623c3f677b6a88a50e6737c29d',1,'BlueSTSDKFeatureAutoConfigurable']]],
-  ['resetdiscovery',['resetDiscovery',['../interface_blue_s_t_s_d_k_manager.html#a34d56f2789396c3a4a58b2dd29422dc4',1,'BlueSTSDKManager']]],
-  ['resetdiscovery_3a',['resetDiscovery:',['../interface_blue_s_t_s_d_k_manager.html#a4652c9a2c6ebf82e8541d88ef2fbe952',1,'BlueSTSDKManager']]],
-  ['resutlwithsample_3anreaddata_3a',['resutlWithSample:nReadData:',['../interface_blue_s_t_s_d_k_extract_result.html#a50a3758e3ac5f7ff5d398a5c0af3ff46',1,'BlueSTSDKExtractResult']]]
+  ['parsecommandresponsewithtimestamp_3acommandtype_3adata_3a',['parseCommandResponseWithTimestamp:commandType:data:',['../interface_blue_s_t_s_d_k_feature.html#afd5fc56a29f351c5076a63d714519b8e',1,'BlueSTSDKFeature']]]
 ];

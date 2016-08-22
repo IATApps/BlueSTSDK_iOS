@@ -131,34 +131,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20a207963875b66aac529577a9aaf50bde7">   67</a></span>&#160;    <a class="code" href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20a207963875b66aac529577a9aaf50bde7">BlueSTSDKFeatureFieldTypeInt16</a>,</div>
 <div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20a68209fcdd0a1759c72e7edacf1751f92">   71</a></span>&#160;    <a class="code" href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20a68209fcdd0a1759c72e7edacf1751f92">BlueSTSDKFeatureFieldTypeUInt8</a>,</div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20a12717dccd24bb6c9d0b6750e283dc7e0">   75</a></span>&#160;    <a class="code" href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20a12717dccd24bb6c9d0b6750e283dc7e0">BlueSTSDKFeatureFieldTypeInt8</a>,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_field.html#aa060382af18632cfd09ada900f364434">   81</a></span>&#160;<span class="keyword">@property</span> (readonly) NSString *name;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_field.html#a8a433076eed80e0c637ff48626166285">   86</a></span>&#160;<span class="keyword">@property</span> (readonly) NSString *unit;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_field.html#a5246476101866376180273b39ba70c87">   91</a></span>&#160;<span class="keyword">@property</span> (readonly) NSNumber *min;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_field.html#a79e8635cdbb05d5ef89314b3d19145ce">   96</a></span>&#160;<span class="keyword">@property</span> (readonly) NSNumber *max;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_field.html#a791d6e3b7fc44fcc4ead6f1a15eba4b3">  101</a></span>&#160;<span class="keyword">@property</span> (readonly) <a class="code" href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20">BlueSTSDKFeatureFieldType</a> type;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;+(instancetype)createWithName:(NSString *)name</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                                     unit:(NSString*)unit</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                     type:(<a class="code" href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20">BlueSTSDKFeatureFieldType</a>)type</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                      min:(NSNumber*)min</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                      max:(NSNumber*)max;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;-(instancetype) initWithName:(NSString *)name</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;              unit:(NSString*)unit</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;              type:(<a class="code" href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20">BlueSTSDKFeatureFieldType</a>)type</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;               min:(NSNumber*)min</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;               max:(NSNumber*)max;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20ac869c1f11f072e8a35ad127fb3a82913">   79</a></span>&#160;    <a class="code" href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20ac869c1f11f072e8a35ad127fb3a82913">BlueSTSDKFeatureFieldTypeInt16Array</a></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_field.html#aa060382af18632cfd09ada900f364434">   85</a></span>&#160;<span class="keyword">@property</span> (readonly) NSString *name;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_field.html#a8a433076eed80e0c637ff48626166285">   90</a></span>&#160;<span class="keyword">@property</span> (readonly) NSString *unit;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_field.html#a5246476101866376180273b39ba70c87">   95</a></span>&#160;<span class="keyword">@property</span> (readonly) NSNumber *min;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_field.html#a79e8635cdbb05d5ef89314b3d19145ce">  100</a></span>&#160;<span class="keyword">@property</span> (readonly) NSNumber *max;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_field.html#a791d6e3b7fc44fcc4ead6f1a15eba4b3">  105</a></span>&#160;<span class="keyword">@property</span> (readonly) <a class="code" href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20">BlueSTSDKFeatureFieldType</a> type;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;+(instancetype)createWithName:(NSString *)name</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                     unit:(NSString*)unit</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                     type:(<a class="code" href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20">BlueSTSDKFeatureFieldType</a>)type</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                      min:(NSNumber*)min</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                      max:(NSNumber*)max;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;-(instancetype) initWithName:(NSString *)name</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;              unit:(NSString*)unit</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;              type:(<a class="code" href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20">BlueSTSDKFeatureFieldType</a>)type</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;               min:(NSNumber*)min</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;               max:(NSNumber*)max;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;-(BOOL)hasUnit;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">@end</span></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_feature_field_html_a5af8e8966be8daa1ff5344550766be20a9bebe033112d626ddcd1bb7e4104b3a7"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20a9bebe033112d626ddcd1bb7e4104b3a7">BlueSTSDKFeatureField::BlueSTSDKFeatureFieldTypeInt64</a></div><div class="ttdoc">64bit signed integer </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureField.h:51</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_feature_field_html_a5af8e8966be8daa1ff5344550766be20a0a64d72df11749e04e63166a06bc8f49"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20a0a64d72df11749e04e63166a06bc8f49">BlueSTSDKFeatureField::BlueSTSDKFeatureFieldTypeDouble</a></div><div class="ttdoc">64bit float number ieee 754 format </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureField.h:47</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_field_html_a5af8e8966be8daa1ff5344550766be20ac869c1f11f072e8a35ad127fb3a82913"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20ac869c1f11f072e8a35ad127fb3a82913">BlueSTSDKFeatureField::BlueSTSDKFeatureFieldTypeInt16Array</a></div><div class="ttdoc">Array of 16bit singed integer. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureField.h:79</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_feature_field_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_field.html">BlueSTSDKFeatureField</a></div><div class="ttdoc">This class describe a feature data field. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureField.h:34</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_feature_field_html_a5af8e8966be8daa1ff5344550766be20a12717dccd24bb6c9d0b6750e283dc7e0"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20a12717dccd24bb6c9d0b6750e283dc7e0">BlueSTSDKFeatureField::BlueSTSDKFeatureFieldTypeInt8</a></div><div class="ttdoc">8bit signed integer </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureField.h:75</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_feature_field_html_a5af8e8966be8daa1ff5344550766be20ab875a65215acf836464f436e45a1dabb"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20ab875a65215acf836464f436e45a1dabb">BlueSTSDKFeatureField::BlueSTSDKFeatureFieldTypeUInt16</a></div><div class="ttdoc">16bit unsigned integer </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureField.h:63</div></div>
@@ -171,7 +173,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 5 2016 08:46:21 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>
