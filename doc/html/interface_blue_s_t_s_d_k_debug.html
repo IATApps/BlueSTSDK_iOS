@@ -110,6 +110,10 @@ Instance Methods</h2></td></tr>
 <tr class="memitem:a67f008af9e38e93d44c455bd9974cba8"><td class="memItemLeft" align="right" valign="top">(instancetype)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_debug.html#a67f008af9e38e93d44c455bd9974cba8">initWithNode:periph:termChart:errChart:</a></td></tr>
 <tr class="memdesc:a67f008af9e38e93d44c455bd9974cba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a debug console  <a href="#a67f008af9e38e93d44c455bd9974cba8">More...</a><br /></td></tr>
 <tr class="separator:a67f008af9e38e93d44c455bd9974cba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b974af5f6a090056a085582cde5d29"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_debug.html#a73b974af5f6a090056a085582cde5d29">addDebugOutputDelegate:</a></td></tr>
+<tr class="separator:a73b974af5f6a090056a085582cde5d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7159505380a6bcba6a1cc961a0935e04"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_debug.html#a7159505380a6bcba6a1cc961a0935e04">removeDebugOutputDelegate:</a></td></tr>
+<tr class="separator:a7159505380a6bcba6a1cc961a0935e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4ca2310286b33991ce94037de42639f"><td class="memItemLeft" align="right" valign="top">(NSUInteger)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_blue_s_t_s_d_k_debug.html#ad4ca2310286b33991ce94037de42639f">writeMessage:</a></td></tr>
 <tr class="memdesc:ad4ca2310286b33991ce94037de42639f"><td class="mdescLeft">&#160;</td><td class="mdescRight">send a message to the debug console, the message longer than the maximum size will be splited in several ble packages  <a href="#ad4ca2310286b33991ce94037de42639f">More...</a><br /></td></tr>
 <tr class="separator:ad4ca2310286b33991ce94037de42639f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,14 +129,30 @@ Properties</h2></td></tr>
 <tr class="memitem:ac56eb8495a695b533c37e6905385fc0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_debug.html#ac56eb8495a695b533c37e6905385fc0a">parentNode</a></td></tr>
 <tr class="memdesc:ac56eb8495a695b533c37e6905385fc0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">node that export this console  <a href="#ac56eb8495a695b533c37e6905385fc0a">More...</a><br /></td></tr>
 <tr class="separator:ac56eb8495a695b533c37e6905385fc0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae560d854f03599d9a3d16074ff0f0994"><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_blue_s_t_s_d_k_debug_output_delegate-p.html">BlueSTSDKDebugOutputDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_debug.html#ae560d854f03599d9a3d16074ff0f0994">delegate</a></td></tr>
-<tr class="memdesc:ae560d854f03599d9a3d16074ff0f0994"><td class="mdescLeft">&#160;</td><td class="mdescRight">delegate used for notify new message in the console, when you set a delegate we will automatically enable the notification for the out/error message for disable the notification set it to nil  <a href="#ae560d854f03599d9a3d16074ff0f0994">More...</a><br /></td></tr>
-<tr class="separator:ae560d854f03599d9a3d16074ff0f0994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f762d470b46ddc95e4954e1e836e14b"><td class="memItemLeft" align="right" valign="top">id&lt; <a class="el" href="protocol_blue_s_t_s_d_k_debug_output_delegate-p.html">BlueSTSDKDebugOutputDelegate</a> &gt; delegate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_debug.html#a2f762d470b46ddc95e4954e1e836e14b">DEPRECATED_ATTRIBUTE</a></td></tr>
+<tr class="memdesc:a2f762d470b46ddc95e4954e1e836e14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">delegate used for notify new message in the console, when you set a delegate we will automatically enable the notification for the out/error message for disable the notification set it to nil  <a href="#a2f762d470b46ddc95e4954e1e836e14b">More...</a><br /></td></tr>
+<tr class="separator:a2f762d470b46ddc95e4954e1e836e14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class that permit to read and write from the debug node console. </p>
 <dl class="section author"><dt>Author</dt><dd>STMicroelectronics - Central Labs. </dd></dl>
 </div><h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="a73b974af5f6a090056a085582cde5d29"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) addDebugOutputDelegate: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_blue_s_t_s_d_k_debug_output_delegate-p.html">BlueSTSDKDebugOutputDelegate</a> &gt;)&#160;</td>
+          <td class="paramname"><em>delegate</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a67f008af9e38e93d44c455bd9974cba8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -180,6 +200,22 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to a <a class="el" href="interface_blue_s_t_s_d_k_debug.html" title="Class that permit to read and write from the debug node console. ">BlueSTSDKDebug</a> class </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7159505380a6bcba6a1cc961a0935e04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) removeDebugOutputDelegate: </td>
+          <td></td>
+          <td class="paramtype">(id&lt; <a class="el" href="protocol_blue_s_t_s_d_k_debug_output_delegate-p.html">BlueSTSDKDebugOutputDelegate</a> &gt;)&#160;</td>
+          <td class="paramname"><em>delegate</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -252,7 +288,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
-<a class="anchor" id="ae560d854f03599d9a3d16074ff0f0994"></a>
+<a class="anchor" id="a2f762d470b46ddc95e4954e1e836e14b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -260,7 +296,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">- (id&lt;<a class="el" href="protocol_blue_s_t_s_d_k_debug_output_delegate-p.html">BlueSTSDKDebugOutputDelegate</a>&gt;) delegate</td>
+          <td class="memname">- (id&lt;<a class="el" href="protocol_blue_s_t_s_d_k_debug_output_delegate-p.html">BlueSTSDKDebugOutputDelegate</a>&gt; delegate) DEPRECATED_ATTRIBUTE</td>
         </tr>
       </table>
   </td>
@@ -302,7 +338,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 10 2017 16:22:13 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

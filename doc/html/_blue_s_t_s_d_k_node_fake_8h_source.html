@@ -116,23 +116,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#import &lt;<a class="code" href="_blue_s_t_s_d_k_8h.html">BlueSTSDK/BlueSTSDK.h</a>&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef BlueSTSDK_BlueSTSDKNode_fake_h</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define BlueSTSDK_BlueSTSDKNode_fake_h</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node_fake.html">   37</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_blue_s_t_s_d_k_node_fake.html">BlueSTSDKNodeFake</a> : <a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;-(instancetype)<a class="code" href="interface_blue_s_t_s_d_k_node_fake.html#ad46c8bb9c51143889f8d1a9f6440a950">init</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;-(instancetype)initWithName:(NSString *)name tag:(NSString *)tag address:(NSString *)address;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#import &lt;<a class="code" href="_blue_s_t_s_d_k_8h.html">BlueSTSDK/BlueSTSDK.h</a>&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node_fake.html">   39</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_blue_s_t_s_d_k_node_fake.html">BlueSTSDKNodeFake</a> : <a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;-(instancetype)<a class="code" href="interface_blue_s_t_s_d_k_node_fake.html#ad46c8bb9c51143889f8d1a9f6440a950">init</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;-(instancetype)initWithName:(NSString *)name tag:(NSString *)tag address:(NSString *)address;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_node_fake_html_ad46c8bb9c51143889f8d1a9f6440a950"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node_fake.html#ad46c8bb9c51143889f8d1a9f6440a950">-[BlueSTSDKNodeFake init]</a></div><div class="ttdeci">instancetype init()</div><div class="ttdoc">create a fake BlueSTSDKNode that doesn&#39;t use the bluetooth </div></div>
 <div class="ttc" id="_blue_s_t_s_d_k_8h_html"><div class="ttname"><a href="_blue_s_t_s_d_k_8h.html">BlueSTSDK.h</a></div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_node_fake_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node_fake.html">BlueSTSDKNodeFake</a></div><div class="ttdoc">this class overwrite the node method for avoid to use the bluethoot connection and generate fake data...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKNodeFake.h:37</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_node_fake_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node_fake.html">BlueSTSDKNodeFake</a></div><div class="ttdoc">this class overwrite the node method for avoid to use the bluethoot connection and generate fake data...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKNodeFake.h:39</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_node_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a></div><div class="ttdoc">Class that represent a remote node that will export some data (as BlueSTSDKFeature) that the user can...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:58</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 10 2017 16:22:12 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

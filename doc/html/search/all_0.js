@@ -2,8 +2,10 @@ var searchData=
 [
   ['access',['access',['../interface_blue_s_t_s_d_k_register.html#a4f3f2015f0be9cf02bb2537a73f4ac80',1,'BlueSTSDKRegister']]],
   ['add_3afeature_3a',['add:feature:',['../category_n_s_mutable_dictionary_07_blue_s_t_s_d_k_feature_08.html#acf9d98d0007e6d0e3ba287d1d9f089e4',1,'NSMutableDictionary(BlueSTSDKFeature)']]],
+  ['addbatterydelegate_3a',['addBatteryDelegate:',['../interface_blue_s_t_s_d_k_feature_battery.html#a84a4be34e37385b54554421b326787c8',1,'BlueSTSDKFeatureBattery']]],
   ['addbleconnectionparamiterdelegate_3a',['addBleConnectionParamiterDelegate:',['../interface_blue_s_t_s_d_k_node.html#a98bcd01b57b7968bec047b5f78086909',1,'BlueSTSDKNode']]],
   ['addconfigdelegate_3a',['addConfigDelegate:',['../interface_blue_s_t_s_d_k_config_control.html#a629b8d23766bf5a1fa4ad2cba7f01950',1,'BlueSTSDKConfigControl']]],
+  ['adddebugoutputdelegate_3a',['addDebugOutputDelegate:',['../interface_blue_s_t_s_d_k_debug.html#a73b974af5f6a090056a085582cde5d29',1,'BlueSTSDKDebug']]],
   ['adddelegate_3a',['addDelegate:',['../interface_blue_s_t_s_d_k_manager.html#a944e4594b2af8d16a37b160a9a802493',1,'BlueSTSDKManager']]],
   ['addexternalcharacteristics_3a',['addExternalCharacteristics:',['../interface_blue_s_t_s_d_k_node.html#a4351d2b5c14a43285efe84e670214999',1,'BlueSTSDKNode']]],
   ['addfeatureaccelerationenabletypedelegate_3a',['addFeatureAccelerationEnableTypeDelegate:',['../interface_blue_s_t_s_d_k_feature_accelerometer_event.html#aed23e36c0b239094720538d4a313302e',1,'BlueSTSDKFeatureAccelerometerEvent']]],

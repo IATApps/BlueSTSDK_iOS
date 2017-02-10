@@ -135,131 +135,133 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;NS_CLASS_AVAILABLE(10_7, 5_0)</div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html">   58</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> : NSObject </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a8227cb157485815eae094c3e64b04fad">   63</a></span>&#160;typedef NS_ENUM(NSInteger, BlueSTSDKNodeMode){</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a8227cb157485815eae094c3e64b04fada2e3b1aa3db8ed36d5023839fd287ed30">   67</a></span>&#160;    <a class="code" href="interface_blue_s_t_s_d_k_node.html#a8227cb157485815eae094c3e64b04fada2e3b1aa3db8ed36d5023839fd287ed30">BlueSTSDKNodeModeUSB_DFU</a>,</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a8227cb157485815eae094c3e64b04fadaa2eadcd141ed5d41c018d83617db8ecc">   71</a></span>&#160;    <a class="code" href="interface_blue_s_t_s_d_k_node.html#a8227cb157485815eae094c3e64b04fadaa2eadcd141ed5d41c018d83617db8ecc">BlueSTSDKNodeModeOTA_BLE_DFU</a>,</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a8227cb157485815eae094c3e64b04fadaf13c955bed79f6af2c349e2fe00ecda0">   75</a></span>&#160;    <a class="code" href="interface_blue_s_t_s_d_k_node.html#a8227cb157485815eae094c3e64b04fadaf13c955bed79f6af2c349e2fe00ecda0">BlueSTSDKNodeModeApplication</a></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aa">   81</a></span>&#160;<span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aa">BlueSTSDKNodeState</a>){</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaac9e45b5b8c1171142f04bacda2ada34c">   85</a></span>&#160;    BlueSTSDKNodeStateInit          = 0,</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa9aee4189828c33f57500ffcad3a230a6">   89</a></span>&#160;    BlueSTSDKNodeStateIdle          = 1,</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa1f15a4edf350d848827bf0b643447b53">   93</a></span>&#160;    BlueSTSDKNodeStateConnecting    = 2,</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaad005fcece21981eec97bbff62c01f312">   97</a></span>&#160;    BlueSTSDKNodeStateConnected     = 3,</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa9d677b973a75d62f67231fa36557f382">  101</a></span>&#160;    BlueSTSDKNodeStateDisconnecting = 4,</div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa32613458f20bd901466e637c81f2c1ff">  105</a></span>&#160;    BlueSTSDKNodeStateLost          = 5,</div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa3081128a92b4a2c9ca2ef2d190d25c59">  109</a></span>&#160;    BlueSTSDKNodeStateUnreachable   = 6,</div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa8e17dffeac09dcb2fbbc7485d2fe412a">  113</a></span>&#160;    BlueSTSDKNodeStateDead          = 7,</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7f">  119</a></span>&#160;<span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7f">BlueSTSDKNodeType</a>){</div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fac07a25b9a5cbbe23c107bbe73c261508">  123</a></span>&#160;    BlueSTSDKNodeTypeGeneric      = 0x00,</div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fa3291c8510df5a531e0d25d5dff500939">  127</a></span>&#160;    BlueSTSDKNodeTypeSTEVAL_WESU1         = 0x01,</div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7faf3c5073865c800303bb07808a6165579">  128</a></span>&#160;    BlueSTSDKNodeTypeSensor_Tile = 0x02,</div>
-<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fa6085990fc97ec2ad9c50bd838c0e8754">  129</a></span>&#160;    BlueSTSDKNodeTypeBlue_Coin = 0x03,</div>
-<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fabac63e5dda7c92f86c7ad548be687f04">  133</a></span>&#160;    BlueSTSDKNodeTypeNucleo       = 0x80,</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ab356f41ebd9ad2d6c8d9496fc4edd5ee">  139</a></span>&#160;<span class="keyword">@property</span> (assign, nonatomic,readonly) <a class="code" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aa">BlueSTSDKNodeState</a> state;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a3d25505c833e222b4ef9bbce5168677a">  144</a></span>&#160;<span class="keyword">@property</span> (assign, nonatomic,readonly) <a class="code" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7f">BlueSTSDKNodeType</a> type;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ac013319e9ffe49d4910cad503b3e5094">  149</a></span>&#160;<span class="keyword">@property</span> (assign, nonatomic,readonly) uint8_t typeId;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a3fb84051da33560b8e71a1a584b05d96">  154</a></span>&#160;<span class="keyword">@property</span> (retain, readonly) NSString *name;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a44e68f6a71272f3e09c9eb8fe44e68e8">  159</a></span>&#160;<span class="keyword">@property</span> (retain, readonly) NSString *address;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a3f8d2768a4c962d8ed5f32c3ba326791">  164</a></span>&#160;<span class="keyword">@property</span> (readonly) <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> protocolVersion;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a452abb61224c4d9f9053b4c0a295532d">  169</a></span>&#160;<span class="keyword">@property</span> (retain, readonly) NSString *tag;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a6e221308eaa541bd9017dbc810d0c617">  174</a></span>&#160;<span class="keyword">@property</span> (readonly) NSDate *rssiLastUpdate;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aa">   63</a></span>&#160;typedef NS_ENUM(NSInteger, BlueSTSDKNodeState){</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaac9e45b5b8c1171142f04bacda2ada34c">   67</a></span>&#160;    <a class="code" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaac9e45b5b8c1171142f04bacda2ada34c">BlueSTSDKNodeStateInit</a>          = 0,</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa9aee4189828c33f57500ffcad3a230a6">   71</a></span>&#160;    <a class="code" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa9aee4189828c33f57500ffcad3a230a6">BlueSTSDKNodeStateIdle</a>          = 1,</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa1f15a4edf350d848827bf0b643447b53">   75</a></span>&#160;    <a class="code" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa1f15a4edf350d848827bf0b643447b53">BlueSTSDKNodeStateConnecting</a>    = 2,</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaad005fcece21981eec97bbff62c01f312">   79</a></span>&#160;    <a class="code" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaad005fcece21981eec97bbff62c01f312">BlueSTSDKNodeStateConnected</a>     = 3,</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa9d677b973a75d62f67231fa36557f382">   83</a></span>&#160;    <a class="code" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa9d677b973a75d62f67231fa36557f382">BlueSTSDKNodeStateDisconnecting</a> = 4,</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa32613458f20bd901466e637c81f2c1ff">   87</a></span>&#160;    <a class="code" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa32613458f20bd901466e637c81f2c1ff">BlueSTSDKNodeStateLost</a>          = 5,</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa3081128a92b4a2c9ca2ef2d190d25c59">   91</a></span>&#160;    <a class="code" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa3081128a92b4a2c9ca2ef2d190d25c59">BlueSTSDKNodeStateUnreachable</a>   = 6,</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa8e17dffeac09dcb2fbbc7485d2fe412a">   95</a></span>&#160;    <a class="code" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa8e17dffeac09dcb2fbbc7485d2fe412a">BlueSTSDKNodeStateDead</a>          = 7,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7f">  101</a></span>&#160;<span class="keyword">typedef</span> NS_ENUM(NSInteger, <a class="code" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7f">BlueSTSDKNodeType</a>){</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fac07a25b9a5cbbe23c107bbe73c261508">  105</a></span>&#160;    BlueSTSDKNodeTypeGeneric      = 0x00,</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fa3291c8510df5a531e0d25d5dff500939">  109</a></span>&#160;    BlueSTSDKNodeTypeSTEVAL_WESU1         = 0x01,</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7faf3c5073865c800303bb07808a6165579">  110</a></span>&#160;    BlueSTSDKNodeTypeSensor_Tile = 0x02,</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fa6085990fc97ec2ad9c50bd838c0e8754">  111</a></span>&#160;    BlueSTSDKNodeTypeBlue_Coin = 0x03,</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7fabac63e5dda7c92f86c7ad548be687f04">  115</a></span>&#160;    BlueSTSDKNodeTypeNucleo       = 0x80,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;};</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ab356f41ebd9ad2d6c8d9496fc4edd5ee">  121</a></span>&#160;<span class="keyword">@property</span> (assign, nonatomic,readonly) <a class="code" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aa">BlueSTSDKNodeState</a> state;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a3d25505c833e222b4ef9bbce5168677a">  126</a></span>&#160;<span class="keyword">@property</span> (assign, nonatomic,readonly) <a class="code" href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7f">BlueSTSDKNodeType</a> type;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ac013319e9ffe49d4910cad503b3e5094">  131</a></span>&#160;<span class="keyword">@property</span> (assign, nonatomic,readonly) uint8_t typeId;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a3fb84051da33560b8e71a1a584b05d96">  136</a></span>&#160;<span class="keyword">@property</span> (retain, readonly) NSString *name;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a44e68f6a71272f3e09c9eb8fe44e68e8">  141</a></span>&#160;<span class="keyword">@property</span> (retain, readonly) NSString *address;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a3f8d2768a4c962d8ed5f32c3ba326791">  146</a></span>&#160;<span class="keyword">@property</span> (readonly) <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> protocolVersion;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a452abb61224c4d9f9053b4c0a295532d">  151</a></span>&#160;<span class="keyword">@property</span> (retain, readonly) NSString *tag;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a6e221308eaa541bd9017dbc810d0c617">  156</a></span>&#160;<span class="keyword">@property</span> (readonly) NSDate *rssiLastUpdate;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ad736cf9b4180c1346787680a790466e8">  161</a></span>&#160;<span class="keyword">@property</span> (retain, readonly) NSNumber *RSSI;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a7ad6d7e428157b92b3de704cfc3f43c5">  166</a></span>&#160;<span class="keyword">@property</span> (retain, readonly) <a class="code" href="interface_blue_s_t_s_d_k_debug.html">BlueSTSDKDebug</a> *debugConsole;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a2036ba3818cd96184cee77e96c13ddfa">  171</a></span>&#160;<span class="keyword">@property</span> (readonly) <a class="code" href="interface_blue_s_t_s_d_k_config_control.html">BlueSTSDKConfigControl</a> *configControl;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a3a818995109e9b464f60e1e0ce048e34">  173</a></span>&#160;<span class="keyword">@property</span> (readonly) BOOL isSleeping;</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#aab513d185afb60c2953c2013a16f4fe0">  174</a></span>&#160;<span class="keyword">@property</span> (readonly) BOOL hasExtension;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#ad736cf9b4180c1346787680a790466e8">  179</a></span>&#160;<span class="keyword">@property</span> (retain, readonly) NSNumber *RSSI;</div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a8707731e4b1352bbb9e36e13e9bab278">  179</a></span>&#160;<span class="keyword">@property</span> (retain, readonly) NSNumber *txPower;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a7ad6d7e428157b92b3de704cfc3f43c5">  184</a></span>&#160;<span class="keyword">@property</span> (retain, readonly) <a class="code" href="interface_blue_s_t_s_d_k_debug.html">BlueSTSDKDebug</a> *debugConsole;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a2036ba3818cd96184cee77e96c13ddfa">  189</a></span>&#160;<span class="keyword">@property</span> (readonly) <a class="code" href="interface_blue_s_t_s_d_k_config_control.html">BlueSTSDKConfigControl</a> *configControl;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_node.html#a8707731e4b1352bbb9e36e13e9bab278">  194</a></span>&#160;<span class="keyword">@property</span> (retain, readonly) NSNumber *txPower;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;-(NSString *) friendlyName;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;-(NSString *)addressEx;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;+(NSString*) stateToString:(<a class="code" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aa">BlueSTSDKNodeState</a>)state;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;-(void) addBleConnectionParamiterDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_node_ble_connection_param_delegate-p.html">BlueSTSDKNodeBleConnectionParamDelegate</a>&gt;)delegate;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;-(void) removeBleConnectionParamiterDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_node_ble_connection_param_delegate-p.html">BlueSTSDKNodeBleConnectionParamDelegate</a>&gt;)delegate;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;-(void) addNodeStatusDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_node_state_delegate-p.html">BlueSTSDKNodeStateDelegate</a>&gt;)delegate;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;-(void) removeNodeStatusDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_node_state_delegate-p.html">BlueSTSDKNodeStateDelegate</a>&gt;)delegate;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;-(BOOL) equals:(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)node;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;-(NSArray*) getFeatures;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;-(NSString *) friendlyName;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;-(NSString *)addressEx;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;+(NSString*) stateToString:(<a class="code" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aa">BlueSTSDKNodeState</a>)state;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;-(void) addBleConnectionParamiterDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_node_ble_connection_param_delegate-p.html">BlueSTSDKNodeBleConnectionParamDelegate</a>&gt;)delegate;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;-(void) removeBleConnectionParamiterDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_node_ble_connection_param_delegate-p.html">BlueSTSDKNodeBleConnectionParamDelegate</a>&gt;)delegate;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;-(void) addNodeStatusDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_node_state_delegate-p.html">BlueSTSDKNodeStateDelegate</a>&gt;)delegate;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;-(void) removeNodeStatusDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_node_state_delegate-p.html">BlueSTSDKNodeStateDelegate</a>&gt;)delegate;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;-(BOOL) equals:(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)node;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;-(NSArray*) getFeatures;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;-(NSArray*)getFeaturesOfType:(Class)type;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;-(<a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a>*)getFeatureOfType:(Class)type;</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;-(NSArray*)getFeaturesOfType:(Class)type;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;-(<a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a>*)getFeatureOfType:(Class)type;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;-(void) readRssi;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;-(void) connect;</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;-(void) readRssi;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;-(BOOL) isConnected;</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;-(void) connect;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;-(BOOL) isConnected;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;-(void) disconnect;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;-(void) addExternalCharacteristics:(NSDictionary&lt;CBUUID*,NSArray&lt;Class&gt;* &gt;*)userDefinedFeature;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;-(BOOL) readFeature:(<a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a>*)feature;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;-(BOOL) isEnableNotification:(<a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a>*)feature;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;-(BOOL) enableNotification:(<a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a>*)feature;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;-(BOOL) disableNotification:(<a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a>*)feature;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
-<div class="line"><a name="l00350"></a><span class="lineno"><a class="line" href="protocol_blue_s_t_s_d_k_node_state_delegate-p.html">  350</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_node_state_delegate-p.html">BlueSTSDKNodeStateDelegate</a> &lt;NSObject&gt;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="keyword">@required</span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;- (void) node:(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)node didChangeState:(BlueSTSDKNodeState)newState prevState:(BlueSTSDKNodeState)prevState;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
-<div class="line"><a name="l00366"></a><span class="lineno"><a class="line" href="protocol_blue_s_t_s_d_k_node_ble_connection_param_delegate-p.html">  366</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_node_ble_connection_param_delegate-p.html">BlueSTSDKNodeBleConnectionParamDelegate</a> &lt;NSObject&gt;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="keyword">@required</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;- (void) node:(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)node didChangeRssi:(NSInteger)newRssi;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="keyword">@optional</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;- (void) node:(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)node didChangeTxPower:(NSInteger)newPower;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_node_html_a8227cb157485815eae094c3e64b04fadaf13c955bed79f6af2c349e2fe00ecda0"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html#a8227cb157485815eae094c3e64b04fadaf13c955bed79f6af2c349e2fe00ecda0">BlueSTSDKNode::BlueSTSDKNodeModeApplication</a></div><div class="ttdoc">normal state </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:75</div></div>
-<div class="ttc" id="protocol_blue_s_t_s_d_k_node_state_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_node_state_delegate-p.html">BlueSTSDKNodeStateDelegate-p</a></div><div class="ttdoc">protocol used by the node for notify a connection state change </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:350</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_node_html_a29cd81ec11bcfc45b2913ac96f6c32aa"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aa">BlueSTSDKNode::BlueSTSDKNodeState</a></div><div class="ttdeci">BlueSTSDKNodeState</div><div class="ttdoc">possible connection state </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:81</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_node_html_a8227cb157485815eae094c3e64b04fada2e3b1aa3db8ed36d5023839fd287ed30"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html#a8227cb157485815eae094c3e64b04fada2e3b1aa3db8ed36d5023839fd287ed30">BlueSTSDKNode::BlueSTSDKNodeModeUSB_DFU</a></div><div class="ttdoc">enter in the update mode through the usb port </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:67</div></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;-(void) disconnect;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;-(void) addExternalCharacteristics:(NSDictionary&lt;CBUUID*,NSArray&lt;Class&gt;* &gt;*)userDefinedFeature;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;-(BOOL) readFeature:(<a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a>*)feature;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;-(BOOL) isEnableNotification:(<a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a>*)feature;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;-(BOOL) enableNotification:(<a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a>*)feature;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;-(BOOL) disableNotification:(<a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a>*)feature;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00335"></a><span class="lineno"><a class="line" href="protocol_blue_s_t_s_d_k_node_state_delegate-p.html">  335</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_node_state_delegate-p.html">BlueSTSDKNodeStateDelegate</a> &lt;NSObject&gt;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="keyword">@required</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;- (void) node:(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)node didChangeState:(BlueSTSDKNodeState)newState prevState:(BlueSTSDKNodeState)prevState;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno"><a class="line" href="protocol_blue_s_t_s_d_k_node_ble_connection_param_delegate-p.html">  351</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_node_ble_connection_param_delegate-p.html">BlueSTSDKNodeBleConnectionParamDelegate</a> &lt;NSObject&gt;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="keyword">@required</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;- (void) node:(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)node didChangeRssi:(NSInteger)newRssi;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="keyword">@optional</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;- (void) node:(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)node didChangeTxPower:(NSInteger)newPower;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
+<div class="ttc" id="protocol_blue_s_t_s_d_k_node_state_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_node_state_delegate-p.html">BlueSTSDKNodeStateDelegate-p</a></div><div class="ttdoc">protocol used by the node for notify a connection state change </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:335</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_node_html_a29cd81ec11bcfc45b2913ac96f6c32aa"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aa">BlueSTSDKNode::BlueSTSDKNodeState</a></div><div class="ttdeci">BlueSTSDKNodeState</div><div class="ttdoc">possible connection state </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:63</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_debug_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_debug.html">BlueSTSDKDebug</a></div><div class="ttdoc">Class that permit to read and write from the debug node console. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKDebug.h:44</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_node_html_ab0aae529f904156fac3cffad0e1aca7f"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7f">BlueSTSDKNode::BlueSTSDKNodeType</a></div><div class="ttdeci">BlueSTSDKNodeType</div><div class="ttdoc">board type </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:119</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_node_html_ab0aae529f904156fac3cffad0e1aca7f"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7f">BlueSTSDKNode::BlueSTSDKNodeType</a></div><div class="ttdeci">BlueSTSDKNodeType</div><div class="ttdoc">board type </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:101</div></div>
 <div class="ttc" id="_blue_s_t_s_d_k_manager_8h_html"><div class="ttname"><a href="_blue_s_t_s_d_k_manager_8h.html">BlueSTSDKManager.h</a></div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_node_html_a8227cb157485815eae094c3e64b04fadaa2eadcd141ed5d41c018d83617db8ecc"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html#a8227cb157485815eae094c3e64b04fadaa2eadcd141ed5d41c018d83617db8ecc">BlueSTSDKNode::BlueSTSDKNodeModeOTA_BLE_DFU</a></div><div class="ttdoc">enter in the update mode through the ble connection </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:71</div></div>
-<div class="ttc" id="protocol_blue_s_t_s_d_k_node_ble_connection_param_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_node_ble_connection_param_delegate-p.html">BlueSTSDKNodeBleConnectionParamDelegate-p</a></div><div class="ttdoc">protocol used by the node for notify a change in the BLE connection parameters </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:366</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_node_html_a29cd81ec11bcfc45b2913ac96f6c32aaa9d677b973a75d62f67231fa36557f382"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa9d677b973a75d62f67231fa36557f382">BlueSTSDKNode::BlueSTSDKNodeStateDisconnecting</a></div><div class="ttdoc">disconnection in progress </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:83</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_node_html_a29cd81ec11bcfc45b2913ac96f6c32aaa1f15a4edf350d848827bf0b643447b53"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa1f15a4edf350d848827bf0b643447b53">BlueSTSDKNode::BlueSTSDKNodeStateConnecting</a></div><div class="ttdoc">connection in progress </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:75</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_node_html_a29cd81ec11bcfc45b2913ac96f6c32aaac9e45b5b8c1171142f04bacda2ada34c"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaac9e45b5b8c1171142f04bacda2ada34c">BlueSTSDKNode::BlueSTSDKNodeStateInit</a></div><div class="ttdoc">start state </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:67</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_node_html_a29cd81ec11bcfc45b2913ac96f6c32aaad005fcece21981eec97bbff62c01f312"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaad005fcece21981eec97bbff62c01f312">BlueSTSDKNode::BlueSTSDKNodeStateConnected</a></div><div class="ttdoc">node connected </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:79</div></div>
+<div class="ttc" id="protocol_blue_s_t_s_d_k_node_ble_connection_param_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_node_ble_connection_param_delegate-p.html">BlueSTSDKNodeBleConnectionParamDelegate-p</a></div><div class="ttdoc">protocol used by the node for notify a change in the BLE connection parameters </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:351</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_config_control_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_config_control.html">BlueSTSDKConfigControl</a></div><div class="ttdoc">Class that manage the Config characteristics. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKConfigControl.h:48</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_node_html_a29cd81ec11bcfc45b2913ac96f6c32aaa32613458f20bd901466e637c81f2c1ff"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa32613458f20bd901466e637c81f2c1ff">BlueSTSDKNode::BlueSTSDKNodeStateLost</a></div><div class="ttdoc">error during a connection </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:87</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_node_html_a29cd81ec11bcfc45b2913ac96f6c32aaa3081128a92b4a2c9ca2ef2d190d25c59"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa3081128a92b4a2c9ca2ef2d190d25c59">BlueSTSDKNode::BlueSTSDKNodeStateUnreachable</a></div><div class="ttdoc">the node does&#39;t respond to a connection </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:91</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_node_html_a29cd81ec11bcfc45b2913ac96f6c32aaa9aee4189828c33f57500ffcad3a230a6"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa9aee4189828c33f57500ffcad3a230a6">BlueSTSDKNode::BlueSTSDKNodeStateIdle</a></div><div class="ttdoc">node available, waiting for a connection command </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:71</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_node_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a></div><div class="ttdoc">Class that represent a remote node that will export some data (as BlueSTSDKFeature) that the user can...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:58</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_feature_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a></div><div class="ttdoc">This class represent some set of data that a node can export. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:89</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_node_html_a29cd81ec11bcfc45b2913ac96f6c32aaa8e17dffeac09dcb2fbbc7485d2fe412a"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa8e17dffeac09dcb2fbbc7485d2fe412a">BlueSTSDKNode::BlueSTSDKNodeStateDead</a></div><div class="ttdoc">end node </div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:95</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a></div><div class="ttdoc">This class represent some set of data that a node can export. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:95</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 10 2017 16:22:12 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

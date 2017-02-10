@@ -196,12 +196,6 @@ Class Methods</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:a8227cb157485815eae094c3e64b04fad"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_node.html#a8227cb157485815eae094c3e64b04fad">BlueSTSDKNodeMode</a> { <a class="el" href="interface_blue_s_t_s_d_k_node.html#a8227cb157485815eae094c3e64b04fada2e3b1aa3db8ed36d5023839fd287ed30">BlueSTSDKNodeModeUSB_DFU</a>, 
-<a class="el" href="interface_blue_s_t_s_d_k_node.html#a8227cb157485815eae094c3e64b04fadaa2eadcd141ed5d41c018d83617db8ecc">BlueSTSDKNodeModeOTA_BLE_DFU</a>, 
-<a class="el" href="interface_blue_s_t_s_d_k_node.html#a8227cb157485815eae094c3e64b04fadaf13c955bed79f6af2c349e2fe00ecda0">BlueSTSDKNodeModeApplication</a>
- }<tr class="memdesc:a8227cb157485815eae094c3e64b04fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">possible node mode  <a href="interface_blue_s_t_s_d_k_node.html#a8227cb157485815eae094c3e64b04fad">More...</a><br /></td></tr>
-<tr class="separator:a8227cb157485815eae094c3e64b04fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</td></tr>
 <tr class="memitem:a29cd81ec11bcfc45b2913ac96f6c32aa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aa">BlueSTSDKNodeState</a> { <br />
 &#160;&#160;<a class="el" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaac9e45b5b8c1171142f04bacda2ada34c">BlueSTSDKNodeStateInit</a> = 0, 
 <a class="el" href="interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aaa9aee4189828c33f57500ffcad3a230a6">BlueSTSDKNodeStateIdle</a> = 1, 
@@ -263,6 +257,10 @@ Properties</h2></td></tr>
 <tr class="memitem:a2036ba3818cd96184cee77e96c13ddfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_blue_s_t_s_d_k_config_control.html">BlueSTSDKConfigControl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_node.html#a2036ba3818cd96184cee77e96c13ddfa">configControl</a></td></tr>
 <tr class="memdesc:a2036ba3818cd96184cee77e96c13ddfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">object that we can use for access to the config node or nil if it is absent  <a href="#a2036ba3818cd96184cee77e96c13ddfa">More...</a><br /></td></tr>
 <tr class="separator:a2036ba3818cd96184cee77e96c13ddfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a818995109e9b464f60e1e0ce048e34"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_node.html#a3a818995109e9b464f60e1e0ce048e34">isSleeping</a></td></tr>
+<tr class="separator:a3a818995109e9b464f60e1e0ce048e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab513d185afb60c2953c2013a16f4fe0"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_node.html#aab513d185afb60c2953c2013a16f4fe0">hasExtension</a></td></tr>
+<tr class="separator:aab513d185afb60c2953c2013a16f4fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8707731e4b1352bbb9e36e13e9bab278"><td class="memItemLeft" align="right" valign="top">NSNumber *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_node.html#a8707731e4b1352bbb9e36e13e9bab278">txPower</a></td></tr>
 <tr class="memdesc:a8707731e4b1352bbb9e36e13e9bab278"><td class="mdescLeft">&#160;</td><td class="mdescRight">tx power used from the board  <a href="#a8707731e4b1352bbb9e36e13e9bab278">More...</a><br /></td></tr>
 <tr class="separator:a8707731e4b1352bbb9e36e13e9bab278"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -272,39 +270,6 @@ Properties</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>In case that the node require the a secure connection with the pin it can happen that the notification subscription are sent before the connection completed. It is not possible have callback/notification when the connection completed. For this reason we try to subscribe the feature every second until we didn't receive some data from it.</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>STMicroelectronics - Central Labs. </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a8227cb157485815eae094c3e64b04fad"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (enum) <a class="el" href="interface_blue_s_t_s_d_k_node.html#a8227cb157485815eae094c3e64b04fad">BlueSTSDKNodeMode</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>possible node mode </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a8227cb157485815eae094c3e64b04fada2e3b1aa3db8ed36d5023839fd287ed30"></a>BlueSTSDKNodeModeUSB_DFU&#160;</td><td class="fielddoc">
-<p>enter in the update mode through the usb port </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8227cb157485815eae094c3e64b04fadaa2eadcd141ed5d41c018d83617db8ecc"></a>BlueSTSDKNodeModeOTA_BLE_DFU&#160;</td><td class="fielddoc">
-<p>enter in the update mode through the ble connection </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8227cb157485815eae094c3e64b04fadaf13c955bed79f6af2c349e2fe00ecda0"></a>BlueSTSDKNodeModeApplication&#160;</td><td class="fielddoc">
-<p>normal state </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <a class="anchor" id="a29cd81ec11bcfc45b2913ac96f6c32aa"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1171,6 +1136,46 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aab513d185afb60c2953c2013a16f4fe0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) hasExtension</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">atomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3a818995109e9b464f60e1e0ce048e34"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) isSleeping</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">atomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a3fb84051da33560b8e71a1a584b05d96"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1375,7 +1380,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 10 2017 16:22:13 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

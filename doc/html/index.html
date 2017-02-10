@@ -115,7 +115,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr>
 <th align="center">Bit</th><th align="center">15</th><th align="center">14</th><th align="center">13</th><th align="center">12</th><th align="center">11</th><th align="center">10</th><th align="center">9</th><th align="center">8</th><th align="center">7</th><th align="center">6</th><th align="center">5</th><th align="center">4</th><th align="center">3</th><th align="center">2</th><th align="center">1</th><th align="center">0  </th></tr>
 <tr>
-<td align="center">Feature</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">AccEvent</td><td align="center">FreeFall</td><td align="center">Sensor Fusion Compact</td><td align="center">Sensor Fusion</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">Activity</td><td align="center">Carry Position</td><td align="center">ProximityGesture</td><td align="center">MemsGesture</td><td align="center">Pedometer </td></tr>
+<td align="center">Feature</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">RFU</td><td align="center">AccEvent</td><td align="center">FreeFall</td><td align="center">Sensor Fusion Compact</td><td align="center">Sensor Fusion</td><td align="center">Compass</td><td align="center">Motion Intensity</td><td align="center">Activity</td><td align="center">Carry Position</td><td align="center">ProximityGesture</td><td align="center">MemsGesture</td><td align="center">Pedometer </td></tr>
 </table>
 <p>You can use one of the RFU bits or define a new device and decide how to map the feature. To see how the data is exported by pre-defined features, consult the export method <a href="https://stmicroelectronics-centralLabs.github.io/BlueSTSDK_Android/javadoc/com/st/BlueSTSDK/Feature.html#extractData-long-byte:A-int-"><code> Feature.ExtractResult Feature.extractData(long,byte[],int)</code></a>. within the feature class definition.</p>
 <ul>
@@ -227,7 +227,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p class="startli">```Objective-C // add the feature to the Nucleo device uint8_t deviceId = 0x80; // the feature will be mapped in the characteristic // 0x10000000-0001-11e1-ac36-0002a5d5c51b NSDictionary * temp = @0x10000000: [MyNewFeature class] };</p>
 <p class="startli"><a class="el" href="interface_blue_s_t_s_d_k_manager.html" title="Class that permit to discover new node that are compatible with the BlueSTSDK protocol. ">BlueSTSDKManager</a> *manager = [<a class="el" href="interface_blue_s_t_s_d_k_manager.html" title="Class that permit to discover new node that are compatible with the BlueSTSDK protocol. ">BlueSTSDKManager</a> sharedInstance]; [manager addFeatureForBoard:deviceId features:temp];</p>
 <p class="startli">``` Otherwise you can register the characteristics before call the connect method:</p>
-<p class="startli">```Objective-C <a class="el" href="interface_blue_s_t_s_d_k_node.html" title="Class that represent a remote node that will export some data (as BlueSTSDKFeature) that the user can...">BlueSTSDKNode</a> *node = … NSDictionary *map = [<a class="el" href="interface_blue_s_t_s_d_k_std_char_to_feature_map.html" title="Utility class that return all the standard charateristics manage by the SDK. ">BlueSTSDKStdCharToFeatureMap</a> getManageStdCharacteristics]; [node addExternalCharacteristics: map]; ```</p>
+<p class="startli">```Objective-C <a class="el" href="interface_blue_s_t_s_d_k_node.html" title="Class that represent a remote node that will export some data (as BlueSTSDKFeature) that the user can...">BlueSTSDKNode</a> *node = â€¦ NSDictionary *map = [<a class="el" href="interface_blue_s_t_s_d_k_std_char_to_feature_map.html" title="Utility class that return all the standard charateristics manage by the SDK. ">BlueSTSDKStdCharToFeatureMap</a> getManageStdCharacteristics]; [node addExternalCharacteristics: map]; ```</p>
 </li>
 </ol>
 <h2>Docs</h2>
@@ -243,7 +243,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 10 2017 16:22:13 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

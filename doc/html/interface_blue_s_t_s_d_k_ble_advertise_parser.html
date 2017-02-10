@@ -141,6 +141,12 @@ Properties</h2></td></tr>
 <tr class="memitem:aff499173abb134c75e85a3120978b308"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_ble_advertise_parser.html#aff499173abb134c75e85a3120978b308">address</a></td></tr>
 <tr class="memdesc:aff499173abb134c75e85a3120978b308"><td class="mdescLeft">&#160;</td><td class="mdescRight">address, can be nil if not present in the advertise  <a href="#aff499173abb134c75e85a3120978b308">More...</a><br /></td></tr>
 <tr class="separator:aff499173abb134c75e85a3120978b308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c102ca456e834fb4abbbbb877be9778"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_ble_advertise_parser.html#a6c102ca456e834fb4abbbbb877be9778">isSleeping</a></td></tr>
+<tr class="memdesc:a6c102ca456e834fb4abbbbb877be9778"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if the board is in sleeping state  <a href="#a6c102ca456e834fb4abbbbb877be9778">More...</a><br /></td></tr>
+<tr class="separator:a6c102ca456e834fb4abbbbb877be9778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a313ccb2ec646e071aad7eb8b02e47156"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_blue_s_t_s_d_k_ble_advertise_parser.html#a313ccb2ec646e071aad7eb8b02e47156">hasExtension</a></td></tr>
+<tr class="memdesc:a313ccb2ec646e071aad7eb8b02e47156"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if the board has some special extension  <a href="#a313ccb2ec646e071aad7eb8b02e47156">More...</a><br /></td></tr>
+<tr class="separator:a313ccb2ec646e071aad7eb8b02e47156"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class that parse the ble advertise package. </p>
@@ -248,6 +254,50 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>bit mask that tell what feature are available in the node </p>
+
+</div>
+</div>
+<a class="anchor" id="a313ccb2ec646e071aad7eb8b02e47156"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) hasExtension</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">atomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>true if the board has some special extension </p>
+
+</div>
+</div>
+<a class="anchor" id="a6c102ca456e834fb4abbbbb877be9778"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) isSleeping</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">atomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>true if the board is in sleeping state </p>
 
 </div>
 </div>
@@ -367,7 +417,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 10 2017 16:22:13 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

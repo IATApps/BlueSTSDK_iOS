@@ -120,8 +120,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef BlueSTSDK_BleAdvertiseParser_h</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define BlueSTSDK_BleAdvertiseParser_h</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_blue_s_t_s_d_k_ble_node_defines_8h.html">BlueSTSDKBleNodeDefines.h</a>&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;../BlueSTSDKNode.h&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_blue_s_t_s_d_k_ble_node_defines_8h.html">BlueSTSDKBleNodeDefines.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#import &quot;../BlueSTSDKNode.h&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_ble_advertise_parser.html">   38</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_blue_s_t_s_d_k_ble_advertise_parser.html">BlueSTSDKBleAdvertiseParser</a> : NSObject</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
@@ -138,18 +138,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_ble_advertise_parser.html#aff499173abb134c75e85a3120978b308">   72</a></span>&#160;<span class="keyword">@property</span> (readonly) NSString *<a class="code" href="interface_blue_s_t_s_d_k_ble_advertise_parser.html#aff499173abb134c75e85a3120978b308">address</a>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;+(instancetype)advertiseParserWithAdvertise:(NSDictionary *)advertisementData;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;-(instancetype)initWithAdvertise:(NSDictionary*)advertisementData;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_ble_advertise_parser.html#a6c102ca456e834fb4abbbbb877be9778">   77</a></span>&#160;<span class="keyword">@property</span> (readonly) BOOL <a class="code" href="interface_blue_s_t_s_d_k_ble_advertise_parser.html#a6c102ca456e834fb4abbbbb877be9778">isSleeping</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_ble_advertise_parser.html#a313ccb2ec646e071aad7eb8b02e47156">   82</a></span>&#160;<span class="keyword">@property</span> (readonly) BOOL <a class="code" href="interface_blue_s_t_s_d_k_ble_advertise_parser.html#a313ccb2ec646e071aad7eb8b02e47156">hasExtension</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;+(instancetype)advertiseParserWithAdvertise:(NSDictionary *)advertisementData;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;-(instancetype)initWithAdvertise:(NSDictionary*)advertisementData;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_ble_advertise_parser_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_ble_advertise_parser.html">BlueSTSDKBleAdvertiseParser</a></div><div class="ttdoc">Class that parse the ble advertise package. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKBleAdvertiseParser.h:38</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_ble_advertise_parser_html_ad6e9e1607556bcae996259fd3e0a50ae"><div class="ttname"><a href="interface_blue_s_t_s_d_k_ble_advertise_parser.html#ad6e9e1607556bcae996259fd3e0a50ae">BlueSTSDKBleAdvertiseParser::nodeId</a></div><div class="ttdeci">unsigned char nodeId</div><div class="ttdoc">node id, tell the node type </div><div class="ttdef"><b>Definition:</b> BlueSTSDKBleAdvertiseParser.h:52</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_ble_advertise_parser_html_a313ccb2ec646e071aad7eb8b02e47156"><div class="ttname"><a href="interface_blue_s_t_s_d_k_ble_advertise_parser.html#a313ccb2ec646e071aad7eb8b02e47156">BlueSTSDKBleAdvertiseParser::hasExtension</a></div><div class="ttdeci">BOOL hasExtension</div><div class="ttdoc">true if the board has some special extension </div><div class="ttdef"><b>Definition:</b> BlueSTSDKBleAdvertiseParser.h:82</div></div>
 <div class="ttc" id="_blue_s_t_s_d_k_ble_node_defines_8h_html_a8de70545b8ad7dab51092344307ed522"><div class="ttname"><a href="_blue_s_t_s_d_k_ble_node_defines_8h.html#a8de70545b8ad7dab51092344307ed522">featureMask_t</a></div><div class="ttdeci">uint32_t featureMask_t</div><div class="ttdoc">type used for store the feature mask, each 1 bit means that the node export a specific feature ...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKBleNodeDefines.h:37</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_ble_advertise_parser_html_a0ad033c500054b23e244304d8ec9d72b"><div class="ttname"><a href="interface_blue_s_t_s_d_k_ble_advertise_parser.html#a0ad033c500054b23e244304d8ec9d72b">BlueSTSDKBleAdvertiseParser::txPower</a></div><div class="ttdeci">NSNumber * txPower</div><div class="ttdoc">tell the tx power used by the node, in mdb </div><div class="ttdef"><b>Definition:</b> BlueSTSDKBleAdvertiseParser.h:62</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_ble_advertise_parser_html_a6c102ca456e834fb4abbbbb877be9778"><div class="ttname"><a href="interface_blue_s_t_s_d_k_ble_advertise_parser.html#a6c102ca456e834fb4abbbbb877be9778">BlueSTSDKBleAdvertiseParser::isSleeping</a></div><div class="ttdeci">BOOL isSleeping</div><div class="ttdoc">true if the board is in sleeping state </div><div class="ttdef"><b>Definition:</b> BlueSTSDKBleAdvertiseParser.h:77</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_ble_advertise_parser_html_a7f512ec41079e89f1d30f6daef3951a5"><div class="ttname"><a href="interface_blue_s_t_s_d_k_ble_advertise_parser.html#a7f512ec41079e89f1d30f6daef3951a5">BlueSTSDKBleAdvertiseParser::nodeType</a></div><div class="ttdeci">BlueSTSDKNodeType nodeType</div><div class="ttdoc">tell the board type </div><div class="ttdef"><b>Definition:</b> BlueSTSDKBleAdvertiseParser.h:67</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_ble_advertise_parser_html_aff499173abb134c75e85a3120978b308"><div class="ttname"><a href="interface_blue_s_t_s_d_k_ble_advertise_parser.html#aff499173abb134c75e85a3120978b308">BlueSTSDKBleAdvertiseParser::address</a></div><div class="ttdeci">NSString * address</div><div class="ttdoc">address, can be nil if not present in the advertise </div><div class="ttdef"><b>Definition:</b> BlueSTSDKBleAdvertiseParser.h:72</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_ble_advertise_parser_html_a262bc96631b7d4577e490f993bd6cfbe"><div class="ttname"><a href="interface_blue_s_t_s_d_k_ble_advertise_parser.html#a262bc96631b7d4577e490f993bd6cfbe">BlueSTSDKBleAdvertiseParser::name</a></div><div class="ttdeci">NSString * name</div><div class="ttdoc">board name </div><div class="ttdef"><b>Definition:</b> BlueSTSDKBleAdvertiseParser.h:43</div></div>
@@ -159,7 +166,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 10 2017 16:22:13 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

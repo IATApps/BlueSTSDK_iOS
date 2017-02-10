@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['write_3a',['write:',['../interface_blue_s_t_s_d_k_config_control.html#a90259c8eb902e35a3d59b94a38a613d5',1,'BlueSTSDKConfigControl']]],
-  ['writedata_3a',['writeData:',['../interface_blue_s_t_s_d_k_feature.html#aec36545fd0e19733f1e96daa7095f743',1,'BlueSTSDKFeature']]],
-  ['writedatatofeature_3adata_3a',['writeDataToFeature:data:',['../interface_blue_s_t_s_d_k_node.html#a28a1a38ff280b95a0903c92c7393f828',1,'BlueSTSDKNode']]],
-  ['writemessage_3a',['writeMessage:',['../interface_blue_s_t_s_d_k_debug.html#ad4ca2310286b33991ce94037de42639f',1,'BlueSTSDKDebug']]],
-  ['writemessagedata_3a',['writeMessageData:',['../interface_blue_s_t_s_d_k_debug.html#ab5d935d67554a5a3f0df4421a458b4c7',1,'BlueSTSDKDebug']]],
-  ['writemessagedatafast_3a',['writeMessageDataFast:',['../interface_blue_s_t_s_d_k_debug.html#a40436443ea781f63685517ddaec2171f',1,'BlueSTSDKDebug']]]
+  ['version_3a',['version:',['../interface_blue_s_t_s_d_k_fw_version.html#a69f090aead84ac83e2a84c9eea09be14',1,'BlueSTSDKFwVersion']]],
+  ['versionmajor_3aminor_3apatch_3a',['versionMajor:minor:patch:',['../interface_blue_s_t_s_d_k_fw_version.html#a48ae62d128d717587fd12736684b848e',1,'BlueSTSDKFwVersion']]],
+  ['versionwithname_3amcutype_3amajor_3aminor_3apatch_3a',['versionWithName:mcuType:major:minor:patch:',['../interface_blue_s_t_s_d_k_fw_version.html#a753357a5306a904851b0641f79b5575e',1,'BlueSTSDKFwVersion']]]
 ];

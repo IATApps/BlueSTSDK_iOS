@@ -16,5 +16,6 @@ var searchData=
   ['state',['state',['../interface_blue_s_t_s_d_k_node.html#ab356f41ebd9ad2d6c8d9496fc4edd5ee',1,'BlueSTSDKNode']]],
   ['statetostring_3a',['stateToString:',['../interface_blue_s_t_s_d_k_node.html#a546420e6d53e5403ac97226d80a36aee',1,'BlueSTSDKNode']]],
   ['stderruuid',['stdErrUuid',['../interface_blue_s_t_s_d_k_service_debug.html#ad4d4362049fd60937c7866b07cd1fee1',1,'BlueSTSDKServiceDebug']]],
-  ['stopautoconfiguration',['stopAutoConfiguration',['../interface_blue_s_t_s_d_k_feature_auto_configurable.html#a5314a20761b46438ef46c57eb11a5f91',1,'BlueSTSDKFeatureAutoConfigurable']]]
+  ['stopautoconfiguration',['stopAutoConfiguration',['../interface_blue_s_t_s_d_k_feature_auto_configurable.html#a5314a20761b46438ef46c57eb11a5f91',1,'BlueSTSDKFeatureAutoConfigurable']]],
+  ['subsampling',['subsampling',['../interface_blue_s_t_s_d_k_we_s_u_feature_config.html#a217cdfcd9bba27b3c87695d812a1dc39',1,'BlueSTSDKWeSUFeatureConfig']]]
 ];

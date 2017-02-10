@@ -116,36 +116,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef BlueSTSDK_NSData_NumberConversion_h</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define BlueSTSDK_NSData_NumberConversion_h</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="category_n_s_data_07_number_conversion_08.html">   36</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_n_s_data_07_number_conversion_08.html">NSData(NumberConversion)</a></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;-(uint8_t) extractUInt8FromOffset:(NSUInteger)offset;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;-(uint16_t) extractLeUInt16FromOffset:(NSUInteger)offset;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;-(int16_t) extractLeInt16FromOffset:(NSUInteger)offset;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;-(int16_t) extractBeInt16FromOffset:(NSUInteger)offset;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;-(int32_t) extractLeInt32FromOffset:(NSUInteger)offset;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;-(uint32_t) extractLeUInt32FromOffset:(NSUInteger)offset;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;-(uint32_t) extractBeUInt32FromOffset:(NSUInteger)offset;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;-(int32_t) extractBeInt32FromOffset:(NSUInteger)offset;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;-(float) extractLeFloatFromOffset:(NSUInteger)offset;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;-(NSData *)<a class="code" href="category_n_s_data_07_number_conversion_08.html#a9b9a96db2a98f542c1b1a2923b0da00a">int16ChangeEndianes</a>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="category_n_s_data_07_number_conversion_08.html">   38</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_n_s_data_07_number_conversion_08.html">NSData(NumberConversion)</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;-(uint8_t) extractUInt8FromOffset:(NSUInteger)offset;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;-(int8_t) extractInt8FromOffset:(NSUInteger)offset;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;-(uint16_t) extractLeUInt16FromOffset:(NSUInteger)offset;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;-(int16_t) extractLeInt16FromOffset:(NSUInteger)offset;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;-(int16_t) extractBeInt16FromOffset:(NSUInteger)offset;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;-(int32_t) extractLeInt32FromOffset:(NSUInteger)offset;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;-(uint32_t) extractLeUInt32FromOffset:(NSUInteger)offset;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;-(uint32_t) extractBeUInt32FromOffset:(NSUInteger)offset;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;-(int32_t) extractBeInt32FromOffset:(NSUInteger)offset;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;-(float) extractLeFloatFromOffset:(NSUInteger)offset;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;-(NSData *)<a class="code" href="category_n_s_data_07_number_conversion_08.html#a9b9a96db2a98f542c1b1a2923b0da00a">int16ChangeEndianes</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="category_n_s_data_07_number_conversion_08_html_a9b9a96db2a98f542c1b1a2923b0da00a"><div class="ttname"><a href="category_n_s_data_07_number_conversion_08.html#a9b9a96db2a98f542c1b1a2923b0da00a">-[NSData(NumberConversion) int16ChangeEndianes]</a></div><div class="ttdeci">NSData * int16ChangeEndianes()</div></div>
-<div class="ttc" id="category_n_s_data_07_number_conversion_08_html"><div class="ttname"><a href="category_n_s_data_07_number_conversion_08.html">NSData(NumberConversion)</a></div><div class="ttdoc">Add to the NSData class the method for convert a little endian byte array to numbers. </div><div class="ttdef"><b>Definition:</b> NSData+NumberConversion.h:36</div></div>
+<div class="ttc" id="category_n_s_data_07_number_conversion_08_html"><div class="ttname"><a href="category_n_s_data_07_number_conversion_08.html">NSData(NumberConversion)</a></div><div class="ttdoc">Add to the NSData class the method for convert a little endian byte array to numbers. </div><div class="ttdef"><b>Definition:</b> NSData+NumberConversion.h:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 10 2017 16:22:13 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

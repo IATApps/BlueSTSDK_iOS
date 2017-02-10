@@ -8,10 +8,9 @@ var searchData=
   ['bluestsdkfeaturefieldtype',['BlueSTSDKFeatureFieldType',['../interface_blue_s_t_s_d_k_feature_field.html#a5af8e8966be8daa1ff5344550766be20',1,'BlueSTSDKFeatureField']]],
   ['bluestsdkfeaturememsgesturetype',['BlueSTSDKFeatureMemsGestureType',['../interface_blue_s_t_s_d_k_feature_mems_gesture.html#a578e85b794d9ba85ac409a33f109c138',1,'BlueSTSDKFeatureMemsGesture']]],
   ['bluestsdkfeatureproximitygesturetype',['BlueSTSDKFeatureProximityGestureType',['../interface_blue_s_t_s_d_k_feature_proximity_gesture.html#a02996ba99b309d53ed6b7f6bf4b37e7a',1,'BlueSTSDKFeatureProximityGesture']]],
-  ['bluestsdknodemode',['BlueSTSDKNodeMode',['../interface_blue_s_t_s_d_k_node.html#a8227cb157485815eae094c3e64b04fad',1,'BlueSTSDKNode']]],
   ['bluestsdknodestate',['BlueSTSDKNodeState',['../interface_blue_s_t_s_d_k_node.html#a29cd81ec11bcfc45b2913ac96f6c32aa',1,'BlueSTSDKNode']]],
   ['bluestsdknodetype',['BlueSTSDKNodeType',['../interface_blue_s_t_s_d_k_node.html#ab0aae529f904156fac3cffad0e1aca7f',1,'BlueSTSDKNode']]],
   ['bluestsdkregisteraccess_5fe',['BlueSTSDKRegisterAccess_e',['../interface_blue_s_t_s_d_k_register.html#ab80788e2a87eaf9f6be0c87f9f9ba652',1,'BlueSTSDKRegister']]],
-  ['bluestsdkregistername_5fe',['BlueSTSDKRegisterName_e',['../interface_blue_s_t_s_d_k_register_defines.html#ab6a0834776ff44b43e9c7ef388833e96',1,'BlueSTSDKRegisterDefines']]],
-  ['bluestsdkregistertarget_5fe',['BlueSTSDKRegisterTarget_e',['../interface_blue_s_t_s_d_k_register.html#ae319533b681771d36e46ab0c84ca6a22',1,'BlueSTSDKRegister']]]
+  ['bluestsdkregistertarget_5fe',['BlueSTSDKRegisterTarget_e',['../interface_blue_s_t_s_d_k_register.html#ae319533b681771d36e46ab0c84ca6a22',1,'BlueSTSDKRegister']]],
+  ['bluestsdkwesuregistername_5fe',['BlueSTSDKWeSURegisterName_e',['../interface_blue_s_t_s_d_k_we_s_u_register_defines.html#a43a69aec0edcefa656e3a582d9785273',1,'BlueSTSDKWeSURegisterDefines']]]
 ];

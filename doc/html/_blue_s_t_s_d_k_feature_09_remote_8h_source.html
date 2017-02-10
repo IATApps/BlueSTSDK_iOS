@@ -117,46 +117,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_blue_s_t_s_d_k_feature_8h.html">BlueSTSDKFeature.h</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_blue_s_t_s_d_k_feature_field_8h.html">BlueSTSDKFeatureField.h</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="protocol_blue_s_t_s_d_k_remote_feature-p.html">   37</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_remote_feature-p.html">BlueSTSDKRemoteFeature</a> &lt;NSObject&gt;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;-(<a class="code" href="interface_blue_s_t_s_d_k_extract_result.html">BlueSTSDKExtractResult</a>*) extractRemoteData:(uint64_t)timestamp</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                        data:(NSData*)data</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                  dataOffset:(uint32_t)offset;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="category_blue_s_t_s_d_k_feature_07_remote_08.html">   59</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_blue_s_t_s_d_k_feature_07_remote_08.html">BlueSTSDKFeature(Remote)</a></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;+(uint16_t) getNodeId:(<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a>*)sample idPos:(uint32_t)idPos;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;+(<a class="code" href="interface_blue_s_t_s_d_k_feature_field.html">BlueSTSDKFeatureField</a>*) getNodeIdFieldDesc;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;+(<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a>*) appendRemoteId:(uint16_t)remoteId</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                   sample:(<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a>*)sample;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;+(<a class="code" href="interface_blue_s_t_s_d_k_extract_result.html">BlueSTSDKExtractResult</a>*) extractRemoteData:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_remote_feature-p.html">BlueSTSDKRemoteFeature</a>&gt;)feature</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                 unTsWrapper:(NSMutableDictionary *) nodeUnWrapper</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                   timestamp:(uint64_t)timestamp</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                        data:(NSData*)rawData</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                  dataOffset:(uint32_t)offset;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef BlueSTSDK_BlueSTSDKFeatureCarryPosition_h</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define BlueSTSDK_BlueSTSDKFeatureCarryPosition_h</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_blue_s_t_s_d_k_feature_8h.html">BlueSTSDKFeature.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_blue_s_t_s_d_k_feature_field_8h.html">BlueSTSDKFeatureField.h</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="protocol_blue_s_t_s_d_k_remote_feature-p.html">   40</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_remote_feature-p.html">BlueSTSDKRemoteFeature</a> &lt;NSObject&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;-(<a class="code" href="interface_blue_s_t_s_d_k_extract_result.html">BlueSTSDKExtractResult</a>*) extractRemoteData:(uint64_t)timestamp</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                        data:(NSData*)data</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                  dataOffset:(uint32_t)offset;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="category_blue_s_t_s_d_k_feature_07_remote_08.html">   62</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="category_blue_s_t_s_d_k_feature_07_remote_08.html">BlueSTSDKFeature(Remote)</a></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;+(uint16_t) getNodeId:(<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a>*)sample idPos:(uint32_t)idPos;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;+(<a class="code" href="interface_blue_s_t_s_d_k_feature_field.html">BlueSTSDKFeatureField</a>*) getNodeIdFieldDesc;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;+(<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a>*) appendRemoteId:(uint16_t)remoteId</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                   sample:(<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a>*)sample;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;+(<a class="code" href="interface_blue_s_t_s_d_k_extract_result.html">BlueSTSDKExtractResult</a>*) extractRemoteData:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_remote_feature-p.html">BlueSTSDKRemoteFeature</a>&gt;)feature</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                 unTsWrapper:(NSMutableDictionary *) nodeUnWrapper</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                   timestamp:(uint64_t)timestamp</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                        data:(NSData*)rawData</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                  dataOffset:(uint32_t)offset;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_extract_result_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_extract_result.html">BlueSTSDKExtractResult</a></div><div class="ttdoc">class that contains the number of read bytes and the data extracted from the raw data stream ...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature_pro.h:39</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_feature_field_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_field.html">BlueSTSDKFeatureField</a></div><div class="ttdoc">This class describe a feature data field. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureField.h:34</div></div>
-<div class="ttc" id="protocol_blue_s_t_s_d_k_remote_feature-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_remote_feature-p.html">BlueSTSDKRemoteFeature-p</a></div><div class="ttdoc">protocol used by the remote feature for extract the data </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature+Remote.h:37</div></div>
-<div class="ttc" id="category_blue_s_t_s_d_k_feature_07_remote_08_html"><div class="ttname"><a href="category_blue_s_t_s_d_k_feature_07_remote_08.html">BlueSTSDKFeature(Remote)</a></div><div class="ttdoc">Extend the BlueSTSDKFeature adding utitility method used for handle RemoteFeatures. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature+Remote.h:59</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_field_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_field.html">BlueSTSDKFeatureField</a></div><div class="ttdoc">This class describe a feature data field. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureField.h:38</div></div>
+<div class="ttc" id="protocol_blue_s_t_s_d_k_remote_feature-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_remote_feature-p.html">BlueSTSDKRemoteFeature-p</a></div><div class="ttdoc">protocol used by the remote feature for extract the data </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature+Remote.h:40</div></div>
+<div class="ttc" id="category_blue_s_t_s_d_k_feature_07_remote_08_html"><div class="ttname"><a href="category_blue_s_t_s_d_k_feature_07_remote_08.html">BlueSTSDKFeature(Remote)</a></div><div class="ttdoc">Extend the BlueSTSDKFeature adding utitility method used for handle RemoteFeatures. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature+Remote.h:62</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_feature_sample_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a></div><div class="ttdoc">Class that represent a sample data from a feature, it contains the data exported by the feature and t...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:44</div></div>
 <div class="ttc" id="_blue_s_t_s_d_k_feature_field_8h_html"><div class="ttname"><a href="_blue_s_t_s_d_k_feature_field_8h.html">BlueSTSDKFeatureField.h</a></div></div>
 <div class="ttc" id="_blue_s_t_s_d_k_feature_8h_html"><div class="ttname"><a href="_blue_s_t_s_d_k_feature_8h.html">BlueSTSDKFeature.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 10 2017 16:22:13 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

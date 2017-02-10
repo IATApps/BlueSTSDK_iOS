@@ -117,8 +117,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef W2STApp_BlueSTSDKDebug_h</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define W2STApp_BlueSTSDKDebug_h</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef BlueSTSDK_BlueSTSDKDebug_h</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define BlueSTSDK_BlueSTSDKDebug_h</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#import &lt;CoreBluetooth/CBPeripheral.h&gt;</span></div>
@@ -133,39 +133,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_debug.html#ac56eb8495a695b533c37e6905385fc0a">   49</a></span>&#160;<span class="keyword">@property</span> (readonly,strong) <a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a>* <a class="code" href="interface_blue_s_t_s_d_k_debug.html#ac56eb8495a695b533c37e6905385fc0a">parentNode</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_debug.html#ae560d854f03599d9a3d16074ff0f0994">   56</a></span>&#160;<span class="keyword">@property</span> (nonatomic,retain,setter=setDelegate:,getter=getDelegate) id&lt;BlueSTSDKDebugOutputDelegate&gt; <a class="code" href="interface_blue_s_t_s_d_k_debug.html#ae560d854f03599d9a3d16074ff0f0994">delegate</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_debug.html#a2f762d470b46ddc95e4954e1e836e14b">   56</a></span>&#160;<span class="keyword">@property</span> (nonatomic,retain,setter=setDelegate:,getter=getDelegate) id&lt;BlueSTSDKDebugOutputDelegate&gt; delegate <a class="code" href="interface_blue_s_t_s_d_k_debug.html#a2f762d470b46ddc95e4954e1e836e14b">DEPRECATED_ATTRIBUTE</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;-(instancetype) initWithNode:(<a class="code" href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a> *)node periph:(CBPeripheral *)periph</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;         termChart:(CBCharacteristic*)termChar</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;          errChart:(CBCharacteristic*)errChar;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;-(NSUInteger) writeMessage:(NSString*)msg;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;-(NSUInteger) writeMessageData:(NSData*)data;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;- (BOOL)writeMessageDataFast:(NSData *)data ;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="protocol_blue_s_t_s_d_k_debug_output_delegate-p.html">   98</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_debug_output_delegate-p.html">BlueSTSDKDebugOutputDelegate</a></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">@required</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;-(void) debug:(<a class="code" href="interface_blue_s_t_s_d_k_debug.html">BlueSTSDKDebug</a>*)debug didStdOutReceived:(NSString*) msg;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;-(void) debug:(<a class="code" href="interface_blue_s_t_s_d_k_debug.html">BlueSTSDKDebug</a>*)debug didStdErrReceived:(NSString*) msg;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;-(void) debug:(<a class="code" href="interface_blue_s_t_s_d_k_debug.html">BlueSTSDKDebug</a>*)debug didStdInSend:(NSString*) msg error:(NSError*)error;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;-(void) addDebugOutputDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_debug_output_delegate-p.html">BlueSTSDKDebugOutputDelegate</a>&gt;)delegate;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;-(void) removeDebugOutputDelegate:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_blue_s_t_s_d_k_debug_output_delegate-p.html">BlueSTSDKDebugOutputDelegate</a>&gt;)delegate;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;-(NSUInteger) writeMessage:(NSString*)msg;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;-(NSUInteger) writeMessageData:(NSData*)data;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;- (BOOL)writeMessageDataFast:(NSData *)data ;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="protocol_blue_s_t_s_d_k_debug_output_delegate-p.html">  101</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_debug_output_delegate-p.html">BlueSTSDKDebugOutputDelegate</a></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">@required</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;-(void) debug:(<a class="code" href="interface_blue_s_t_s_d_k_debug.html">BlueSTSDKDebug</a>*)debug didStdOutReceived:(NSString*) msg;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;-(void) debug:(<a class="code" href="interface_blue_s_t_s_d_k_debug.html">BlueSTSDKDebug</a>*)debug didStdErrReceived:(NSString*) msg;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;-(void) debug:(<a class="code" href="interface_blue_s_t_s_d_k_debug.html">BlueSTSDKDebug</a>*)debug didStdInSend:(NSString*) msg error:(NSError*)error;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_debug_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_debug.html">BlueSTSDKDebug</a></div><div class="ttdoc">Class that permit to read and write from the debug node console. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKDebug.h:44</div></div>
 <div class="ttc" id="_blue_s_t_s_d_k_node_8h_html"><div class="ttname"><a href="_blue_s_t_s_d_k_node_8h.html">BlueSTSDKNode.h</a></div></div>
-<div class="ttc" id="protocol_blue_s_t_s_d_k_debug_output_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_debug_output_delegate-p.html">BlueSTSDKDebugOutputDelegate-p</a></div><div class="ttdoc">Protocol used for notify an console update. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKDebug.h:98</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_debug_html_ae560d854f03599d9a3d16074ff0f0994"><div class="ttname"><a href="interface_blue_s_t_s_d_k_debug.html#ae560d854f03599d9a3d16074ff0f0994">BlueSTSDKDebug::delegate</a></div><div class="ttdeci">id&lt; BlueSTSDKDebugOutputDelegate &gt; delegate</div><div class="ttdoc">delegate used for notify new message in the console, when you set a delegate we will automatically en...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKDebug.h:56</div></div>
+<div class="ttc" id="protocol_blue_s_t_s_d_k_debug_output_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_debug_output_delegate-p.html">BlueSTSDKDebugOutputDelegate-p</a></div><div class="ttdoc">Protocol used for notify an console update. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKDebug.h:101</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_debug_html_ac56eb8495a695b533c37e6905385fc0a"><div class="ttname"><a href="interface_blue_s_t_s_d_k_debug.html#ac56eb8495a695b533c37e6905385fc0a">BlueSTSDKDebug::parentNode</a></div><div class="ttdeci">BlueSTSDKNode * parentNode</div><div class="ttdoc">node that export this console </div><div class="ttdef"><b>Definition:</b> BlueSTSDKDebug.h:49</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_node_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_node.html">BlueSTSDKNode</a></div><div class="ttdoc">Class that represent a remote node that will export some data (as BlueSTSDKFeature) that the user can...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKNode.h:58</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_debug_html_a2f762d470b46ddc95e4954e1e836e14b"><div class="ttname"><a href="interface_blue_s_t_s_d_k_debug.html#a2f762d470b46ddc95e4954e1e836e14b">BlueSTSDKDebug::DEPRECATED_ATTRIBUTE</a></div><div class="ttdeci">id&lt; BlueSTSDKDebugOutputDelegate &gt; delegate DEPRECATED_ATTRIBUTE</div><div class="ttdoc">delegate used for notify new message in the console, when you set a delegate we will automatically en...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKDebug.h:56</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 10 2017 16:22:12 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

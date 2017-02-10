@@ -22,8 +22,10 @@ var searchData=
   ['bluestsdkfeatureautoconfigurable',['BlueSTSDKFeatureAutoConfigurable',['../interface_blue_s_t_s_d_k_feature_auto_configurable.html',1,'']]],
   ['bluestsdkfeatureautoconfigurabledelegate_2dp',['BlueSTSDKFeatureAutoConfigurableDelegate-p',['../protocol_blue_s_t_s_d_k_feature_auto_configurable_delegate-p.html',1,'']]],
   ['bluestsdkfeaturebattery',['BlueSTSDKFeatureBattery',['../interface_blue_s_t_s_d_k_feature_battery.html',1,'']]],
+  ['bluestsdkfeaturebatterydelegate_2dp',['BlueSTSDKFeatureBatteryDelegate-p',['../protocol_blue_s_t_s_d_k_feature_battery_delegate-p.html',1,'']]],
   ['bluestsdkfeaturecarryposition',['BlueSTSDKFeatureCarryPosition',['../interface_blue_s_t_s_d_k_feature_carry_position.html',1,'']]],
   ['bluestsdkfeaturecharacteristics',['BlueSTSDKFeatureCharacteristics',['../interface_blue_s_t_s_d_k_feature_characteristics.html',1,'']]],
+  ['bluestsdkfeaturecompass',['BlueSTSDKFeatureCompass',['../interface_blue_s_t_s_d_k_feature_compass.html',1,'']]],
   ['bluestsdkfeaturedelegate_2dp',['BlueSTSDKFeatureDelegate-p',['../protocol_blue_s_t_s_d_k_feature_delegate-p.html',1,'']]],
   ['bluestsdkfeaturedirectionofarrival',['BlueSTSDKFeatureDirectionOfArrival',['../interface_blue_s_t_s_d_k_feature_direction_of_arrival.html',1,'']]],
   ['bluestsdkfeaturefield',['BlueSTSDKFeatureField',['../interface_blue_s_t_s_d_k_feature_field.html',1,'']]],
@@ -41,6 +43,7 @@ var searchData=
   ['bluestsdkfeaturememssensorfusion',['BlueSTSDKFeatureMemsSensorFusion',['../interface_blue_s_t_s_d_k_feature_mems_sensor_fusion.html',1,'']]],
   ['bluestsdkfeaturememssensorfusioncompact',['BlueSTSDKFeatureMemsSensorFusionCompact',['../interface_blue_s_t_s_d_k_feature_mems_sensor_fusion_compact.html',1,'']]],
   ['bluestsdkfeaturemiclevel',['BlueSTSDKFeatureMicLevel',['../interface_blue_s_t_s_d_k_feature_mic_level.html',1,'']]],
+  ['bluestsdkfeaturemotionintensity',['BlueSTSDKFeatureMotionIntensity',['../interface_blue_s_t_s_d_k_feature_motion_intensity.html',1,'']]],
   ['bluestsdkfeaturepedometer',['BlueSTSDKFeaturePedometer',['../interface_blue_s_t_s_d_k_feature_pedometer.html',1,'']]],
   ['bluestsdkfeaturepressure',['BlueSTSDKFeaturePressure',['../interface_blue_s_t_s_d_k_feature_pressure.html',1,'']]],
   ['bluestsdkfeatureproximity',['BlueSTSDKFeatureProximity',['../interface_blue_s_t_s_d_k_feature_proximity.html',1,'']]],
@@ -48,6 +51,7 @@ var searchData=
   ['bluestsdkfeaturesample',['BlueSTSDKFeatureSample',['../interface_blue_s_t_s_d_k_feature_sample.html',1,'']]],
   ['bluestsdkfeatureswitch',['BlueSTSDKFeatureSwitch',['../interface_blue_s_t_s_d_k_feature_switch.html',1,'']]],
   ['bluestsdkfeaturetemperature',['BlueSTSDKFeatureTemperature',['../interface_blue_s_t_s_d_k_feature_temperature.html',1,'']]],
+  ['bluestsdkfwversion',['BlueSTSDKFwVersion',['../interface_blue_s_t_s_d_k_fw_version.html',1,'']]],
   ['bluestsdkmanager',['BlueSTSDKManager',['../interface_blue_s_t_s_d_k_manager.html',1,'']]],
   ['bluestsdkmanagerdelegate_2dp',['BlueSTSDKManagerDelegate-p',['../protocol_blue_s_t_s_d_k_manager_delegate-p.html',1,'']]],
   ['bluestsdknode',['BlueSTSDKNode',['../interface_blue_s_t_s_d_k_node.html',1,'']]],
@@ -56,7 +60,6 @@ var searchData=
   ['bluestsdknodestatedelegate_2dp',['BlueSTSDKNodeStateDelegate-p',['../protocol_blue_s_t_s_d_k_node_state_delegate-p.html',1,'']]],
   ['bluestsdknodestatusnslog',['BlueSTSDKNodeStatusNSLog',['../interface_blue_s_t_s_d_k_node_status_n_s_log.html',1,'']]],
   ['bluestsdkregister',['BlueSTSDKRegister',['../interface_blue_s_t_s_d_k_register.html',1,'']]],
-  ['bluestsdkregisterdefines',['BlueSTSDKRegisterDefines',['../interface_blue_s_t_s_d_k_register_defines.html',1,'']]],
   ['bluestsdkregisterheader_5ft',['BlueSTSDKRegisterHeader_t',['../struct_blue_s_t_s_d_k_register_1_1_blue_s_t_s_d_k_register_header__t.html',1,'BlueSTSDKRegister']]],
   ['bluestsdkremotefeature_2dp',['BlueSTSDKRemoteFeature-p',['../protocol_blue_s_t_s_d_k_remote_feature-p.html',1,'']]],
   ['bluestsdkremotefeaturehumidity',['BlueSTSDKRemoteFeatureHumidity',['../interface_blue_s_t_s_d_k_remote_feature_humidity.html',1,'']]],
@@ -66,5 +69,7 @@ var searchData=
   ['bluestsdkserviceconfig',['BlueSTSDKServiceConfig',['../interface_blue_s_t_s_d_k_service_config.html',1,'']]],
   ['bluestsdkservicedebug',['BlueSTSDKServiceDebug',['../interface_blue_s_t_s_d_k_service_debug.html',1,'']]],
   ['bluestsdkservices',['BlueSTSDKServices',['../interface_blue_s_t_s_d_k_services.html',1,'']]],
-  ['bluestsdkstdchartofeaturemap',['BlueSTSDKStdCharToFeatureMap',['../interface_blue_s_t_s_d_k_std_char_to_feature_map.html',1,'']]]
+  ['bluestsdkstdchartofeaturemap',['BlueSTSDKStdCharToFeatureMap',['../interface_blue_s_t_s_d_k_std_char_to_feature_map.html',1,'']]],
+  ['bluestsdkwesufeatureconfig',['BlueSTSDKWeSUFeatureConfig',['../interface_blue_s_t_s_d_k_we_s_u_feature_config.html',1,'']]],
+  ['bluestsdkwesuregisterdefines',['BlueSTSDKWeSURegisterDefines',['../interface_blue_s_t_s_d_k_we_s_u_register_defines.html',1,'']]]
 ];

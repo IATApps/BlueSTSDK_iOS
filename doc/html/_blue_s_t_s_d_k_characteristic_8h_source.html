@@ -117,33 +117,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#import &lt;CoreBluetooth/CoreBluetooth.h&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef BlueSTSDK_BlueSTSDKCharacteristic_h</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define BlueSTSDK_BlueSTSDKCharacteristic_h</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#import &quot;../BlueSTSDKFeature.h&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_characteristic.html">   38</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_blue_s_t_s_d_k_characteristic.html">BlueSTSDKCharacteristic</a> : NSObject</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_characteristic.html#aa5f4720a746ac3ed01dd560329673676">   43</a></span>&#160;<span class="keyword">@property</span>(strong,nonatomic,readonly) CBCharacteristic* <a class="code" href="interface_blue_s_t_s_d_k_characteristic.html#aa5f4720a746ac3ed01dd560329673676">characteristic</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_characteristic.html#a127e3764fdc9537dc1f360307696f213">   48</a></span>&#160;<span class="keyword">@property</span>(strong,nonatomic,readonly) NSArray* <a class="code" href="interface_blue_s_t_s_d_k_characteristic.html#a127e3764fdc9537dc1f360307696f213">features</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;-(instancetype) initWithChar:(CBCharacteristic*)charac features:(NSArray*)features;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;+(NSArray*) getFeaturesFromChar:(CBCharacteristic const*)characteristic</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                             in:(NSArray*)CharFeatureArray;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;+(CBCharacteristic*) getCharFromFeature:(<a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a>*)feature</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                     in:(NSArray*)CharFeatureArray;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">@end</span></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_characteristic_html_aa5f4720a746ac3ed01dd560329673676"><div class="ttname"><a href="interface_blue_s_t_s_d_k_characteristic.html#aa5f4720a746ac3ed01dd560329673676">BlueSTSDKCharacteristic::characteristic</a></div><div class="ttdeci">CBCharacteristic * characteristic</div><div class="ttdoc">ble characteristic associated with this object </div><div class="ttdef"><b>Definition:</b> BlueSTSDKCharacteristic.h:43</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_characteristic_html_a127e3764fdc9537dc1f360307696f213"><div class="ttname"><a href="interface_blue_s_t_s_d_k_characteristic.html#a127e3764fdc9537dc1f360307696f213">BlueSTSDKCharacteristic::features</a></div><div class="ttdeci">NSArray * features</div><div class="ttdoc">array of class that extend BlueSTSDKFeature that the characteristic export </div><div class="ttdef"><b>Definition:</b> BlueSTSDKCharacteristic.h:48</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_characteristic_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_characteristic.html">BlueSTSDKCharacteristic</a></div><div class="ttdoc">A single ble characteristic can contains more than one feature, this class help to map a ble characte...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKCharacteristic.h:38</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_feature_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a></div><div class="ttdoc">This class represent some set of data that a node can export. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:89</div></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#import &lt;CoreBluetooth/CoreBluetooth.h&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#import &quot;../BlueSTSDKFeature.h&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_characteristic.html">   41</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_blue_s_t_s_d_k_characteristic.html">BlueSTSDKCharacteristic</a> : NSObject</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_characteristic.html#aa5f4720a746ac3ed01dd560329673676">   46</a></span>&#160;<span class="keyword">@property</span>(strong,nonatomic,readonly) CBCharacteristic* <a class="code" href="interface_blue_s_t_s_d_k_characteristic.html#aa5f4720a746ac3ed01dd560329673676">characteristic</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_characteristic.html#a127e3764fdc9537dc1f360307696f213">   51</a></span>&#160;<span class="keyword">@property</span>(strong,nonatomic,readonly) NSArray* <a class="code" href="interface_blue_s_t_s_d_k_characteristic.html#a127e3764fdc9537dc1f360307696f213">features</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;-(instancetype) initWithChar:(CBCharacteristic*)charac features:(NSArray*)features;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;+(NSArray*) getFeaturesFromChar:(CBCharacteristic const*)characteristic</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                             in:(NSArray*)CharFeatureArray;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;+(CBCharacteristic*) getCharFromFeature:(<a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a>*)feature</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                     in:(NSArray*)CharFeatureArray;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_characteristic_html_aa5f4720a746ac3ed01dd560329673676"><div class="ttname"><a href="interface_blue_s_t_s_d_k_characteristic.html#aa5f4720a746ac3ed01dd560329673676">BlueSTSDKCharacteristic::characteristic</a></div><div class="ttdeci">CBCharacteristic * characteristic</div><div class="ttdoc">ble characteristic associated with this object </div><div class="ttdef"><b>Definition:</b> BlueSTSDKCharacteristic.h:46</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_characteristic_html_a127e3764fdc9537dc1f360307696f213"><div class="ttname"><a href="interface_blue_s_t_s_d_k_characteristic.html#a127e3764fdc9537dc1f360307696f213">BlueSTSDKCharacteristic::features</a></div><div class="ttdeci">NSArray * features</div><div class="ttdoc">array of class that extend BlueSTSDKFeature that the characteristic export </div><div class="ttdef"><b>Definition:</b> BlueSTSDKCharacteristic.h:51</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_characteristic_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_characteristic.html">BlueSTSDKCharacteristic</a></div><div class="ttdoc">A single ble characteristic can contains more than one feature, this class help to map a ble characte...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKCharacteristic.h:41</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a></div><div class="ttdoc">This class represent some set of data that a node can export. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:95</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 10 2017 16:22:13 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

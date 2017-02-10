@@ -116,25 +116,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_blue_s_t_s_d_k_device_timestamp_feature_8h.html">BlueSTSDKDeviceTimestampFeature.h</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_heart_rate.html">   36</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_blue_s_t_s_d_k_feature_heart_rate.html">BlueSTSDKFeatureHeartRate</a> : <a class="code" href="interface_blue_s_t_s_d_k_device_timestamp_feature.html">BlueSTSDKDeviceTimestampFeature</a></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;+(int32_t) getHeartRate:(<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a> *)sample;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;+(int32_t) getEnergyExtended:(<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a> *)sample;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;+(float) getRRInterval:(<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a> *)sample;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">@end</span></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_device_timestamp_feature_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_device_timestamp_feature.html">BlueSTSDKDeviceTimestampFeature</a></div><div class="ttdoc">Utiliy class that use as timestamp the system timestamp, in this way the fist 2 bytes of the notifica...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKDeviceTimestampFeature.h:38</div></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef BlueSTSDK_BlueSTSDKFeatureHeartRate_h</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define BlueSTSDK_BlueSTSDKFeatureHeartRate_h</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_blue_s_t_s_d_k_device_timestamp_feature_8h.html">BlueSTSDKDeviceTimestampFeature.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_heart_rate.html">   38</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_blue_s_t_s_d_k_feature_heart_rate.html">BlueSTSDKFeatureHeartRate</a> : <a class="code" href="interface_blue_s_t_s_d_k_device_timestamp_feature.html">BlueSTSDKDeviceTimestampFeature</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;+(int32_t) getHeartRate:(<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a> *)sample;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;+(int32_t) getEnergyExtended:(<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a> *)sample;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;+(float) getRRInterval:(<a class="code" href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a> *)sample;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_device_timestamp_feature_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_device_timestamp_feature.html">BlueSTSDKDeviceTimestampFeature</a></div><div class="ttdoc">Utiliy class that use as timestamp the system timestamp, in this way the fist 2 bytes of the notifica...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKDeviceTimestampFeature.h:41</div></div>
 <div class="ttc" id="_blue_s_t_s_d_k_device_timestamp_feature_8h_html"><div class="ttname"><a href="_blue_s_t_s_d_k_device_timestamp_feature_8h.html">BlueSTSDKDeviceTimestampFeature.h</a></div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_feature_heart_rate_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_heart_rate.html">BlueSTSDKFeatureHeartRate</a></div><div class="ttdoc">Feature that store the data from the standard heart rate characteristics. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureHeartRate.h:36</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_heart_rate_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_heart_rate.html">BlueSTSDKFeatureHeartRate</a></div><div class="ttdoc">Feature that store the data from the standard heart rate characteristics. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureHeartRate.h:38</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_feature_sample_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_sample.html">BlueSTSDKFeatureSample</a></div><div class="ttdoc">Class that represent a sample data from a feature, it contains the data exported by the feature and t...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:44</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 10 2017 16:22:13 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>

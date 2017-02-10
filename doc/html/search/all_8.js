@@ -32,6 +32,7 @@ var searchData=
   ['isfeaturecharacteristics_3a',['isFeatureCharacteristics:',['../interface_blue_s_t_s_d_k_feature_characteristics.html#abf718fd0c1f46d0184e8172874595eb6',1,'BlueSTSDKFeatureCharacteristics']]],
   ['isfeaturegeneralpurposecharacteristics_3a',['isFeatureGeneralPurposeCharacteristics:',['../interface_blue_s_t_s_d_k_feature_characteristics.html#a55048e36c39c8531a38e5aca4bfe4ba1',1,'BlueSTSDKFeatureCharacteristics']]],
   ['isreadoperationfromdata_3a',['isReadOperationFromData:',['../interface_blue_s_t_s_d_k_register.html#ab4f793996051bca6578d6fb2e1208c84',1,'BlueSTSDKRegister']]],
+  ['issleeping',['isSleeping',['../interface_blue_s_t_s_d_k_node.html#a3a818995109e9b464f60e1e0ce048e34',1,'BlueSTSDKNode::isSleeping()'],['../interface_blue_s_t_s_d_k_ble_advertise_parser.html#a6c102ca456e834fb4abbbbb877be9778',1,'BlueSTSDKBleAdvertiseParser::isSleeping()']]],
   ['isvalidnodeid_3a',['isValidNodeId:',['../interface_blue_s_t_s_d_k_manager.html#a8b20ab4290a6543f48d6609dd89c5c9a',1,'BlueSTSDKManager']]],
   ['iswriteoperationfromdata_3a',['isWriteOperationFromData:',['../interface_blue_s_t_s_d_k_register.html#a2105f5624580e1e8d05f5b8035fe34d9',1,'BlueSTSDKRegister']]]
 ];

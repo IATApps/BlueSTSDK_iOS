@@ -117,50 +117,56 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_blue_s_t_s_d_k_feature_8h.html">BlueSTSDKFeature.h</a>&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_feature_auto_configurable_delegate-p.html">BlueSTSDKFeatureAutoConfigurableDelegate</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifndef BlueSTSDK_BlueSTSDKFeatureAutoConfigurable_h</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define BlueSTSDK_BlueSTSDKFeatureAutoConfigurable_h</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html">   39</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html">BlueSTSDKFeatureAutoConfigurable</a> : <a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html#a201768eb06182219ff40270cfd0daa90">   44</a></span>&#160;<span class="keyword">@property</span>(readonly) BOOL <a class="code" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html#a201768eb06182219ff40270cfd0daa90">isConfigured</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;-(BOOL) <a class="code" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html#a08c09c8ff2703d55946b590f8ab464e0">startAutoConfiguration</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;-(BOOL) <a class="code" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html#a29ce48623c3f677b6a88a50e6737c29d">requestAutoConfigurationStatus</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;-(BOOL) <a class="code" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html#a5314a20761b46438ef46c57eb11a5f91">stopAutoConfiguration</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;-(void) addFeatureConfigurationDelegate:(id&lt;BlueSTSDKFeatureAutoConfigurableDelegate&gt;)delegate;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;-(void) removeFeatureConfigurationDelegate:(id&lt;BlueSTSDKFeatureAutoConfigurableDelegate&gt;)delegate;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="protocol_blue_s_t_s_d_k_feature_auto_configurable_delegate-p.html">   90</a></span>&#160;<span class="keyword">@protocol  </span><a class="code" href="protocol_blue_s_t_s_d_k_feature_auto_configurable_delegate-p.html">BlueSTSDKFeatureAutoConfigurableDelegate</a> &lt;NSObject&gt;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">@optional</span> -(void)didAutoConfigurationStart:(<a class="code" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html">BlueSTSDKFeatureAutoConfigurable</a> *)feature;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">@optional</span> -(void)didAutoConfigurationChange:(<a class="code" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html">BlueSTSDKFeatureAutoConfigurable</a> *)feature</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                     status:(int32_t)status;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">@optional</span> -(void)didConfigurationFinished:(<a class="code" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html">BlueSTSDKFeatureAutoConfigurable</a> *)feature</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                          status:(int32_t)status;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">@end</span></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_feature_auto_configurable_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_auto_configurable.html">BlueSTSDKFeatureAutoConfigurable</a></div><div class="ttdoc">Extend a feature adding the possibility to have a self configuration routine that run on the node...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureAutoConfigurable.h:39</div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_feature_auto_configurable_html_a201768eb06182219ff40270cfd0daa90"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_auto_configurable.html#a201768eb06182219ff40270cfd0daa90">BlueSTSDKFeatureAutoConfigurable::isConfigured</a></div><div class="ttdeci">BOOL isConfigured</div><div class="ttdoc">true if the feature is configured </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureAutoConfigurable.h:44</div></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_blue_s_t_s_d_k_feature_8h.html">BlueSTSDKFeature.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_blue_s_t_s_d_k_feature_auto_configurable_delegate-p.html">BlueSTSDKFeatureAutoConfigurableDelegate</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html">   43</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html">BlueSTSDKFeatureAutoConfigurable</a> : <a class="code" href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html#a201768eb06182219ff40270cfd0daa90">   48</a></span>&#160;<span class="keyword">@property</span>(readonly) BOOL <a class="code" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html#a201768eb06182219ff40270cfd0daa90">isConfigured</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;-(BOOL) <a class="code" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html#a08c09c8ff2703d55946b590f8ab464e0">startAutoConfiguration</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;-(BOOL) <a class="code" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html#a29ce48623c3f677b6a88a50e6737c29d">requestAutoConfigurationStatus</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;-(BOOL) <a class="code" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html#a5314a20761b46438ef46c57eb11a5f91">stopAutoConfiguration</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;-(void) addFeatureConfigurationDelegate:(id&lt;BlueSTSDKFeatureAutoConfigurableDelegate&gt;)delegate;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;-(void) removeFeatureConfigurationDelegate:(id&lt;BlueSTSDKFeatureAutoConfigurableDelegate&gt;)delegate;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="protocol_blue_s_t_s_d_k_feature_auto_configurable_delegate-p.html">   94</a></span>&#160;<span class="keyword">@protocol  </span><a class="code" href="protocol_blue_s_t_s_d_k_feature_auto_configurable_delegate-p.html">BlueSTSDKFeatureAutoConfigurableDelegate</a> &lt;NSObject&gt;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">@optional</span> -(void)didAutoConfigurationStart:(<a class="code" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html">BlueSTSDKFeatureAutoConfigurable</a> *)feature;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">@optional</span> -(void)didAutoConfigurationChange:(<a class="code" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html">BlueSTSDKFeatureAutoConfigurable</a> *)feature</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                     status:(int32_t)status;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">@optional</span> -(void)didConfigurationFinished:(<a class="code" href="interface_blue_s_t_s_d_k_feature_auto_configurable.html">BlueSTSDKFeatureAutoConfigurable</a> *)feature</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                          status:(int32_t)status;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_auto_configurable_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_auto_configurable.html">BlueSTSDKFeatureAutoConfigurable</a></div><div class="ttdoc">Extend a feature adding the possibility to have a self configuration routine that run on the node...</div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureAutoConfigurable.h:43</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_auto_configurable_html_a201768eb06182219ff40270cfd0daa90"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_auto_configurable.html#a201768eb06182219ff40270cfd0daa90">BlueSTSDKFeatureAutoConfigurable::isConfigured</a></div><div class="ttdeci">BOOL isConfigured</div><div class="ttdoc">true if the feature is configured </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureAutoConfigurable.h:48</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_feature_auto_configurable_html_a29ce48623c3f677b6a88a50e6737c29d"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_auto_configurable.html#a29ce48623c3f677b6a88a50e6737c29d">-[BlueSTSDKFeatureAutoConfigurable requestAutoConfigurationStatus]</a></div><div class="ttdeci">BOOL requestAutoConfigurationStatus()</div><div class="ttdoc">request the status of the configuration process, the status is an int between 0 and 100...</div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_feature_auto_configurable_html_a5314a20761b46438ef46c57eb11a5f91"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_auto_configurable.html#a5314a20761b46438ef46c57eb11a5f91">-[BlueSTSDKFeatureAutoConfigurable stopAutoConfiguration]</a></div><div class="ttdeci">BOOL stopAutoConfiguration()</div><div class="ttdoc">request to stop the self configuration process </div></div>
-<div class="ttc" id="protocol_blue_s_t_s_d_k_feature_auto_configurable_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_feature_auto_configurable_delegate-p.html">BlueSTSDKFeatureAutoConfigurableDelegate-p</a></div><div class="ttdoc">Protocol used for notify the change configuration change. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureAutoConfigurable.h:90</div></div>
+<div class="ttc" id="protocol_blue_s_t_s_d_k_feature_auto_configurable_delegate-p_html"><div class="ttname"><a href="protocol_blue_s_t_s_d_k_feature_auto_configurable_delegate-p.html">BlueSTSDKFeatureAutoConfigurableDelegate-p</a></div><div class="ttdoc">Protocol used for notify the change configuration change. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeatureAutoConfigurable.h:94</div></div>
 <div class="ttc" id="_blue_s_t_s_d_k_feature_8h_html"><div class="ttname"><a href="_blue_s_t_s_d_k_feature_8h.html">BlueSTSDKFeature.h</a></div></div>
 <div class="ttc" id="interface_blue_s_t_s_d_k_feature_auto_configurable_html_a08c09c8ff2703d55946b590f8ab464e0"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature_auto_configurable.html#a08c09c8ff2703d55946b590f8ab464e0">-[BlueSTSDKFeatureAutoConfigurable startAutoConfiguration]</a></div><div class="ttdeci">BOOL startAutoConfiguration()</div><div class="ttdoc">run the self configuration routine in the node </div></div>
-<div class="ttc" id="interface_blue_s_t_s_d_k_feature_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a></div><div class="ttdoc">This class represent some set of data that a node can export. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:89</div></div>
+<div class="ttc" id="interface_blue_s_t_s_d_k_feature_html"><div class="ttname"><a href="interface_blue_s_t_s_d_k_feature.html">BlueSTSDKFeature</a></div><div class="ttdoc">This class represent some set of data that a node can export. </div><div class="ttdef"><b>Definition:</b> BlueSTSDKFeature.h:95</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Aug 22 2016 14:54:23 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 10 2017 16:22:12 for BlueSTSDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.10
 </small></address>
